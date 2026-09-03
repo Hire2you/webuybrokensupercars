@@ -1,0 +1,436 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #080808;
+  --bg-dark: #030303;
+  --bg-surface: #111111;
+  --bg-surface-light: #171717;
+
+  --red-primary: #e21b16;
+  --red-dark: #9d0d0a;
+  --red-bright: #ff2b24;
+  --red-glow: rgba(226, 27, 22, 0.18);
+
+  --text-primary: #f7f7f7;
+  --text-secondary: #b5b5b5;
+  --text-muted: #777777;
+
+  --border-primary: #292929;
+  --border-light: #343434;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  --container-width: 1240px;
+  --font-primary: "Inter", sans-serif;
+
+  --placeholder: color-mix(in srgb, var(--text-primary) 88%, var(--red-primary) 12%);
+
+  /* UK number-plate yellow. The one accent we spend on the reg lookup */
+  --plate-yellow: #ffd200;
+
+  /* Hero carriageway — near-black tones aligned with bg-primary / bg-dark */
+  --hero-asphalt-dark: #030303;
+  --hero-asphalt: #080808;
+  --hero-asphalt-lit: #111111;
+  --hero-lane: rgba(255, 255, 255, 0.42);
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-surface-light: var(--bg-surface-light);
+  --color-red-primary: var(--red-primary);
+  --color-red-dark: var(--red-dark);
+  --color-red-bright: var(--red-bright);
+  --color-red-glow: var(--red-glow);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border-primary: var(--border-primary);
+  --color-border-light: var(--border-light);
+  --color-placeholder: var(--placeholder);
+  --color-plate-yellow: var(--plate-yellow);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --container-width: var(--container-width);
+  --font-display: var(--font-inter);
+  --font-sans: var(--font-inter);
+  --font-numeral: var(--font-bodoni);
+  --font-primary: var(--font-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+  background:
+    radial-gradient(circle at 50% 40%, rgba(120, 0, 0, 0.16), transparent 45%),
+    var(--bg-dark);
+}
+
+.cta-banner {
+  background: linear-gradient(90deg, #080808, #170403, #080808);
+  border: 1px solid rgba(226, 27, 22, 0.45);
+}
+
+.cta-banner-section {
+  background: linear-gradient(90deg, #080808, #170403, #080808);
+  border-top: 1px solid rgba(226, 27, 22, 0.45);
+  border-bottom: 1px solid rgba(226, 27, 22, 0.45);
+}
+
+.valuation-form-submit {
+  background: linear-gradient(90deg, var(--red-primary), #b60e0a) !important;
+}
+
+.valuation-form-submit:hover {
+  background: linear-gradient(90deg, var(--red-bright), var(--red-primary)) !important;
+  box-shadow:
+    0 12px 28px -8px rgba(157, 13, 10, 0.45),
+    0 0 0 1px rgba(226, 27, 22, 0.12);
+}
+
+.hero-road {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse 80% 55% at 50% 35%,
+      var(--red-glow),
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 42% 68% at 0% 48%,
+      rgba(226, 27, 22, 0.09),
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse 42% 68% at 100% 48%,
+      rgba(226, 27, 22, 0.09),
+      transparent 52%
+    ),
+    radial-gradient(circle at 50% 40%, rgba(120, 0, 0, 0.16), transparent 45%);
+}
+
+.hero-pillars {
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-pillars-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-road-asphalt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 40%;
+  background: linear-gradient(
+    180deg,
+    var(--hero-asphalt-dark) 0%,
+    var(--hero-asphalt) 45%,
+    var(--hero-asphalt-lit) 100%
+  );
+}
+
+.hero-road-edge-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 40%;
+  pointer-events: none;
+}
+
+.hero-road-stage {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  width: 240%;
+  height: 40%;
+  transform: translateX(-50%);
+  perspective: 260px;
+  perspective-origin: 50% 0%;
+  transform-style: preserve-3d;
+}
+
+.hero-road-plane {
+  position: absolute;
+  inset: 0;
+  transform: rotateX(66deg);
+  transform-origin: 50% 100%;
+  background: transparent;
+}
+
+.hero-road-markings {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-road-edge-glow {
+  fill: none;
+  stroke: url(#hero-road-edge-glow-fill);
+  vector-effect: non-scaling-stroke;
+  stroke-width: 6;
+  stroke-linecap: square;
+}
+
+.hero-road-edge-core {
+  fill: none;
+  stroke: url(#hero-road-edge-stroke);
+  vector-effect: non-scaling-stroke;
+  stroke-width: 2;
+  stroke-linecap: square;
+}
+
+.hero-lane-dashes {
+  fill: none;
+  stroke: var(--hero-lane);
+  stroke-width: 5;
+  stroke-linecap: butt;
+  stroke-dasharray: 18 28;
+  animation: hero-lane-travel 12s linear infinite;
+}
+
+.hero-road-ground {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  width: 78%;
+  height: 32%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse at 50% 78%,
+    rgba(8, 8, 8, 0.55) 0%,
+    transparent 72%
+  );
+}
+
+@media (min-width: 640px) {
+  .hero-pillars {
+    top: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-pillars {
+    top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-pillars {
+    top: 40%;
+  }
+
+  .hero-road-asphalt {
+    height: 35%;
+  }
+
+  .hero-road-edge-overlay {
+    height: 35%;
+  }
+
+  .hero-road-stage {
+    height: 35%;
+    perspective: 200px;
+  }
+
+  .hero-road-plane {
+    transform: rotateX(58deg);
+  }
+
+  .hero-lane-dashes {
+    animation-duration: 16s;
+  }
+}
+
+@keyframes hero-lane-travel {
+  to {
+    stroke-dashoffset: -92;
+  }
+}
+
+@keyframes phone-shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+.phone-tilt-left,
+.phone-tilt-right {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.phone-tilt-left {
+  transform: rotate(-22deg);
+}
+
+.phone-tilt-right {
+  transform: rotate(22deg);
+}
+
+.phone-shake {
+  display: inline-block;
+  transform-origin: 50% 85%;
+  animation: phone-shake 0.55s ease-in-out 4;
+}
+
+.phone-shake-delayed {
+  animation-delay: 0.12s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-lane-dashes {
+    animation: none;
+  }
+
+  .phone-shake {
+    animation: none;
+  }
+
+  .phone-tilt-left {
+    transform: rotate(-22deg);
+  }
+
+  .phone-tilt-right {
+    transform: rotate(22deg);
+  }
+
+  .motion-btn-primary:hover,
+  .motion-card-hover:hover,
+  .motion-card-hover:hover .motion-img-zoom,
+  .motion-btn-primary:hover .motion-btn-arrow {
+    transform: none;
+  }
+
+  .motion-link-underline::after {
+    transform: scaleX(1);
+  }
+}
+
+/* Shared entrance + hover motion utilities */
+.motion-ease {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-btn-primary {
+  transition:
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 28px -8px rgba(157, 13, 10, 0.45),
+    0 0 0 1px rgba(226, 27, 22, 0.12);
+}
+
+.motion-btn-arrow {
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-btn-primary:hover .motion-btn-arrow {
+  transform: translateX(4px);
+}
+
+.motion-card-hover {
+  transition:
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-card-hover:hover {
+  transform: translateY(-4px);
+}
+
+.motion-accent-line {
+  transition:
+    width 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-card-hover:hover .motion-accent-line {
+  width: 4rem;
+  background-color: var(--red-bright);
+}
+
+.motion-img-zoom {
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-card-hover:hover .motion-img-zoom {
+  transform: scale(1.05);
+}
+
+.motion-link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.motion-link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: var(--red-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-link-underline:hover::after,
+.motion-link-underline:focus-visible::after {
+  transform: scaleX(1);
+}
