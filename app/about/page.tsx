@@ -47,17 +47,17 @@ const STATS: {
   count: boolean;
   accent?: boolean;
 }[] = [
-  { figure: "100+", label: "jags", count: true },
+  { figure: "[NUMBER]+", label: "supercars bought", count: false },
   { figure: "20", label: "years in the trade", count: true },
-  { figure: "Same day", label: "Payment", count: false },
-  { figure: "Mainland UK", label: "Coverage", count: false },
+  { figure: "Same day", label: "payment", count: false },
+  { figure: "Mainland UK", label: "coverage", count: false },
 ];
 
 const EXPERTISE = [
-  { label: "Every marque from Ferrari to Bentley", icon: Car },
-  { label: "Common supercar faults understood", icon: Cog },
+  { label: "Every marque, from Ferrari to Bentley", icon: Car },
+  { label: "Common supercar faults understood, not guessed at", icon: Cog },
   { label: "Fair, knowledge-based pricing", icon: BadgePoundSterling },
-  { label: "Parts and salvage value factored in", icon: Package },
+  { label: "Parts and salvage value factored into every offer", icon: Package },
 ];
 
 const VALUES: { title: string; body: string; icon: LucideIcon }[] = [
@@ -244,7 +244,7 @@ export default function AboutPage() {
             </p>
             <RevealLine className="mt-8 h-px w-24 bg-white/40" />
             <p className="mt-6 max-w-md text-base leading-relaxed text-white/75 md:text-lg">
-              We built this company on that simple idea.
+              We built this company on that idea.
             </p>
           </RevealFrom>
         </div>
@@ -274,18 +274,23 @@ export default function AboutPage() {
               </RevealItem>
               <RevealItem>
                 <h2 className="mt-3 text-3xl font-bold tracking-tight text-bg-dark md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                  Too many good cars were being thrown away
+                  Too many good cars were being written off
                 </h2>
               </RevealItem>
               <RevealItem>
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  We started We Buy Broken Supercars for one simple reason: too
-                  many good cars were being thrown away as worthless. A blown
-                  engine or a failed gearbox does not make a supercar scrap, it
-                  makes it our specialty. Backed by 20 years in the motor
-                  trade, we have grown into a trusted UK buyer for broken,
-                  damaged and non-running supercars, paying fair prices and making
-                  the whole process effortless.
+                  We started We Buy Broken Supercars because too many good cars
+                  were being treated as scrap. A blown engine or a failed
+                  gearbox does not make a Ferrari, a Lamborghini or a Porsche
+                  worthless. It makes it exactly the kind of car we specialise
+                  in.
+                </p>
+                <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
+                  Backed by 20 years in the motor trade, we have built a
+                  reputation as a straight-talking UK buyer for broken, damaged
+                  and non-running supercars. We pay a fair price based on what
+                  the car actually is, and we make the process take a phone call
+                  rather than a fortnight.
                 </p>
               </RevealItem>
             </RevealGroup>
@@ -361,7 +366,7 @@ export default function AboutPage() {
             <RevealGroup>
               <RevealItem>
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-                  WHY JAGUAR SPECIALISTS
+                  WHY SPECIALISTS
                 </p>
               </RevealItem>
               <RevealItem>
@@ -371,12 +376,16 @@ export default function AboutPage() {
               </RevealItem>
               <RevealItem>
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  Because we deal in supercars every day, we know what yours is
-                  really worth. We understand the models and their common
-                  faults, from clutch or gearboxs to gearbox and electrical
-                  issues, and what the parts and salvage are actually worth.
-                  That knowledge means a fair, accurate offer, never the lowball
-                  a general scrap buyer would give you.
+                  Because we deal in supercars every day, not as a side line to
+                  vans and hatchbacks, we know what yours is actually worth. We
+                  understand the common failure points on a PDK gearbox, a ZF
+                  automatic or an air suspension system, and what the parts and
+                  salvage recovery are really worth once a fault is factored in.
+                </p>
+                <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
+                  That knowledge is what stands between you and a lowball offer.
+                  A general buyer sees a broken car and prices the risk. We see a
+                  Ferrari with a turbo fault and price the car.
                 </p>
               </RevealItem>
               <RevealItem>
@@ -489,8 +498,9 @@ export default function AboutPage() {
               </RevealItem>
               <RevealItem>
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-white/65 md:text-lg">
-                  From the south coast to the Scottish border, we collect from
-                  anywhere in mainland UK, usually within 24 to 48 hours.
+                  From the south coast to the Scottish border, our own recovery
+                  collects from anywhere in mainland UK, usually within 24 to 48
+                  hours of an accepted offer.
                 </p>
               </RevealItem>
               <RevealItem>

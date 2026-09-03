@@ -126,7 +126,7 @@ export default function AboutHero() {
               headingLevel="h1"
               eyebrow="ABOUT US"
               title="We buy the supercars nobody else will touch"
-              intro="Broken, damaged or non-running, we see value where others see scrap. Here is who we are and why sellers trust us."
+              intro="Broken, damaged or non-running, we see a car where a scrap yard sees weight. Here is who we are and why sellers trust us."
             />
           </div>
         </div>

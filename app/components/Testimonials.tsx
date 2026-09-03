@@ -5,7 +5,6 @@ import { BadgePoundSterling, Car } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import Section from "@/components/Section";
 import {
-  CountUp,
   RevealGroup,
   RevealItem,
 } from "@/components/motion";
@@ -179,7 +178,7 @@ export default function Testimonials() {
                       className="shrink-0 text-red-primary"
                     />
                     <p className="text-base font-semibold leading-snug text-text-primary sm:text-lg">
-                      <CountUp value={100} suffix="+ jags paid" />
+                      [NUMBER]+ supercars paid for
                     </p>
                   </div>
                 </div>

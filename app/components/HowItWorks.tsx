@@ -95,12 +95,12 @@ export default function HowItWorks() {
         <SettleImage className="relative aspect-[16/10] rounded-md bg-bg-dark ring-1 ring-red-primary/20 lg:aspect-auto lg:h-full">
           <figure className="relative h-full w-full">
             <Image
-              src="/models/f-pace-centred.webp"
-              alt="White Lamborghini Urus on the road — we buy every model, in any condition"
+              src="/Smashed_Aston.png"
+              alt="Damaged Aston Martin with front-end collision damage — we buy every model, in any condition"
               fill
               sizes="(max-width: 1024px) 100vw, 580px"
               quality={90}
-              className="object-cover object-[center_35%]"
+              className="object-cover object-center"
             />
             <div
               aria-hidden="true"
