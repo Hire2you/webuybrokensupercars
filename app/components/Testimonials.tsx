@@ -21,24 +21,24 @@ type Review = {
 const REVIEWS: Review[] = [
   {
     quote:
-      "Our Jaguar F-Pace was having issues with its turbo, which we just couldn't afford to repair. I found these guys on Google and the process was so quick and easy, I was quoted and they came and bought the car the same day.",
+      "Our Lamborghini Huracán had turbo issues we could not afford to repair. I found these guys on Google and the process was so quick and easy — quoted and collected the same day.",
     name: "Jason",
     location: "Maidstone",
-    modelTag: "Sold a Jaguar F-Pace",
+    modelTag: "Sold a Lamborghini Huracán",
   },
   {
     quote:
-      "Can't recommend these guys enough. I've sold both my Jaguar and my wife's Jaguar to them over the past year. They make the process of selling your car so easy, I'll definitely be using them again when it comes time for us to upgrade.",
+      "Cannot recommend these guys enough. I have sold both my Ferrari and my wife's Bentley to them over the past year. They make selling a broken supercar so easy.",
     name: "Mark",
     location: "Canterbury",
-    modelTag: "Sold a Jaguar XJ",
+    modelTag: "Sold a Ferrari 488",
   },
   {
     quote:
-      "The staff are very friendly. I was surprised at how much they ended up offering, I'd got a few other quotes online from some non-Jaguar specialists and they were nowhere near what these guys offered. Same-day payment as well.",
+      "The staff are very friendly. I was surprised at how much they ended up offering — quotes from non-specialist buyers were nowhere near what these guys offered. Same-day payment as well.",
     name: "Sharron",
     location: "Dartford",
-    modelTag: "Sold a Jaguar XE",
+    modelTag: "Sold a Porsche 911",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function Testimonials() {
 
             <RevealItem>
               <h2 className="mt-4 max-w-sm text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-[2.65rem] lg:leading-[1.12]">
-                What Jaguar sellers say about us
+                What supercar owners say about us
               </h2>
             </RevealItem>
 

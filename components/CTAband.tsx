@@ -17,7 +17,7 @@ export default function CTAband({ id }: CTAbandProps) {
         <RevealGroup>
           <RevealItem>
             <h2 className="font-sans text-3xl font-bold uppercase tracking-tight text-white md:text-4xl">
-              Get your free Jaguar valuation today
+              Get your free supercar valuation today
             </h2>
           </RevealItem>
           <RevealItem>

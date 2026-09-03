@@ -7,7 +7,7 @@ import { parseCountValue } from "@/lib/motion";
 const POINTS = [
   "Nationwide collection",
   "Instant online valuation",
-  "100+ Jaguars Purchased",
+  "100+ supercars Purchased",
   "5★ Service",
 ];
 

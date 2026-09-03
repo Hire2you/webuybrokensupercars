@@ -61,7 +61,7 @@ export default function OfferCountPanel() {
           </span>
         </div>
         <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/65">
-          Fair, no-obligation valuation based on your Jaguar
+          Fair, no-obligation valuation based on your supercar
         </p>
       </div>
     </Reveal>

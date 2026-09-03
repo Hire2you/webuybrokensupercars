@@ -125,7 +125,7 @@ export default function AboutHero() {
               revealTrigger="mount"
               headingLevel="h1"
               eyebrow="ABOUT US"
-              title="We buy the Jaguars nobody else will touch"
+              title="We buy the supercars nobody else will touch"
               intro="Broken, damaged or non-running, we see value where others see scrap. Here is who we are and why sellers trust us."
             />
           </div>

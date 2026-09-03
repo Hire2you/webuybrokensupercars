@@ -20,7 +20,7 @@ const STEPS = [
   {
     number: "02",
     title: "Get your offer",
-    body: "We come back to you with a fair, no-obligation offer for your Jaguar, whatever condition it is in.",
+    body: "We come back to you with a fair, no-obligation offer for your supercar, whatever condition it is in.",
     tone: "surface" as const,
   },
   {
@@ -46,7 +46,7 @@ export default function HowItWorks() {
             align="left"
             theme="dark"
             eyebrow="SIMPLE PROCESS"
-            title="Sell your Jaguar in three easy steps"
+            title="Sell your supercar in three easy steps"
             intro="No auctions, no tyre-kickers, no waiting around. Tell us about the car, get an offer, we come to you."
           />
 
@@ -96,7 +96,7 @@ export default function HowItWorks() {
           <figure className="relative h-full w-full">
             <Image
               src="/models/f-pace-centred.webp"
-              alt="White Jaguar F-Pace on the road — we buy every model, in any condition"
+              alt="White Lamborghini Urus on the road — we buy every model, in any condition"
               fill
               sizes="(max-width: 1024px) 100vw, 580px"
               quality={90}

@@ -43,7 +43,7 @@ import {
 } from "@/components/motion";
 import { buildPageMetadata, locationPageJsonLd } from "@/lib/seo";
 
-const COUNTY_SLUG = "sell-my-broken-jaguar-kent";
+const COUNTY_SLUG = "sell-my-broken-supercar-kent";
 const county = getCountyBySlug(COUNTY_SLUG);
 
 if (!county) {
@@ -57,7 +57,7 @@ const ICON_SIZE = 22;
 const ICON_STROKE = 2.25;
 
 export const metadata = buildPageMetadata({
-  title: "Sell My Broken Jaguar in Kent",
+  title: "Sell My Broken Supercar in Kent",
   description: KENT.description,
   path: PATH,
 });
@@ -69,7 +69,7 @@ const HERO_TRUST_POINTS = [
 ];
 
 const FAULTS: { label: string; icon: LucideIcon }[] = [
-  { label: "Ingenium timing chain rattle", icon: Link2 },
+  { label: "clutch or gearbox rattle", icon: Link2 },
   { label: "ZF gearbox limp mode", icon: Cog },
   { label: "Transfer box trouble on 4WD cars", icon: Gauge },
   { label: "Air suspension collapse", icon: Truck },
@@ -80,20 +80,20 @@ const FAULTS: { label: string; icon: LucideIcon }[] = [
 ];
 
 const MODELS: { label: string; icon: LucideIcon }[] = [
-  { label: "XE and XF, including Ingenium engines", icon: Car },
-  { label: "XJ, air suspension faults and all", icon: Car },
-  { label: "XK and F-Type, supercharged cars welcome", icon: Gauge },
-  { label: "F-Pace and E-Pace, gearbox and transfer box included", icon: Truck },
-  { label: "I-Pace, the electric SUV", icon: Zap },
-  { label: "S-Type and X-Type, whatever their age and mileage", icon: Car },
-  { label: "Classic and older Jaguars, running or long off the road", icon: Hourglass },
+  { label: "Ferrari and Lamborghini, including V8 and V10 models", icon: Car },
+  { label: "Bentley and Aston Martin, air suspension faults and all", icon: Car },
+  { label: "McLaren and Porsche, turbocharged cars welcome", icon: Gauge },
+  { label: "Maserati and exotic SUVs, gearbox and transfer box included", icon: Truck },
+  { label: "Hybrid and electric exotics", icon: Zap },
+  { label: "Lotus and niche marques, whatever their age and mileage", icon: Car },
+  { label: "Classic and older supercars, running or long off the road", icon: Hourglass },
 ];
 
 const SCRAP_ITEMS = [
   "The weight of the car",
   "The price of metal that week",
   "What the catalytic converter is worth",
-  "The same figure on an XF as a hatchback",
+  "The same figure on a Ferrari as a hatchback",
   "Model, spec and fault never enter the sum",
 ];
 
@@ -112,7 +112,7 @@ const OTHER_OPTIONS: { title: string; body: string }[] = [
   },
   {
     title: "A scrap yard",
-    body: "A yard gives you the weight arithmetic, with no account taken of which Jaguar it is. If the car is a stripped shell or fire damaged, that is an honest answer. For most broken Jags it is not.",
+    body: "A yard gives you the weight arithmetic, with no account taken of which supercar it is. If the car is a stripped shell or fire damaged, that is an honest answer. For most broken supercars it is not.",
   },
   {
     title: "Listing it privately",
@@ -304,10 +304,10 @@ export default function KentHubPage() {
     <>
       <JsonLd
         data={locationPageJsonLd({
-          title: "Sell My Broken Jaguar in Kent | Any Model, Non-Runners",
+          title: "Sell My Broken Supercar in Kent | Any Model, Non-Runners",
           description: KENT.description,
           path: PATH,
-          serviceType: "sell my broken jaguar kent",
+          serviceType: "sell my broken supercar kent",
           areaServed: KENT.areaServed,
           faqs: KENT_FAQS,
           breadcrumbName: KENT.name,
@@ -328,8 +328,8 @@ export default function KentHubPage() {
             titleSize="display"
             headingLevel="h1"
             eyebrow="KENT"
-            title="Sell my broken Jaguar in Kent"
-            intro="We buy broken, damaged and non-running Jaguars anywhere in Kent, priced on what the whole car is worth rather than what it weighs. Enter your reg for a free, no-obligation offer."
+            title="Sell my broken supercar in Kent"
+            intro="We buy broken, damaged and non-running supercars anywhere in Kent, priced on what the whole car is worth rather than what it weighs. Enter your reg for a free, no-obligation offer."
           />
 
           <RevealGroup
@@ -369,7 +369,7 @@ export default function KentHubPage() {
             <SettleImage className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
               <Image
                 src="/about/jag-f-pace-centred.png"
-                alt="White Jaguar F-Pace SUV"
+                alt="White Lamborghini Urus SUV"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}
@@ -392,7 +392,7 @@ export default function KentHubPage() {
               </RevealItem>
               <RevealItem>
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  If there is a Jaguar sitting on your drive or at the kerb that
+                  If there is a supercar sitting on your drive or at the kerb that
                   will not start, will not come out of limp mode, or has failed
                   an MOT on something expensive, you have probably already had
                   one of two conversations. A garage has quoted a repair bill
@@ -402,7 +402,7 @@ export default function KentHubPage() {
               </RevealItem>
               <RevealItem>
                 <p className="mt-4 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  Neither is the only answer. We buy broken Jaguars across Kent
+                  Neither is the only answer. We buy broken supercars across Kent
                   in any condition, running or not, and the offer is worked out
                   on the car itself. The valuation is free, there is no
                   obligation, and nothing needs fixing, cleaning or moving
@@ -580,8 +580,8 @@ export default function KentHubPage() {
           <div className="min-w-0 lg:sticky lg:top-32 lg:order-2 lg:self-start">
             <SettleImage className="relative aspect-square overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
               <Image
-                src="/about/jaguar-f-pace.png"
-                alt="Grey Jaguar F-Pace SUV"
+                src="/about/jag-f-pace-centred.png"
+                alt="Grey Lamborghini Urus SUV"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}
@@ -606,7 +606,7 @@ export default function KentHubPage() {
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
                   If yours is one of the older cars, you may have assumed nobody
                   but a yard would be interested by now. That is not the case.
-                  Age on its own does not take a Jaguar out of the running.
+                  Age on its own does not take a supercar out of the running.
                 </p>
               </RevealItem>
               <RevealItem>
@@ -635,8 +635,8 @@ export default function KentHubPage() {
           <RevealFrom direction="left" className="min-w-0">
             <SettleImage className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(10,10,10,0.18)] ring-1 ring-red-primary/10">
               <Image
-                src="/how-it-works/jaguar-documents.webp"
-                alt="Jaguar keys, V5 logbook and service history on a wooden surface"
+                src="/how-it-works/enter-details-phone.jpg"
+                alt="supercar keys, V5 logbook and service history on a wooden surface"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}
@@ -731,7 +731,7 @@ export default function KentHubPage() {
               </RevealItem>
               <RevealItem>
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-white/65 md:text-lg">
-                  Collection is free wherever the Jaguar is in Kent, and it is
+                  Collection is free wherever the supercar is in Kent, and it is
                   our own recovery that turns up. If the car cannot be driven it
                   goes on a trailer. Driveway, street, garage forecourt, lock-up
                   or exactly where it stopped, we come to it.
@@ -825,7 +825,7 @@ export default function KentHubPage() {
           <RevealItem>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
               Beyond the county, collection is free anywhere in mainland UK,
-              from the south coast to the Scottish border, so if the Jaguar is
+              from the south coast to the Scottish border, so if the supercar is
               in Kent but you are not, that changes nothing. Send the reg, the
               mileage and the postcode, tell us what the car is doing, and we
               will come back with a free offer and no obligation.

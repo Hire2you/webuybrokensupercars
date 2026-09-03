@@ -67,12 +67,12 @@ export default function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <Link
             href="/"
-            aria-label="We Buy Broken Jaguars — home"
+            aria-label="We Buy Broken Supercars — home"
             className="flex shrink-0 items-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-primary"
           >
             <Image
               src="/logo.webp"
-              alt="We Buy Broken Jaguars"
+              alt="We Buy Broken Supercars"
               width={1000}
               height={500}
               priority

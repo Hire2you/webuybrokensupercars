@@ -28,10 +28,10 @@ function town(name: string, slug?: string): LocationTown {
 export const COUNTIES: LocationCounty[] = [
   {
     name: "Kent",
-    slug: "sell-my-broken-jaguar-kent",
-    title: "Sell My Broken Jaguar in Kent",
+    slug: "sell-my-broken-supercar-kent",
+    title: "Sell My Broken Supercar in Kent",
     description:
-      "Broken, damaged and non-running Jaguars bought across Kent, any model. Priced on the whole car, not scrap weight. Free collection, same-day payment, no V5C.",
+      "Broken, damaged and non-running supercars bought across Kent, any model. Priced on the whole car, not scrap weight. Free collection, same-day payment, no V5C.",
     areaServed: ["Kent", "Medway", "Mainland UK"],
     towns: [
       town("Ashford"),
@@ -59,10 +59,10 @@ export const COUNTIES: LocationCounty[] = [
   },
   {
     name: "Essex",
-    slug: "sell-my-broken-jaguar-essex",
-    title: "Sell My Broken Jaguar in Essex",
+    slug: "sell-my-broken-supercar-essex",
+    title: "Sell My Broken Supercar in Essex",
     description:
-      "Broken, damaged, non-running and write-off Jaguars bought across Essex. Priced on the whole car by Jaguar specialists, with free collection on our own recovery and same-day payment.",
+      "Broken, damaged, non-running and write-off supercars bought across Essex. Priced on the whole car by Supercar specialists, with free collection on our own recovery and same-day payment.",
     areaServed: ["Essex", "Medway", "Mainland UK"],
     towns: [
       town("Basildon"),

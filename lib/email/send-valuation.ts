@@ -6,9 +6,9 @@ import {
 } from "@/lib/email/valuation-email-templates";
 import type { ValuationSubmission } from "@/lib/valuation";
 
-const VERIFIED_SEND_DOMAIN = "webuybrokenjaguars.com";
+const VERIFIED_SEND_DOMAIN = "webuybrokensupercars.co.uk";
 const DEFAULT_FROM =
-  "We Buy Broken Jaguars <valuations@webuybrokenjaguars.com>";
+  "We Buy Broken Supercars <valuations@webuybrokensupercars.co.uk>";
 
 function getResendClient() {
   const apiKey = process.env.RESEND_API_KEY;
@@ -87,7 +87,7 @@ export async function sendValuationEmails(values: ValuationSubmission) {
     from,
     to: values.email,
     replyTo: leadReplyTo,
-    subject: "We received your Jaguar valuation request",
+    subject: "We received your supercar valuation request",
     html: buildConfirmationEmailHtml(values),
   });
 

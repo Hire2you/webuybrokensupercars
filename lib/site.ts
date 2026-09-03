@@ -6,16 +6,16 @@ import {
 } from "@/components/siteContact";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://webuybrokenjaguars.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://webuybrokensupercars.co.uk";
 
-export const SITE_NAME = "We Buy Broken Jaguars";
+export const SITE_NAME = "We Buy Broken Supercars";
 
-export const SITE_TAGLINE = "Sell Your Broken Jaguar Today";
+export const SITE_TAGLINE = "Sell Your Broken Supercar Today";
 
 export const SITE_DESCRIPTION =
-  "We buy broken, non-running and damaged Jaguar cars across the UK. Engine faults, gearbox problems and accident damage accepted. Free nationwide collection, same-day payment, no obligation.";
+  "We buy broken, non-running and damaged supercars across the UK. Engine faults, gearbox problems and accident damage accepted. Free nationwide collection, same-day payment, no obligation.";
 
-export const SITE_OG_IMAGE = "/jaguar-hero.webp";
+export const SITE_OG_IMAGE = "/supercar-hero.webp";
 
 export const SITE_CONTACT = {
   phoneDisplay: SITE_PHONE_DISPLAY,

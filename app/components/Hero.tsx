@@ -57,7 +57,7 @@ export default function Hero({ children }: HeroProps) {
             <RevealItem>
               <h1 className="font-sans text-4xl font-extrabold uppercase leading-[0.98] tracking-[-0.045em] sm:text-5xl lg:text-[clamp(3rem,5vw,4.625rem)]">
                 <span className="text-text-primary">Sell Your Broken</span>{" "}
-                <span className="text-red-primary">Jaguar Today</span>
+                <span className="text-red-primary">Supercar Today</span>
               </h1>
             </RevealItem>
             <RevealItem>

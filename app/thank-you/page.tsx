@@ -15,7 +15,7 @@ import WhyUs from "../components/WhyUs";
 export const metadata = buildPageMetadata({
   title: "Thank You",
   description:
-    "Thanks for your Jaguar valuation request. We will be in touch shortly with a no-obligation offer.",
+    "Thanks for your supercar valuation request. We will be in touch shortly with a no-obligation offer.",
   path: "/thank-you",
   robots: {
     index: false,

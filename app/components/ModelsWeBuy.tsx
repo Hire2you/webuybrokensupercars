@@ -13,20 +13,19 @@ type Model = {
 };
 
 const models: Model[] = [
-  { name: "XE", bodyStyle: "Saloon", src: "/models/xe.jpg" },
-  { name: "XF", bodyStyle: "Saloon", src: "/models/xf.jpg" },
-  { name: "XJ", bodyStyle: "Saloon", src: "/models/xj.jpg" },
-  { name: "XK", bodyStyle: "Grand Tourer", src: "/models/xk.jpg" },
-  { name: "F-Type", bodyStyle: "Sports Car", src: "/models/f-type.jpg" },
-  { name: "F-Pace", bodyStyle: "SUV", src: "/models/f-pace.jpg" },
-  { name: "E-Pace", bodyStyle: "SUV", src: "/models/e-pace.jpg" },
-  { name: "I-Pace", bodyStyle: "Electric SUV", src: "/models/i-pace.jpg" },
-  { name: "S-Type", bodyStyle: "Saloon", src: "/models/s-type.jpg" },
-  { name: "X-Type", bodyStyle: "Saloon", src: "/models/x-type.jpg" },
+  { name: "Ferrari", bodyStyle: "Sports & GT", src: "/models/f-type.webp" },
+  { name: "Lamborghini", bodyStyle: "Sports & SUV", src: "/models/f-pace.webp" },
+  { name: "McLaren", bodyStyle: "Sports", src: "/models/i-pace.webp" },
+  { name: "Porsche", bodyStyle: "Sports & GT", src: "/models/xf.webp" },
+  { name: "Aston Martin", bodyStyle: "Grand Tourer", src: "/models/xj.webp" },
+  { name: "Bentley", bodyStyle: "GT & SUV", src: "/models/xk.webp" },
+  { name: "Maserati", bodyStyle: "GT & SUV", src: "/models/s-type.webp" },
+  { name: "Audi R8", bodyStyle: "Sports", src: "/models/xe.webp" },
+  { name: "Lotus", bodyStyle: "Sports", src: "/models/e-pace.webp" },
   {
-    name: "Classic & Older",
+    name: "Classic & Exotic",
     bodyStyle: "All Years",
-    src: "/models/classic.jpg",
+    src: "/models/classics.webp",
   },
 ];
 
@@ -60,7 +59,7 @@ function resolveModelSrc(src: string): string | null {
 }
 
 function modelAlt(name: string): string {
-  return name === "Classic & Older" ? "Classic Jaguar" : `Jaguar ${name}`;
+  return name === "Classic & Exotic" ? "Classic exotic supercar" : name;
 }
 
 const catalog = models.map((model) => ({
@@ -82,8 +81,8 @@ export default function ModelsWeBuy() {
       <SectionHeading
         theme="dark"
         eyebrow="EVERY MODEL"
-        title="The Jaguars we buy"
-        intro="We purchase every model, from saloons to sports cars and SUVs."
+        title="The supercars we buy"
+        intro="We purchase every marque, from Italian sports cars to British GTs and exotic SUVs."
       />
 
       <div className="relative mt-12">

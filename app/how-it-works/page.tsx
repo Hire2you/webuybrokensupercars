@@ -23,7 +23,7 @@ import {
 export const metadata = buildPageMetadata({
   title: "How It Works",
   description:
-    "Sell your broken Jaguar in three simple steps. Enter your details online, get a fair no-obligation offer, and receive same-day payment with free nationwide collection.",
+    "Sell your broken supercar in three simple steps. Enter your details online, get a fair no-obligation offer, and receive same-day payment with free nationwide collection.",
   path: "/how-it-works",
 });
 
@@ -49,18 +49,18 @@ const STEPS = [
     imageLabel: "Person entering car details on phone",
     imageSrc: "/how-it-works/enter-details-phone.jpg",
     imageAlt:
-      "Person entering their Jaguar details on the We Buy Broken Jaguars website on a phone",
+      "Person entering their supercar details on the We Buy Broken Supercars website on a phone",
   },
   {
     number: "02",
     title: "Get your offer",
-    body: "We review your details and come back with a fair, no-obligation offer based on your Jaguar's model, condition and spec.",
+    body: "We review your details and come back with a fair, no-obligation offer based on your supercar's model, condition and spec.",
     subPoints: [
       "Fair market-based pricing",
       "No lowball tactics",
       "Offer explained clearly",
     ],
-    imageLabel: "Jaguar being valued",
+    imageLabel: "supercar being valued",
     visual: "offer" as const,
   },
   {
@@ -72,9 +72,9 @@ const STEPS = [
       "Same-day payment",
       "We handle the DVLA paperwork",
     ],
-    imageLabel: "Jaguar being collected on a transporter",
-    imageSrc: "/how-it-works/jaguar-f-pace.webp",
-    imageAlt: "Grey Jaguar F-Pace — we collect your car and pay you the same day",
+    imageLabel: "supercar being collected on a transporter",
+    imageSrc: "/supercar-hero.webp",
+    imageAlt: "Grey Lamborghini Urus — we collect your car and pay you the same day",
   },
 ];
 
@@ -391,7 +391,7 @@ export default function HowItWorksPage() {
             titleSize="display"
             headingLevel="h1"
             eyebrow="HOW IT WORKS"
-            title="Selling your Jaguar, made simple"
+            title="Selling your supercar, made simple"
             intro="From first click to same-day payment, here is exactly how it works. No auctions, no haggling, no hassle."
           />
 
@@ -448,8 +448,8 @@ export default function HowItWorksPage() {
               className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(10,10,10,0.18)] ring-1 ring-red-primary/10"
             >
               <Image
-                src="/how-it-works/jaguar-documents.webp"
-                alt="Jaguar keys, V5 logbook and service history on a wooden surface"
+                src="/how-it-works/enter-details-phone.jpg"
+                alt="supercar keys, V5 logbook and service history on a wooden surface"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}

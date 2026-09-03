@@ -18,9 +18,9 @@ import { getAllPosts } from "@/lib/blog";
 import { getBlogCategories } from "@/lib/blog-format";
 
 export const metadata = buildPageMetadata({
-  title: "Jaguar Selling Guides & News",
+  title: "Supercar Selling Guides & News",
   description:
-    "Expert guides, tips and news on selling broken, damaged and non-running Jaguars in the UK. Fair valuations, common faults explained, and practical selling advice.",
+    "Expert guides, tips and news on selling broken, damaged and non-running supercars in the UK. Fair valuations, common faults explained, and practical selling advice.",
   path: "/blog",
 });
 
@@ -81,8 +81,8 @@ export default function BlogPage() {
         <div className="relative z-10">
           <SectionHeading
             eyebrow="THE BLOG"
-            title="Jaguar guides, tips and news"
-            intro="Everything you need to know about selling a broken, damaged or non-running Jaguar."
+            title="supercar guides, tips and news"
+            intro="Everything you need to know about selling a broken, damaged or non-running supercar."
             align="left"
             theme="dark"
             titleSize="display"
@@ -147,7 +147,7 @@ export default function BlogPage() {
       ) : (
         <Section id="featured-post" background="offwhite">
           <p className="text-base text-text-secondary">
-            Articles coming soon. Check back for Jaguar selling guides and news.
+            Articles coming soon. Check back for supercar selling guides and news.
           </p>
         </Section>
       )}

@@ -34,7 +34,7 @@ import {
 export const metadata = buildPageMetadata({
   title: "About Us",
   description:
-    "We buy broken, damaged and non-running Jaguars across mainland UK. Jaguar specialists who pay fair prices, collect nationwide and handle the paperwork. Here is who we are.",
+    "We buy broken, damaged and non-running supercars across mainland UK. Supercar specialists who pay fair prices, collect nationwide and handle the paperwork. Here is who we are.",
   path: "/about",
 });
 
@@ -54,8 +54,8 @@ const STATS: {
 ];
 
 const EXPERTISE = [
-  { label: "Every model from XE to F-Type", icon: Car },
-  { label: "Common Jaguar faults understood", icon: Cog },
+  { label: "Every marque from Ferrari to Bentley", icon: Car },
+  { label: "Common supercar faults understood", icon: Cog },
   { label: "Fair, knowledge-based pricing", icon: BadgePoundSterling },
   { label: "Parts and salvage value factored in", icon: Package },
 ];
@@ -237,7 +237,7 @@ export default function AboutPage() {
               &ldquo;
             </p>
             <p className="max-w-3xl text-3xl font-bold leading-[1.12] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[3.15rem] lg:leading-[1.1]">
-              Every Jaguar has a value.{" "}
+              Every supercar has a value.{" "}
               <span className="font-numeral font-medium italic text-white">
                 Even a broken one.
               </span>
@@ -256,7 +256,7 @@ export default function AboutPage() {
             <SettleImage className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
               <Image
                 src="/about/jag-f-pace-centred.png"
-                alt="White Jaguar F-Pace SUV"
+                alt="White Lamborghini Urus SUV"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}
@@ -279,12 +279,12 @@ export default function AboutPage() {
               </RevealItem>
               <RevealItem>
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  We started We Buy Broken Jaguars for one simple reason: too
+                  We started We Buy Broken Supercars for one simple reason: too
                   many good cars were being thrown away as worthless. A blown
-                  engine or a failed gearbox does not make a Jaguar scrap, it
+                  engine or a failed gearbox does not make a supercar scrap, it
                   makes it our specialty. Backed by 20 years in the motor
                   trade, we have grown into a trusted UK buyer for broken,
-                  damaged and non-running Jaguars, paying fair prices and making
+                  damaged and non-running supercars, paying fair prices and making
                   the whole process effortless.
                 </p>
               </RevealItem>
@@ -342,13 +342,13 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section id="jaguar-specialists" background="white">
+      <Section id="supercar-specialists" background="white">
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14 xl:gap-16">
           <div className="min-w-0 lg:sticky lg:top-32 lg:order-2 lg:self-start">
             <SettleImage className="relative aspect-square overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
               <Image
-                src="/about/jaguar-f-pace.png"
-                alt="Grey Jaguar F-Pace SUV"
+                src="/about/jag-f-pace-centred.png"
+                alt="Grey Lamborghini Urus SUV"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}
@@ -371,9 +371,9 @@ export default function AboutPage() {
               </RevealItem>
               <RevealItem>
                 <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  Because we deal in Jaguars every day, we know what yours is
+                  Because we deal in supercars every day, we know what yours is
                   really worth. We understand the models and their common
-                  faults, from Ingenium timing chains to gearbox and electrical
+                  faults, from clutch or gearboxs to gearbox and electrical
                   issues, and what the parts and salvage are actually worth.
                   That knowledge means a fair, accurate offer, never the lowball
                   a general scrap buyer would give you.
@@ -424,7 +424,7 @@ export default function AboutPage() {
                   Six principles. No exceptions.
                 </h2>
                 <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/75 md:text-base">
-                  The way we buy every Jaguar, from the first valuation to
+                  The way we buy every supercar, from the first valuation to
                   same-day payment.
                 </p>
               </div>
@@ -484,7 +484,7 @@ export default function AboutPage() {
               </RevealItem>
               <RevealItem>
                 <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                  Buying Jaguars across mainland UK
+                  Buying supercars across mainland UK
                 </h2>
               </RevealItem>
               <RevealItem>

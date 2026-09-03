@@ -53,7 +53,7 @@ const BENEFITS: Benefit[] = [
     icon: ClipboardCheck,
   },
   {
-    title: "Jaguar specialists",
+    title: "Supercar specialists",
     body: "We know these cars, so you get a real, fair price, never a lowball.",
     icon: Award,
   },
@@ -147,7 +147,7 @@ function WhyUsImage() {
         >
           <Image
             src="/why-us.webp"
-            alt="Blue Jaguar saloon with front-end damage — we buy broken and accident-damaged cars"
+            alt="Blue supercar with front-end damage with front-end damage — we buy broken and accident-damaged cars"
             width={1400}
             height={1000}
             sizes="(max-width: 1024px) 70vw, 40vw"
@@ -183,7 +183,7 @@ export default function WhyUs() {
             <RevealItem>
               <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-text-primary md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
                 Why sell your broken{" "}
-                <span className="whitespace-nowrap">Jaguar to us</span>
+                <span className="whitespace-nowrap">supercar to us</span>
               </h2>
             </RevealItem>
           </RevealGroup>

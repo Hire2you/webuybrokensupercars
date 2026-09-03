@@ -22,14 +22,14 @@ export default function Footer() {
         <div>
           <Image
             src="/logo.webp"
-            alt="We Buy Broken Jaguars"
+            alt="We Buy Broken Supercars"
             width={1000}
             height={500}
             className="h-14 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-muted">
             The UK&apos;s specialist buyer of broken, damaged and non-running
-            Jaguars.
+            supercars.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function Footer() {
             Coverage
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-[#8E8E8E]">
-            Buying Jaguars across mainland UK.
+            Buying supercars across mainland UK.
           </p>
           <ul className="mt-4 space-y-2">
             {COUNTIES.map((county) => (
@@ -97,7 +97,7 @@ export default function Footer() {
 
       <div className="border-t border-[#181818]">
         <div className="mx-auto max-w-6xl px-6 py-6 text-xs leading-relaxed text-text-muted">
-          <p>© 2026 We Buy Broken Jaguars. All rights reserved.</p>
+          <p>© 2026 We Buy Broken Supercars. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -16,7 +16,7 @@ const BRAND = {
 } as const;
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://webuybrokenjaguars.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://webuybrokensupercars.co.uk";
 
 const FONT = "Arial,Helvetica,sans-serif";
 
@@ -137,7 +137,7 @@ function emailHeader() {
       <td bgcolor="${BRAND.jetBlack}" style="background-color:${BRAND.jetBlack};padding:18px 20px;border:2px solid ${BRAND.green};border-bottom:none;">
         <img
           src="${SITE_URL}/logo.webp"
-          alt="We Buy Broken Jaguars"
+          alt="We Buy Broken Supercars"
           width="200"
           height="80"
           style="display:block;width:200px;max-width:100%;height:auto;border:0;"
@@ -173,7 +173,7 @@ function emailFooter(note: string) {
           ${escapeHtml(note)}
         </p>
         <p style="margin:0;font-size:12px;line-height:1.6;color:#ffffff;opacity:0.65;">
-          We Buy Broken Jaguars · ${escapeHtml(SITE_URL.replace(/^https?:\/\//, ""))}
+          We Buy Broken Supercars · ${escapeHtml(SITE_URL.replace(/^https?:\/\//, ""))}
         </p>
       </td>
     </tr>
@@ -226,7 +226,7 @@ function actionButton(label: string, href: string, primary: boolean) {
 export function buildLeadEmailHtml(values: ValuationSubmission) {
   const submittedAt = formatSubmittedAt();
   const telHref = phoneTelHref(values.phone);
-  const mailtoHref = `mailto:${encodeURIComponent(values.email)}?subject=${encodeURIComponent(`Re: Your Jaguar valuation (${values.reg})`)}`;
+  const mailtoHref = `mailto:${encodeURIComponent(values.email)}?subject=${encodeURIComponent(`Re: Your supercar valuation (${values.reg})`)}`;
 
   const vehicleRows = [
     detailField("Registration", values.reg),
@@ -247,7 +247,7 @@ export function buildLeadEmailHtml(values: ValuationSubmission) {
     ${emailHeader()}
     ${emailHero(
       "New valuation request",
-      `Submitted ${submittedAt} via webuybrokenjaguars.com`,
+      `Submitted ${submittedAt} via webuybrokensupercars.co.uk`,
     )}
     <tr>
       <td bgcolor="${BRAND.white}" style="background-color:${BRAND.white};padding:20px 18px;border-left:2px solid ${BRAND.green};border-right:2px solid ${BRAND.green};font-family:${FONT};">
@@ -307,7 +307,7 @@ export function buildConfirmationEmailHtml(values: ValuationSubmission) {
     ${emailHeader()}
     ${emailHero(
       "We have your details",
-      "Thanks for requesting a valuation with We Buy Broken Jaguars.",
+      "Thanks for requesting a valuation with We Buy Broken Supercars.",
     )}
     <tr>
       <td bgcolor="${BRAND.white}" style="background-color:${BRAND.white};padding:20px 18px;border-left:2px solid ${BRAND.green};border-right:2px solid ${BRAND.green};font-family:${FONT};">
@@ -345,5 +345,5 @@ export function buildConfirmationEmailHtml(values: ValuationSubmission) {
     ${emailFooter("No obligation. Free collection. Payment same day.")}
   `;
 
-  return emailShell("We received your Jaguar valuation request", body);
+  return emailShell("We received your supercar valuation request", body);
 }

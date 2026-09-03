@@ -5,7 +5,7 @@ export type FaqItem = {
 
 export const SITE_FAQS: FaqItem[] = [
   {
-    question: "Do you really buy non-running Jaguars?",
+    question: "Do you really buy non-running supercars?",
     answer:
       "Yes. Non-runners, non-starters and cars that have not moved in years are exactly what we specialise in.",
   },
@@ -25,12 +25,12 @@ export const SITE_FAQS: FaqItem[] = [
       "It helps, but we can still buy your car without it. Just let us know when you get your quote.",
   },
   {
-    question: "What if my Jaguar has no MOT?",
+    question: "What if my supercar has no MOT?",
     answer:
       "Not a problem. We collect on a trailer, so it does not need to be roadworthy or driveable.",
   },
   {
-    question: "Do you buy Cat S, Cat N and salvage Jaguars?",
+    question: "Do you buy Cat S, Cat N and salvage supercars?",
     answer: "Yes, we buy insurance write-offs and salvage of all categories.",
   },
   {
@@ -46,30 +46,30 @@ export const SITE_FAQS: FaqItem[] = [
 
 export const KENT_FAQS: FaqItem[] = [
   {
-    question: "Who actually buys a broken Jaguar in Kent?",
+    question: "Who actually buys a broken supercar in Kent?",
     answer:
-      "We do, direct from the owner. There's no auction, no middleman and no listing. We only buy Jaguars, so a non-runner or an MOT failure is a normal day's work rather than an awkward case.",
+      "We do, direct from the owner. There's no auction, no middleman and no listing. We only buy supercars, so a non-runner or an MOT failure is a normal day's work rather than an awkward case.",
   },
   {
-    question: "Is a Kent scrap yard's figure ever the right answer for a Jaguar?",
+    question: "Is a Kent scrap yard's figure ever the right answer for a supercar?",
     answer:
-      "Sometimes. If the car has been stripped, burnt out or reduced to a shell, weight really is most of what's left. For a complete Jaguar with one significant fault, it almost never is.",
+      "Sometimes. If the car has been stripped, burnt out or reduced to a shell, weight really is most of what's left. For a complete supercar with one significant fault, it almost never is.",
   },
   {
     question:
-      "Do you buy Cat S and Cat N Jaguars in Kent, including ones already repaired?",
+      "Do you buy Cat S and Cat N supercars in Kent, including ones already repaired?",
     answer:
       "Yes, all salvage categories, whether the car is still damaged or has since been repaired. Tell us the category and what work has been done, and both go into the figure.",
   },
   {
     question:
-      "I've lost the V5C and my Jaguar has been on SORN for years in Kent. Can I still sell it?",
+      "I've lost the V5C and my supercar has been on SORN for years in Kent. Can I still sell it?",
     answer:
       "Yes. No logbook and no MOT is fine, and the car doesn't need to start or move. You'll still need to confirm the sale to DVLA yourself once we've collected it.",
   },
   {
     question:
-      "How soon can you collect a broken Jaguar from Kent, and when do I get paid?",
+      "How soon can you collect a broken supercar from Kent, and when do I get paid?",
     answer:
       "Collection is usually within 24 to 48 hours of you accepting the offer, often sooner. Payment is made the same day by secure bank transfer, and it clears before we leave with the car.",
   },
@@ -80,7 +80,7 @@ export const KENT_FAQS: FaqItem[] = [
   },
   {
     question:
-      "My Jaguar is blocking a driveway in Kent and can't be driven. Do I need to move it?",
+      "My supercar is blocking a driveway in Kent and can't be driven. Do I need to move it?",
     answer:
       "No. It goes on a trailer from wherever it's sitting. Mention any tight access, a locked gate or a shared drive when you enquire so we bring the right kit.",
   },
@@ -95,13 +95,13 @@ export const ESSEX_FAQS: FaqItem[] = [
   },
   {
     question:
-      "What is a broken Jaguar XF actually worth — is it just scrap value?",
+      "What is a broken Ferrari California actually worth — is it just scrap value?",
     answer:
-      "Not if it is a complete car with one significant fault. We recently bought a 68-plate XF for about £2,500, priced as a car rather than by the tonne. Every Jaguar is different — model, mileage, spec and which fault it has all move the figure. Submit your reg for a real number.",
+      "Not if it is a complete car with one significant fault. We recently bought a 68-plate Ferrari California for about £25,000, priced as a car rather than by the tonne. Every supercar is different — model, mileage, spec and which fault it has all move the figure. Submit your reg for a real number.",
   },
   {
     question:
-      "My Jaguar has not started in two years and is off the road in Essex. Will you still take it?",
+      "My supercar has not started in two years and is off the road in Essex. Will you still take it?",
     answer:
       "Yes. Non-runners and cars that have not moved in years are normal for us. No MOT, no logbook and no need for it to start or drive — we collect on a trailer from wherever it is standing.",
   },

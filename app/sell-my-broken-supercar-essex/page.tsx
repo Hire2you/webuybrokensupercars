@@ -34,7 +34,7 @@ import {
 } from "@/components/motion";
 import { buildPageMetadata, locationPageJsonLd } from "@/lib/seo";
 
-const COUNTY_SLUG = "sell-my-broken-jaguar-essex";
+const COUNTY_SLUG = "sell-my-broken-supercar-essex";
 const county = getCountyBySlug(COUNTY_SLUG);
 
 if (!county) {
@@ -46,7 +46,7 @@ const PATH = getCountyPath(ESSEX);
 const VALUATION_HREF = "#valuation";
 
 export const metadata = buildPageMetadata({
-  title: "Sell My Broken Jaguar in Essex",
+  title: "Sell My Broken Supercar in Essex",
   description: ESSEX.description,
   path: PATH,
 });
@@ -113,8 +113,8 @@ const ESSEX_REGIONS: { title: string; places: string[] }[] = [
 
 const FAULTS: { title: string; body: string }[] = [
   {
-    title: "Ingenium timing chain rattle",
-    body: "On the 2.0-litre petrol and diesel engines — the repair bill is what ends the car on paper, but a car with one expensive fault is still a whole Jaguar being priced.",
+    title: "clutch or gearbox rattle",
+    body: "On the 2.0-litre petrol and diesel engines — the repair bill is what ends the car on paper, but a car with one expensive fault is still a whole supercar being priced.",
   },
   {
     title: "Head gasket failure and coolant loss",
@@ -231,10 +231,10 @@ export default function EssexHubPage() {
     <>
       <JsonLd
         data={locationPageJsonLd({
-          title: "Sell My Broken Jaguar in Essex | Any Model, Non-Runners",
+          title: "Sell My Broken Supercar in Essex | Any Model, Non-Runners",
           description: ESSEX.description,
           path: PATH,
-          serviceType: "sell my broken jaguar essex",
+          serviceType: "sell my broken supercar essex",
           areaServed: ESSEX.areaServed,
           faqs: ESSEX_FAQS,
           breadcrumbName: ESSEX.name,
@@ -251,19 +251,19 @@ export default function EssexHubPage() {
           <RevealGroup trigger="mount">
             <RevealItem>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-                Essex · Jaguar specialists
+                Essex · Supercar specialists
               </p>
             </RevealItem>
             <RevealItem>
               <h1 className="mt-4 text-4xl font-bold tracking-tight text-bg-dark sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
-                Sell my broken Jaguar in Essex
+                Sell my broken supercar in Essex
               </h1>
             </RevealItem>
             <RevealItem>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary md:text-xl">
-                If your Jaguar will not start, drives but has failed on something
+                If your supercar will not start, drives but has failed on something
                 expensive, or you have been quoted scrap money for a car that still
-                wears the leaper — the offer here is priced on what the whole car
+                is a supercar — the offer here is priced on what the whole car
                 is worth, not what its metal weighs.
               </p>
             </RevealItem>
@@ -273,7 +273,7 @@ export default function EssexHubPage() {
                   Get your free valuation
                 </Button>
                 <Link
-                  href="/blog/non-runner-jaguar-value"
+                  href="/blog/non-runner-supercar-value"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-red-primary underline-offset-2 hover:underline"
                 >
                   How we value non-runners
@@ -292,7 +292,7 @@ export default function EssexHubPage() {
             You searched Essex because the car is sitting somewhere in the county
             — on a drive in Brentwood, in a lock-up near Colchester, on a
             terraced street in Southend where it stopped — and every quote you
-            have had treats it as disposal. We only buy Jaguars, and Essex is
+            have had treats it as disposal. We only buy supercars, and Essex is
             covered by our own recovery from Medway in Kent. There is no Essex
             yard, no local driver matched from a platform, and no figure worked
             out by the tonne.
@@ -311,7 +311,7 @@ export default function EssexHubPage() {
         <RevealGroup className="text-center">
           <RevealItem>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-              What a broken Jaguar has actually been worth
+              What a broken supercar has actually been worth
             </p>
           </RevealItem>
           <RevealItem>
@@ -352,23 +352,23 @@ export default function EssexHubPage() {
                 ~£2,500
               </p>
               <p className="mt-3 text-lg font-bold text-white">
-                68-plate Jaguar XF
+                68-plate Ferrari California
               </p>
               <p className="mt-4 text-sm leading-relaxed text-white/75 md:text-base">
                 A real car, a real figure — bought as a car for a four-figure
                 sum, not weighed in. That is the honest answer to &ldquo;what is
-                a broken XF worth?&rdquo; for at least one car of that age.
+                a broken Ferrari California worth?&rdquo; for at least one car of that age.
               </p>
             </div>
           </RevealFrom>
 
           <RevealFrom direction="right">
             <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl lg:leading-[1.12]">
-              One fault does not make a Jaguar scrap
+              One fault does not make a supercar scrap
             </h2>
             <p className="mt-5 max-w-prose text-base leading-relaxed text-white/75 md:text-lg">
               Competitor pages anchor at £50 to £400 and price by metal weight.
-              None name a single Jaguar fault. This page does, because which
+              None name a single supercar fault. This page does, because which
               fault it is moves the offer — and describing it accurately on the
               form is what makes the number accurate.
             </p>
@@ -518,16 +518,16 @@ export default function EssexHubPage() {
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.34fr)_minmax(0,0.66fr)] lg:gap-14">
           <div className="min-w-0 lg:sticky lg:top-28">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-              Jaguar faults we buy
+              supercar faults we buy
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-bg-dark md:text-4xl">
               Named, not bucketed
             </h2>
             <p className="mt-4 text-base leading-relaxed text-text-secondary">
               Every competitor page uses condition buckets only. None name an
-              Ingenium chain or a ZF limp mode.{" "}
+              gearbox fault or a ZF limp mode.{" "}
               <Link
-                href="/blog/common-jaguar-faults"
+                href="/blog/common-supercar-faults"
                 className="font-medium text-red-primary underline-offset-2 hover:underline"
               >
                 Read our common faults guide
@@ -667,7 +667,7 @@ export default function EssexHubPage() {
               <p className="mt-3 text-sm leading-relaxed text-text-secondary md:text-base">
                 Once a car is scrapped it is issued a Certificate of Destruction
                 and cannot go back on the road, whatever was wrong with it. Find
-                out what your Jaguar is worth as a car before you take a decision
+                out what your supercar is worth as a car before you take a decision
                 that cannot be undone.
               </p>
             </div>
@@ -693,7 +693,7 @@ export default function EssexHubPage() {
             <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-start">
               <IconSquare icon={BadgePoundSterling} variant="solid" size="sm" iconSize={18} />
               <div>
-                <p className="text-sm font-bold text-white">Jaguar specialists</p>
+                <p className="text-sm font-bold text-white">Supercar specialists</p>
                 <p className="mt-1 text-xs leading-relaxed text-white/55">
                   One marque, fair offers from knowing the cars.
                 </p>
@@ -717,7 +717,7 @@ export default function EssexHubPage() {
           <blockquote className="mx-auto max-w-2xl border-l-[3px] border-red-primary pl-6">
             <p className="text-base italic leading-relaxed text-white/85 md:text-lg">
               &ldquo;I was surprised at how much they ended up offering — I&apos;d
-              got quotes from non-Jaguar specialists that were nowhere near what
+              got quotes from non-specialist buyers that were nowhere near what
               these guys offered. Same-day payment as well.&rdquo;
             </p>
             <footer className="mt-4 text-sm text-white/50">

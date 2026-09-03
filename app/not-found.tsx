@@ -4,9 +4,9 @@ import Section from "@/components/Section";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
-  title: "Page not found | We Buy Broken Jaguars",
+  title: "Page not found | We Buy Broken Supercars",
   description:
-    "The page you are looking for could not be found. Return to We Buy Broken Jaguars for a free valuation on your broken or non-running Jaguar.",
+    "The page you are looking for could not be found. Return to We Buy Broken Supercars for a free valuation on your broken or non-running supercar.",
   path: "/404",
   robots: {
     index: false,
@@ -26,7 +26,7 @@ export default function NotFound() {
         </h1>
         <p className="mt-4 text-base leading-relaxed text-text-secondary md:text-lg">
           That page does not exist or may have moved. You can head back to the
-          homepage or get a free valuation for your Jaguar.
+          homepage or get a free valuation for your supercar.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button href="/" showArrow>

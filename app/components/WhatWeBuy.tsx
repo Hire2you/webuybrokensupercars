@@ -113,7 +113,7 @@ function ConditionsCarBackdrop() {
       ) : (
         <div className="relative h-full w-full">
           <PlaceholderImage
-            label="Jaguar silhouette"
+            label="supercar silhouette"
             aspectRatio="21/9"
             className="absolute inset-0 h-full w-full rounded-none opacity-[0.12] brightness-[0.25] ring-0"
           />
@@ -183,13 +183,13 @@ export default function WhatWeBuy() {
 
             <RevealItem>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                We buy Jaguars in any condition
+                We buy supercars in any condition
               </h2>
             </RevealItem>
 
             <RevealItem>
               <p className="mt-4 max-w-md text-base leading-relaxed text-white/65 md:text-lg">
-                Running or not, we are interested. If it wears the leaper, we
+                Running or not, we are interested. If it is a supercar, we
                 will make you an offer.
               </p>
             </RevealItem>

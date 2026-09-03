@@ -15,7 +15,7 @@ export default function ThankYouCard() {
         </p>
         <p className="mx-auto mt-3 max-w-md text-base leading-relaxed text-text-muted">
           Thanks. We will be in touch shortly with a no-obligation offer for
-          your Jaguar.
+          your supercar.
         </p>
         <Button
           href="/#valuation"
