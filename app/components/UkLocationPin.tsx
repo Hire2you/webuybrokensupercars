@@ -51,39 +51,55 @@ export default function UkLocationPin({ className = "" }: UkLocationPinProps) {
         <clipPath id="why-us-badge-clip">
           <path d={BADGE_PATH} />
         </clipPath>
-        <linearGradient
-          id="why-us-badge-fill"
-          x1="100"
-          y1="6"
-          x2="100"
-          y2="218"
-          gradientUnits="userSpaceOnUse"
+        <filter
+          id="why-us-neon-glow"
+          x="-30%"
+          y="-30%"
+          width="160%"
+          height="160%"
         >
-          <stop stopColor="var(--red-bright)" />
-          <stop offset="1" stopColor="var(--red-primary)" />
-        </linearGradient>
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1.4" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+        <filter
+          id="why-us-map-glow"
+          x="-30%"
+          y="-30%"
+          width="160%"
+          height="160%"
+        >
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1.6" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
       </defs>
 
-      <path d={BADGE_PATH} fill="url(#why-us-badge-fill)" />
+      <path d={BADGE_PATH} fill="rgba(18, 18, 18, 0.72)" />
       <path
         d={BADGE_PATH}
         fill="none"
-        stroke="var(--red-dark)"
-        strokeOpacity="0.12"
-        strokeWidth="0.75"
+        stroke="var(--red-bright)"
+        strokeWidth="1.25"
         strokeLinejoin="round"
+        filter="url(#why-us-neon-glow)"
       />
 
       <g clipPath="url(#why-us-badge-clip)">
         <g
           transform={`translate(${mapOffsetX} ${mapOffsetY}) scale(${mapScale})`}
+          filter="url(#why-us-map-glow)"
         >
           {UK_MAP_PATHS.map((path, index) => (
             <path
               key={index}
               d={path}
               fill="none"
-              stroke="rgba(255,255,255,0.88)"
+              stroke="rgba(255,255,255,0.92)"
               strokeWidth="0.9"
               strokeLinejoin="round"
               strokeLinecap="round"
