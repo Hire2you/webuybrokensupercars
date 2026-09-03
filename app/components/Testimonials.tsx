@@ -143,8 +143,8 @@ export default function Testimonials() {
                 <Image
                   src="/logo.webp"
                   alt=""
-                  width={1000}
-                  height={500}
+                  width={2000}
+                  height={1200}
                   className="h-12 w-auto sm:h-14"
                 />
               </div>

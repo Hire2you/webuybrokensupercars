@@ -73,8 +73,8 @@ export default function Header() {
             <Image
               src="/logo.webp"
               alt="We Buy Broken Supercars"
-              width={1000}
-              height={500}
+              width={2000}
+              height={1200}
               priority
               className="h-14 w-auto sm:h-16 md:h-20"
             />

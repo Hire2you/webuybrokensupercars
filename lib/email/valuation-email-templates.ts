@@ -139,7 +139,7 @@ function emailHeader() {
           src="${SITE_URL}/logo.webp"
           alt="We Buy Broken Supercars"
           width="200"
-          height="80"
+          height="120"
           style="display:block;width:200px;max-width:100%;height:auto;border:0;"
         />
       </td>

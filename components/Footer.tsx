@@ -23,8 +23,8 @@ export default function Footer() {
           <Image
             src="/logo.webp"
             alt="We Buy Broken Supercars"
-            width={1000}
-            height={500}
+            width={2000}
+            height={1200}
             className="h-14 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-muted">
