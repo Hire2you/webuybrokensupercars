@@ -146,10 +146,10 @@ function WhyUsImage() {
           className="relative z-10 overflow-hidden rounded-none"
         >
           <Image
-            src="/why-us.webp"
-            alt="Blue supercar with front-end damage with front-end damage — we buy broken and accident-damaged cars"
-            width={1400}
-            height={1000}
+            src="/damaged-mclaren-supercar.webp"
+            alt="Yellow McLaren with front-end collision damage — we buy broken and accident-damaged supercars"
+            width={4703}
+            height={3527}
             sizes="(max-width: 1024px) 70vw, 40vw"
             unoptimized
             className="relative z-10 h-auto w-full object-contain object-bottom"

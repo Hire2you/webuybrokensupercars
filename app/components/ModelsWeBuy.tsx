@@ -13,19 +13,43 @@ type Model = {
 };
 
 const models: Model[] = [
-  { name: "Ferrari", bodyStyle: "Sports & GT", src: "/models/f-type.webp" },
-  { name: "Lamborghini", bodyStyle: "Sports & SUV", src: "/models/f-pace.webp" },
-  { name: "McLaren", bodyStyle: "Sports", src: "/models/i-pace.webp" },
-  { name: "Porsche", bodyStyle: "Sports & GT", src: "/models/xf.webp" },
-  { name: "Aston Martin", bodyStyle: "Grand Tourer", src: "/models/xj.webp" },
-  { name: "Bentley", bodyStyle: "GT & SUV", src: "/models/xk.webp" },
-  { name: "Maserati", bodyStyle: "GT & SUV", src: "/models/s-type.webp" },
-  { name: "Audi R8", bodyStyle: "Sports", src: "/models/xe.webp" },
-  { name: "Lotus", bodyStyle: "Sports", src: "/models/e-pace.webp" },
+  {
+    name: "Ferrari",
+    bodyStyle: "Sports & GT",
+    src: "/models/ferrari-supercar.webp",
+  },
+  {
+    name: "Lamborghini",
+    bodyStyle: "Sports & SUV",
+    src: "/models/lamborghini-supercar.webp",
+  },
+  { name: "McLaren", bodyStyle: "Sports", src: "/models/mclaren-supercar.webp" },
+  {
+    name: "Porsche",
+    bodyStyle: "Sports & GT",
+    src: "/models/porsche-supercar.webp",
+  },
+  {
+    name: "Aston Martin",
+    bodyStyle: "Grand Tourer",
+    src: "/models/aston-martin-supercar.webp",
+  },
+  {
+    name: "Bentley",
+    bodyStyle: "GT & SUV",
+    src: "/models/bentley-supercar.webp",
+  },
+  {
+    name: "Maserati",
+    bodyStyle: "GT & SUV",
+    src: "/models/maserati-supercar.webp",
+  },
+  { name: "Audi R8", bodyStyle: "Sports", src: "/models/audi-r8-supercar.webp" },
+  { name: "Lotus", bodyStyle: "Sports", src: "/models/lotus-supercar.webp" },
   {
     name: "Classic & Exotic",
     bodyStyle: "All Years",
-    src: "/models/classics.webp",
+    src: "/models/classic-exotic-supercar.webp",
   },
 ];
 
