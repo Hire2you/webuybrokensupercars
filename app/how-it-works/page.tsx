@@ -47,7 +47,7 @@ const STEPS = [
       "Running or not",
     ],
     imageLabel: "Person entering car details on phone",
-    imageSrc: "/how-it-works/enter-details-phone.jpg",
+    imageSrc: "/how-it-works/enter-details-phone.webp",
     imageAlt:
       "Person entering their supercar details on the We Buy Broken Supercars website on a phone",
   },
@@ -73,8 +73,8 @@ const STEPS = [
       "We handle the DVLA paperwork",
     ],
     imageLabel: "supercar being collected on a transporter",
-    imageSrc: "/supercar-hero.webp",
-    imageAlt: "Grey Lamborghini Urus — we collect your car and pay you the same day",
+    imageSrc: "/how-it-works/bentley-bentayga.webp",
+    imageAlt: "Red Bentley Bentayga — we collect your car and pay you the same day",
   },
 ];
 
@@ -448,8 +448,8 @@ export default function HowItWorksPage() {
               className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(10,10,10,0.18)] ring-1 ring-red-primary/10"
             >
               <Image
-                src="/how-it-works/enter-details-phone.jpg"
-                alt="supercar keys, V5 logbook and service history on a wooden surface"
+                src="/how-it-works/keys-and-logbook.webp"
+                alt="Supercar keys and V5 logbook on a wooden surface"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}

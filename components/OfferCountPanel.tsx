@@ -6,11 +6,14 @@ import { VIEWPORT } from "@/lib/motion";
 import { Reveal } from "@/components/motion";
 import GreenPanelBackdrop from "@/components/GreenPanelBackdrop";
 
-const OFFER_AMOUNT = 20000;
+const OFFER_AMOUNT_K = 100;
 const COUNT_DURATION = 1.8;
 
 function formatOffer(value: number) {
-  return `£${Math.round(value).toLocaleString("en-GB")}`;
+  const amount = Math.round(value);
+  if (amount <= 0) return "0";
+  if (amount >= OFFER_AMOUNT_K) return `${OFFER_AMOUNT_K}K+`;
+  return `${amount}K+`;
 }
 
 function OfferPanelBackdrop() {
@@ -22,18 +25,18 @@ export default function OfferCountPanel() {
   const isInView = useInView(ref, VIEWPORT);
   const reducedMotion = useReducedMotion();
   const [display, setDisplay] = useState(() =>
-    reducedMotion ? formatOffer(OFFER_AMOUNT) : formatOffer(0),
+    reducedMotion ? formatOffer(OFFER_AMOUNT_K) : formatOffer(0),
   );
 
   useEffect(() => {
     if (reducedMotion) {
-      setDisplay(formatOffer(OFFER_AMOUNT));
+      setDisplay(formatOffer(OFFER_AMOUNT_K));
       return;
     }
 
     if (!isInView) return;
 
-    const controls = animate(0, OFFER_AMOUNT, {
+    const controls = animate(0, OFFER_AMOUNT_K, {
       duration: COUNT_DURATION,
       ease: "easeOut",
       onUpdate: (latest) => setDisplay(formatOffer(latest)),
@@ -55,7 +58,7 @@ export default function OfferCountPanel() {
           <span
             ref={ref}
             className="inline-block bg-gradient-to-b from-white/50 via-white/82 to-white bg-clip-text pr-[0.14em] font-numeral text-5xl font-medium italic leading-none tracking-normal text-transparent sm:text-6xl md:text-[4.75rem]"
-            aria-label={`Example offer up to ${formatOffer(OFFER_AMOUNT)}`}
+            aria-label="Example offers of 100K and above"
           >
             {display}
           </span>

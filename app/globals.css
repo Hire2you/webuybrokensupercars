@@ -91,6 +91,26 @@ body {
   border-bottom: 1px solid rgba(226, 27, 22, 0.45);
 }
 
+.what-we-buy-section {
+  background:
+    radial-gradient(
+      ellipse 70% 80% at 88% 52%,
+      rgba(226, 27, 22, 0.06),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 55% 65% at 12% 72%,
+      rgba(226, 27, 22, 0.03),
+      transparent 52%
+    ),
+    linear-gradient(
+      90deg,
+      var(--bg-dark) 0%,
+      color-mix(in srgb, var(--red-dark) 18%, var(--bg-dark)) 50%,
+      var(--bg-dark) 100%
+    );
+}
+
 .valuation-form-submit {
   background: linear-gradient(90deg, var(--red-primary), #b60e0a) !important;
 }

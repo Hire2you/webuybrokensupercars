@@ -47,7 +47,7 @@ const STATS: {
   count: boolean;
   accent?: boolean;
 }[] = [
-  { figure: "[NUMBER]+", label: "supercars bought", count: false },
+  { figure: "100+", label: "supercars bought", count: false },
   { figure: "20", label: "years in the trade", count: true },
   { figure: "Same day", label: "payment", count: false },
   { figure: "Mainland UK", label: "coverage", count: false },
@@ -255,8 +255,8 @@ export default function AboutPage() {
           <RevealFrom direction="left" className="min-w-0">
             <SettleImage className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
               <Image
-                src="/about/jag-f-pace-centred.png"
-                alt="White Lamborghini Urus SUV"
+                src="/about/crashed-bentley.webp"
+                alt="Damaged black Bentley Continental GT with front-end collision damage"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}
@@ -352,8 +352,8 @@ export default function AboutPage() {
           <div className="min-w-0 lg:sticky lg:top-32 lg:order-2 lg:self-start">
             <SettleImage className="relative aspect-square overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
               <Image
-                src="/about/jag-f-pace-centred.png"
-                alt="Grey Lamborghini Urus SUV"
+                src="/about/red-rolls-royce.webp"
+                alt="Red Rolls-Royce Dawn convertible"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={90}

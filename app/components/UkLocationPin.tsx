@@ -1,4 +1,5 @@
 import { UK_MAP_PATHS, UK_MAP_VIEW_SIZE } from "./uk-map-paths";
+import { UkMapAnimatedPaths } from "./UkMapAnimatedPaths";
 
 type UkLocationPinProps = {
   className?: string;
@@ -94,17 +95,7 @@ export default function UkLocationPin({ className = "" }: UkLocationPinProps) {
           transform={`translate(${mapOffsetX} ${mapOffsetY}) scale(${mapScale})`}
           filter="url(#why-us-map-glow)"
         >
-          {UK_MAP_PATHS.map((path, index) => (
-            <path
-              key={index}
-              d={path}
-              fill="none"
-              stroke="rgba(255,255,255,0.92)"
-              strokeWidth="0.9"
-              strokeLinejoin="round"
-              strokeLinecap="round"
-            />
-          ))}
+          <UkMapAnimatedPaths />
         </g>
       </g>
     </svg>

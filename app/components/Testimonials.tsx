@@ -20,24 +20,24 @@ type Review = {
 const REVIEWS: Review[] = [
   {
     quote:
-      "Our Lamborghini Huracán had turbo issues we could not afford to repair. I found these guys on Google and the process was so quick and easy — quoted and collected the same day.",
-    name: "Jason",
-    location: "Maidstone",
-    modelTag: "Sold a Lamborghini Huracán",
-  },
-  {
-    quote:
-      "Cannot recommend these guys enough. I have sold both my Ferrari and my wife's Bentley to them over the past year. They make selling a broken supercar so easy.",
-    name: "Mark",
-    location: "Canterbury",
-    modelTag: "Sold a Ferrari 488",
-  },
-  {
-    quote:
-      "The staff are very friendly. I was surprised at how much they ended up offering — quotes from non-specialist buyers were nowhere near what these guys offered. Same-day payment as well.",
-    name: "Sharron",
-    location: "Dartford",
+      "I upgraded to the new shape a few months ago and was struggling to sell it privately. These guys gave me a great offer and it was sold within 24 hours. I was very surprised how easy they made this. I will be using these guys in the future.",
+    name: "Graham Brown",
+    location: "Norwich",
     modelTag: "Sold a Porsche 911",
+  },
+  {
+    quote:
+      "Bought the Bentley for my Mrs but she never really got on with it, luckily there are quick services like these guys. Sold this to them very quickly and now my Mrs has a Urus.",
+    name: "Thomas Klapowski",
+    location: "",
+    modelTag: "Sold a Bentley Bentayga",
+  },
+  {
+    quote:
+      "Very happy with the price these lads gave me and the service was top class. I have sold cars like this before and you deal with so much time wasters, but within 48 hours of contacting these guys they had come down, viewed my Ferrari and paid me the full money.",
+    name: "Ben Colliner",
+    location: "",
+    modelTag: "Sold a Ferrari California",
   },
 ];
 
@@ -76,13 +76,13 @@ function ReviewCard({
 
   return (
     <article
-      className={`motion-card-hover group rounded-md border border-[#272727] bg-bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-red-primary/70 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
+      className={`motion-card-hover group flex h-full flex-col rounded-md border border-[#272727] bg-bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-red-primary/70 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
         featured ? "p-7 sm:p-8" : "p-6 sm:p-7"
       }`}
     >
       <CardStarRow />
       <blockquote
-        className={`mt-4 leading-relaxed text-text-secondary ${
+        className={`mt-4 flex-1 leading-relaxed text-text-secondary ${
           featured ? "text-base sm:text-[1.0625rem]" : "text-sm sm:text-base"
         }`}
       >
@@ -105,9 +105,11 @@ function ReviewCard({
             <span className="block truncate font-semibold text-text-primary">
               {review.name}
             </span>
-            <span className="block truncate text-sm text-text-muted">
-              {review.location}
-            </span>
+            {review.location ? (
+              <span className="block truncate text-sm text-text-muted">
+                {review.location}
+              </span>
+            ) : null}
           </cite>
         </div>
         <span className="w-fit shrink-0 rounded-sm border border-border-primary bg-bg-dark px-3 py-1 text-xs font-medium text-text-muted">
@@ -178,7 +180,7 @@ export default function Testimonials() {
                       className="shrink-0 text-red-primary"
                     />
                     <p className="text-base font-semibold leading-snug text-text-primary sm:text-lg">
-                      [NUMBER]+ supercars paid for
+                      100+ supercars paid for
                     </p>
                   </div>
                 </div>
@@ -205,9 +207,9 @@ export default function Testimonials() {
           <RevealItem>
             <ReviewCard review={featuredReview} featured />
           </RevealItem>
-          <div className="grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2 md:items-stretch">
             {otherReviews.map((review) => (
-              <RevealItem key={review.modelTag}>
+              <RevealItem key={`${review.name}-${review.modelTag}`} className="h-full">
                 <ReviewCard review={review} />
               </RevealItem>
             ))}

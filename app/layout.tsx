@@ -42,6 +42,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <head>
         <GoogleAds />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "history.scrollRestoration = 'manual';",
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col antialiased">
         <JsonLd data={organizationJsonLd()} />

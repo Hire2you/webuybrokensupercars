@@ -7,8 +7,8 @@ import { parseCountValue } from "@/lib/motion";
 const POINTS = [
   "Nationwide collection",
   "Instant online valuation",
-  "[NUMBER]+ supercars purchased",
-  "[RATING]★ service",
+  "100+ supercars purchased",
+  "5 star rating",
 ];
 
 function TrustPoint({ point, index }: { point: string; index: number }) {

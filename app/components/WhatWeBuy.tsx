@@ -13,12 +13,9 @@ import {
   Zap,
   type LucideIcon,
 } from "lucide-react";
-import Image from "next/image";
-import { useState } from "react";
 import Button from "@/components/Button";
 import IconSquare from "@/components/IconSquare";
 import Section from "@/components/Section";
-import PlaceholderImage from "@/components/PlaceholderImage";
 import {
   RevealFrom,
   RevealGroup,
@@ -60,7 +57,7 @@ function ConditionCell({ condition }: { condition: Condition }) {
   const Icon = condition.icon;
 
   return (
-    <div className="motion-card-hover group flex min-h-[4.25rem] items-center gap-3.5 rounded-md bg-white/[0.04] px-3.5 py-4 transition-colors duration-200 hover:bg-red-primary/10 motion-reduce:transition-none">
+    <div className="motion-card-hover group flex min-h-[4.25rem] items-center gap-3.5 rounded-md border border-border-primary bg-bg-primary px-3.5 py-4 transition duration-200 hover:border-red-primary/70 hover:bg-red-primary/10 motion-reduce:transition-none">
       <IconSquare
         icon={Icon}
         variant="solid"
@@ -76,102 +73,13 @@ function ConditionCell({ condition }: { condition: Condition }) {
   );
 }
 
-function ConditionsCarBackdrop() {
-  const [imageMissing, setImageMissing] = useState(false);
-
-  return (
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute bottom-0 left-1/2 z-0 hidden h-[26%] min-h-[6.5rem] w-screen max-w-none -translate-x-1/2 sm:block md:h-[32%] lg:h-[38%]"
-    >
-      {!imageMissing ? (
-        <>
-          <Image
-            src="/conditions-car.png"
-            alt=""
-            fill
-            sizes="100vw"
-            className="object-cover object-[center_88%] opacity-[0.09] saturate-[0.15] brightness-[0.3] contrast-[0.85]"
-            onError={() => setImageMissing(true)}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to top, #0a0a0a 0%, #0a0a0a 18%, rgba(10,10,10,0.94) 42%, rgba(10,10,10,0.72) 62%, rgba(10,10,10,0.35) 82%, transparent 100%)",
-            }}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to right, #0a0a0a 0%, transparent 22%, transparent 78%, rgba(10,10,10,0.85) 100%)",
-            }}
-          />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_95%_60%_at_50%_100%,rgba(226,27,22,0.08),transparent_68%)]" />
-        </>
-      ) : (
-        <div className="relative h-full w-full">
-          <PlaceholderImage
-            label="supercar silhouette"
-            aspectRatio="21/9"
-            className="absolute inset-0 h-full w-full rounded-none opacity-[0.12] brightness-[0.25] ring-0"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to top, #0a0a0a 0%, #0a0a0a 22%, rgba(10,10,10,0.96) 48%, rgba(10,10,10,0.7) 68%, rgba(10,10,10,0.3) 86%, transparent 100%)",
-            }}
-          />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_95%_60%_at_50%_100%,rgba(226,27,22,0.06),transparent_68%)]" />
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function WhatWeBuy() {
   return (
     <Section
       id="what-we-buy"
       background="black"
-      className="relative overflow-hidden"
+      className="what-we-buy-section relative overflow-hidden border-t border-border-primary"
     >
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div
-          className="absolute -right-32 -top-32 h-[28rem] w-[28rem] rounded-full opacity-60 blur-3xl"
-          style={{
-            background: "radial-gradient(circle, color-mix(in srgb, var(--red-primary) 13%, transparent) 0%, transparent 68%)",
-          }}
-        />
-        <svg
-          className="absolute bottom-0 right-0 h-[72%] w-[58%] opacity-[0.035]"
-          viewBox="0 0 400 320"
-          preserveAspectRatio="none"
-          fill="none"
-        >
-          <line
-            x1="0"
-            y1="320"
-            x2="400"
-            y2="40"
-            stroke="white"
-            strokeWidth="1"
-          />
-          <line
-            x1="72"
-            y1="320"
-            x2="400"
-            y2="112"
-            stroke="white"
-            strokeWidth="1"
-          />
-        </svg>
-      </div>
-
-      <ConditionsCarBackdrop />
-
       <div className="relative z-10 grid items-start gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 xl:gap-20">
         <div className="min-w-0">
           <RevealGroup>
@@ -218,8 +126,12 @@ export default function WhatWeBuy() {
         </div>
 
         <RevealFrom direction="right" className="min-w-0 self-center">
-          <div className="rounded-md border border-white/10 bg-white/[0.02] p-3 sm:p-4">
-            <RevealGroup as="ul" className="flex flex-col gap-2 sm:gap-2.5">
+          <div className="relative overflow-hidden rounded-md border border-border-primary bg-bg-surface p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] ring-1 ring-red-primary/10 sm:p-4">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(90%_80%_at_100%_-10%,rgba(255,255,255,0.07),transparent_48%)]"
+            />
+            <RevealGroup as="ul" className="relative flex flex-col gap-2 sm:gap-2.5">
               {CONDITION_ROWS.map(([left, right]) => (
                 <RevealItem as="li" key={left.label} className="list-none">
                   <div className="grid grid-cols-1 gap-2 sm:gap-2.5 md:grid-cols-2">
