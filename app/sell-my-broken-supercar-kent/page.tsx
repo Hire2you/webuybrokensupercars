@@ -1,31 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  AlertTriangle,
+  ArrowRight,
+  BadgePoundSterling,
   Car,
-  Check,
-  Cog,
-  Cpu,
-  Droplets,
-  Fan,
+  ClipboardCheck,
+  FileCheck,
+  FileText,
   Gauge,
   Hourglass,
-  Link2,
-  MapPin,
-  Monitor,
+  Receipt,
+  ShieldCheck,
   Truck,
   Zap,
   type LucideIcon,
 } from "lucide-react";
 import Button from "@/components/Button";
 import CTAband from "@/components/CTAband";
-import GreenPanelBackdrop from "@/components/GreenPanelBackdrop";
 import IconSquare from "@/components/IconSquare";
 import JsonLd from "@/components/JsonLd";
 import Section from "@/components/Section";
-import SectionHeading from "@/components/SectionHeading";
 import FAQ from "@/app/components/FAQ";
-import Testimonials from "@/app/components/Testimonials";
-import { UkMapOutline } from "@/app/components/UkLocationPin";
 import { KENT_FAQS } from "@/lib/faq";
 import {
   getCountyBySlug,
@@ -38,7 +34,7 @@ import {
   RevealFrom,
   RevealGroup,
   RevealItem,
-  RevealLine,
+  RevealNumeral,
   SettleImage,
 } from "@/components/motion";
 import { buildPageMetadata, locationPageJsonLd } from "@/lib/seo";
@@ -53,8 +49,6 @@ if (!county) {
 const KENT: LocationCounty = county;
 const PATH = getCountyPath(KENT);
 const VALUATION_HREF = "#valuation";
-const ICON_SIZE = 22;
-const ICON_STROKE = 2.25;
 
 export const metadata = buildPageMetadata({
   title: "Sell My Broken Supercar in Kent",
@@ -62,47 +56,123 @@ export const metadata = buildPageMetadata({
   path: PATH,
 });
 
-const HERO_TRUST_POINTS = [
-  "Any condition",
-  "No obligation",
-  "Same-day payment",
+const PRICE_MOVERS = ["Model", "Mileage", "Specification", "Which fault"];
+
+const SEQUENCE = [
+  {
+    step: "01",
+    title: "Offer from the form",
+    body: "Submit your reg, mileage, postcode and a description of the fault. The offer is priced on what the whole car is worth, no obligation.",
+  },
+  {
+    step: "02",
+    title: "Collection within 24 to 48 hours",
+    body: "Accept the offer and we arrange collection, usually within 24 to 48 hours and often sooner. Our own recovery turns up, on a trailer where the car will not drive.",
+  },
+  {
+    step: "03",
+    title: "Payment cleared before we leave",
+    body: "Same-day payment by secure bank transfer, cleared before the driver leaves with the car. Not cash on the spot, not a transfer sent afterwards.",
+  },
 ];
 
-const FAULTS: { label: string; icon: LucideIcon }[] = [
-  { label: "clutch or gearbox rattle", icon: Link2 },
-  { label: "ZF gearbox limp mode", icon: Cog },
-  { label: "Transfer box trouble on 4WD cars", icon: Gauge },
-  { label: "Air suspension collapse", icon: Truck },
-  { label: "Turbo failure", icon: Fan },
-  { label: "Head gasket and coolant loss", icon: Droplets },
-  { label: "Body control module faults", icon: Cpu },
-  { label: "Infotainment and ECU problems", icon: Monitor },
+const KENT_REGIONS: { title: string; places: string[] }[] = [
+  {
+    title: "Medway & North Kent",
+    places: [
+      "Chatham",
+      "Gillingham",
+      "Rochester",
+      "Dartford",
+      "Gravesend",
+      "Sittingbourne",
+    ],
+  },
+  {
+    title: "East Kent",
+    places: [
+      "Canterbury",
+      "Whitstable",
+      "Herne Bay",
+      "Margate",
+      "Ramsgate",
+      "Broadstairs",
+      "Deal",
+      "Dover",
+      "Folkestone",
+      "Faversham",
+      "Ashford",
+    ],
+  },
+  {
+    title: "West Kent",
+    places: ["Maidstone", "Sevenoaks", "Tonbridge", "Tunbridge Wells"],
+  },
+];
+
+const FAULTS: { title: string; body: string }[] = [
+  {
+    title: "PDK and dual-clutch gearbox faults",
+    body: "Harsh shifts, limp mode or complete failure. Main dealers quote eye-watering figures, a specialist factors it into the price instead.",
+  },
+  {
+    title: "ZF automatic limp mode",
+    body: "Describe what the gearbox is doing on the form and the offer reflects it.",
+  },
+  {
+    title: "Transfer box trouble on 4WD and AWD cars",
+    body: "Common on all-wheel drive exotics, priced as a fault, not a write-off.",
+  },
+  {
+    title: "Air suspension collapse",
+    body: "Leaking struts or a failed compressor, where the car sits down on one corner, the point many owners are told it is finished.",
+  },
+  {
+    title: "Turbo failure",
+    body: "One expensive but self-contained failure leaves the rest of the car intact.",
+  },
+  {
+    title: "Head gasket and coolant loss",
+    body: "The engine may be written off in a garage quote, we price the car, not the repair estimate.",
+  },
+  {
+    title: "Body control module and infotainment faults",
+    body: "Black screens and electrical gremlins, which fault it is moves the offer.",
+  },
 ];
 
 const MODELS: { label: string; icon: LucideIcon }[] = [
   { label: "Ferrari and Lamborghini, including V8 and V10 models", icon: Car },
   { label: "Bentley and Aston Martin, air suspension faults and all", icon: Car },
   { label: "McLaren and Porsche, turbocharged cars welcome", icon: Gauge },
-  { label: "Maserati and exotic SUVs, gearbox and transfer box included", icon: Truck },
+  {
+    label: "Maserati and exotic SUVs, gearbox and transfer box included",
+    icon: Truck,
+  },
   { label: "Hybrid and electric exotics", icon: Zap },
   { label: "Lotus and niche marques, whatever their age and mileage", icon: Car },
-  { label: "Classic and older supercars, running or long off the road", icon: Hourglass },
+  {
+    label: "Classic and older supercars, running or long off the road",
+    icon: Hourglass,
+  },
 ];
 
-const SCRAP_ITEMS = [
-  "The weight of the car",
-  "The price of metal that week",
-  "What the catalytic converter is worth",
-  "The same figure on a Ferrari as a hatchback",
-  "Model, spec and fault never enter the sum",
-];
-
-const SPECIALIST_ITEMS = [
-  "Priced on what the whole car is worth",
-  "Model, mileage and specification counted",
-  "The fault is an input to the price",
-  "Service history and options matter",
-  "Specialist pricing beats scrap-weight pricing",
+const PAPERWORK = [
+  {
+    title: "Receipt",
+    body: "Proof of sale on collection day.",
+    icon: Receipt,
+  },
+  {
+    title: "Sale confirmation",
+    body: "Written confirmation of the agreed figure.",
+    icon: FileCheck,
+  },
+  {
+    title: "DVLA acknowledgement",
+    body: "We file the change-of-keeper notification as part of every purchase.",
+    icon: FileText,
+  },
 ];
 
 const OTHER_OPTIONS: { title: string; body: string }[] = [
@@ -120,13 +190,80 @@ const OTHER_OPTIONS: { title: string; body: string }[] = [
   },
 ];
 
+const ACTIVE_STEP_CLASS =
+  "border border-red-primary/40 bg-[linear-gradient(90deg,rgba(226,27,22,0.75),rgba(120,0,0,0.45))] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_22px_40px_-24px_rgba(157,13,10,0.45)]";
+
+const SURFACE_STEP_CLASS =
+  "border border-border-primary bg-bg-surface text-text-primary shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]";
+
+function SectionGlow({
+  position = "right",
+}: {
+  position?: "left" | "right";
+}) {
+  const positionClass =
+    position === "left"
+      ? "-left-32 top-1/2 -translate-y-1/2"
+      : "-right-32 top-1/2 -translate-y-1/2";
+
+  return (
+    <div
+      aria-hidden="true"
+      className={`pointer-events-none absolute ${positionClass} h-[24rem] w-[24rem] rounded-full opacity-50 blur-3xl`}
+      style={{
+        background:
+          "radial-gradient(circle, color-mix(in srgb, var(--red-primary) 9%, transparent) 0%, transparent 68%)",
+      }}
+    />
+  );
+}
+
+function SectionImage({
+  src,
+  alt,
+  aspect = "video",
+  className = "",
+  overlay = "none",
+}: {
+  src: string;
+  alt: string;
+  aspect?: "video" | "square";
+  className?: string;
+  overlay?: "none" | "dark";
+}) {
+  const aspectClass =
+    aspect === "square" ? "aspect-square" : "aspect-[16/10]";
+
+  return (
+    <SettleImage
+      className={`relative overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/20 ${aspectClass} ${className}`}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        quality={90}
+        className="object-cover object-center"
+      />
+      {overlay === "dark" ? (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-dark/85 via-bg-dark/30 to-bg-dark/10"
+        />
+      ) : null}
+    </SettleImage>
+  );
+}
+
 function HeroBackdrop() {
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0">
       <div
         className="absolute -right-32 -top-32 h-[28rem] w-[28rem] rounded-full opacity-60 blur-3xl"
         style={{
-          background: "radial-gradient(circle, color-mix(in srgb, var(--red-primary) 13%, transparent) 0%, transparent 68%)",
+          background:
+            "radial-gradient(circle, color-mix(in srgb, var(--red-primary) 13%, transparent) 0%, transparent 68%)",
         }}
       />
       <svg
@@ -149,7 +286,165 @@ function HeroBackdrop() {
   );
 }
 
-function SpecRow({
+function TownChip({
+  town,
+  theme = "light",
+}: {
+  town: LocationTown;
+  theme?: "light" | "dark";
+}) {
+  const className =
+    theme === "dark"
+      ? "inline-flex items-center rounded-full border border-white/15 bg-white/[0.04] px-3 py-1.5 text-sm font-medium text-white/80 transition-colors hover:border-red-primary/40 hover:text-white"
+      : "inline-flex items-center rounded-full border border-border-primary bg-white px-3 py-1.5 text-sm font-medium text-bg-dark transition-colors hover:border-red-primary/30 hover:text-red-primary";
+
+  if (town.published) {
+    return (
+      <Link href={getTownPath(KENT, town)} className={className}>
+        {town.name}
+      </Link>
+    );
+  }
+
+  return <span className={className}>{town.name}</span>;
+}
+
+function SequenceStep({
+  step,
+  title,
+  body,
+  index,
+}: {
+  step: string;
+  title: string;
+  body: string;
+  index: number;
+}) {
+  const isFirst = index === 0;
+
+  return (
+    <RevealItem as="li" className="list-none">
+      <article
+        className={`motion-card-hover relative overflow-hidden rounded-md px-5 py-5 sm:px-6 sm:py-5 ${
+          isFirst ? ACTIVE_STEP_CLASS : SURFACE_STEP_CLASS
+        }`}
+      >
+        {isFirst ? (
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(90%_80%_at_100%_-10%,rgba(255,255,255,0.12),transparent_48%)]"
+          />
+        ) : null}
+
+        <div className="relative flex items-center justify-between gap-5">
+          <div className="min-w-0">
+            <h3 className="text-base font-semibold tracking-tight text-white sm:text-lg">
+              {title}
+            </h3>
+            <p
+              className={`mt-1.5 max-w-[42ch] text-sm leading-snug ${
+                isFirst ? "text-white/80" : "text-text-secondary"
+              }`}
+            >
+              {body}
+            </p>
+          </div>
+          <RevealNumeral
+            className="shrink-0 font-numeral text-[2.5rem] font-medium italic leading-none tracking-tight text-white/30 sm:text-[3.125rem]"
+          >
+            {step}
+          </RevealNumeral>
+        </div>
+      </article>
+    </RevealItem>
+  );
+}
+
+function FaultRow({
+  title,
+  body,
+  index,
+}: {
+  title: string;
+  body: string;
+  index: number;
+}) {
+  return (
+    <div className="flex gap-4 py-5 sm:gap-5 sm:py-6">
+      <RevealNumeral className="shrink-0 font-numeral text-[1.75rem] font-medium italic leading-none text-red-primary sm:text-[2rem]">
+        {String(index + 1).padStart(2, "0")}
+      </RevealNumeral>
+      <div className="min-w-0 border-l-2 border-red-primary/35 pl-4 sm:pl-5">
+        <h3 className="text-base font-bold tracking-tight text-white md:text-lg">
+          {title}
+        </h3>
+        <p className="mt-1.5 text-sm leading-relaxed text-white/72 md:text-[0.9375rem]">
+          {body}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function DocCard({
+  title,
+  body,
+  icon: Icon,
+  index,
+}: {
+  title: string;
+  body: string;
+  icon: LucideIcon;
+  index: number;
+}) {
+  const isFirst = index === 0;
+
+  return (
+    <article
+      className={`motion-card-hover relative overflow-hidden rounded-md px-5 py-5 sm:px-6 sm:py-5 ${
+        isFirst ? ACTIVE_STEP_CLASS : SURFACE_STEP_CLASS
+      }`}
+    >
+      {isFirst ? (
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(90%_80%_at_100%_-10%,rgba(255,255,255,0.12),transparent_48%)]"
+        />
+      ) : null}
+
+      <div className="relative flex items-start justify-between gap-4">
+        <div className="flex min-w-0 items-start gap-4">
+          <IconSquare
+            icon={Icon}
+            variant="solid"
+            size="sm"
+            iconSize={20}
+            strokeWidth={2.25}
+          />
+          <div className="min-w-0">
+            <h3 className="text-base font-semibold tracking-tight text-white sm:text-lg">
+              {title}
+            </h3>
+            <p
+              className={`mt-1.5 text-sm leading-snug ${
+                isFirst ? "text-white/80" : "text-text-secondary"
+              }`}
+            >
+              {body}
+            </p>
+          </div>
+        </div>
+        <RevealNumeral
+          className="shrink-0 font-numeral text-[2.5rem] font-medium italic leading-none tracking-tight text-white/30 sm:text-[3.125rem]"
+        >
+          {String(index + 1).padStart(2, "0")}
+        </RevealNumeral>
+      </div>
+    </article>
+  );
+}
+
+function ModelRow({
   label,
   icon: Icon,
 }: {
@@ -169,133 +464,6 @@ function SpecRow({
         {label}
       </span>
     </li>
-  );
-}
-
-function FaultCell({
-  label,
-  icon: Icon,
-}: {
-  label: string;
-  icon: LucideIcon;
-}) {
-  return (
-    <div className="motion-card-hover group flex min-h-[4.25rem] items-center gap-3.5 rounded-md bg-white/[0.04] px-3.5 py-4 transition-colors duration-200 hover:bg-red-primary/10 motion-reduce:transition-none">
-      <IconSquare
-        icon={Icon}
-        variant="solid"
-        size="sm"
-        iconSize={ICON_SIZE}
-        strokeWidth={ICON_STROKE}
-        interactive
-      />
-      <span className="text-sm font-medium leading-snug text-white md:text-[0.9375rem]">
-        {label}
-      </span>
-    </div>
-  );
-}
-
-function ComparisonList({
-  title,
-  items,
-  variant,
-}: {
-  title: string;
-  items: string[];
-  variant: "muted" | "highlight";
-}) {
-  const isHighlight = variant === "highlight";
-
-  return (
-    <div
-      className={
-        isHighlight
-          ? "rounded-md border border-red-primary bg-red-primary p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_30px_48px_-20px_rgba(157,13,10,0.85)] sm:p-8 lg:-translate-y-1 lg:scale-[1.02]"
-          : "rounded-md border border-white/10 bg-white/[0.02] p-6 sm:p-8"
-      }
-    >
-      <h3
-        className={
-          isHighlight
-            ? "text-lg font-bold tracking-tight text-white"
-            : "text-lg font-semibold tracking-tight text-white/45"
-        }
-      >
-        {title}
-      </h3>
-      <ul className="mt-6 space-y-4">
-        {items.map((item) => (
-          <li key={item} className="flex items-center gap-3.5">
-            <span
-              className={
-                isHighlight
-                  ? "flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-white/15"
-                  : "flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-white/[0.06]"
-              }
-            >
-              {isHighlight ? (
-                <Check
-                  size={16}
-                  strokeWidth={2.5}
-                  aria-hidden
-                  className="text-white"
-                />
-              ) : (
-                <span className="h-1.5 w-1.5 rounded-full bg-white/35" />
-              )}
-            </span>
-            <span
-              className={
-                isHighlight
-                  ? "text-sm font-medium leading-snug text-white md:text-[0.9375rem]"
-                  : "text-sm leading-snug text-white/40 md:text-[0.9375rem]"
-              }
-            >
-              {item}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function TownLink({
-  town,
-}: {
-  town: LocationTown;
-}) {
-  const content = (
-    <>
-      <IconSquare
-        icon={MapPin}
-        variant="light"
-        size="sm"
-        iconSize={16}
-        strokeWidth={2.5}
-      />
-      <span className="text-sm font-medium tracking-tight text-bg-dark md:text-[0.9375rem]">
-        {town.name}
-      </span>
-    </>
-  );
-
-  if (town.published) {
-    return (
-      <Link
-        href={getTownPath(KENT, town)}
-        className="flex items-center gap-3.5 border-b border-black/[0.08] py-4 transition-colors hover:text-red-primary"
-      >
-        {content}
-      </Link>
-    );
-  }
-
-  return (
-    <span className="flex items-center gap-3.5 border-b border-black/[0.08] py-4">
-      {content}
-    </span>
   );
 }
 
@@ -321,486 +489,215 @@ export default function KentHubPage() {
       >
         <HeroBackdrop />
 
-        <div className="relative z-10">
-          <SectionHeading
-            align="left"
-            theme="dark"
-            titleSize="display"
-            headingLevel="h1"
-            eyebrow="KENT"
-            title="Sell my broken supercar in Kent"
-            intro="We buy broken, damaged and non-running supercars anywhere in Kent, priced on what the whole car is worth rather than what it weighs. Enter your reg for a free, no-obligation offer."
-          />
+        <div className="relative z-10 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-14 xl:gap-16">
+          <RevealGroup trigger="mount">
+            <RevealItem>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+                Kent · Supercar specialists
+              </p>
+            </RevealItem>
+            <RevealItem>
+              <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
+                Sell my broken supercar in Kent
+              </h1>
+            </RevealItem>
+            <RevealItem>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/65 md:text-xl">
+                If your supercar will not start, drives but has failed on
+                something expensive, or you have been quoted scrap money for a
+                car that still is a supercar, the offer here is priced on what
+                the whole car is worth, not what its metal weighs.
+              </p>
+            </RevealItem>
+            <RevealItem>
+              <div className="mt-8 flex flex-col items-start gap-3">
+                <Button
+                  href={VALUATION_HREF}
+                  variant="primary"
+                  primaryTone="accent"
+                  showArrow
+                  size="lg"
+                  className="shrink-0 whitespace-nowrap"
+                >
+                  Get your free valuation
+                </Button>
+                <Link
+                  href="/blog/non-runner-supercar-value"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-white/80 underline-offset-2 hover:text-white hover:underline"
+                >
+                  How we value non-runners
+                  <ArrowRight size={16} aria-hidden />
+                </Link>
+              </div>
+            </RevealItem>
+          </RevealGroup>
+
+          <RevealFrom direction="right" className="min-w-0">
+            <SettleImage className="relative aspect-square w-full">
+              <Image
+                src="/Crashed_Bentley.png"
+                alt="Damaged red Bentley Bentayga with front-end collision damage"
+                fill
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                quality={90}
+                priority
+                className="object-contain object-center"
+              />
+            </SettleImage>
+          </RevealFrom>
+        </div>
+      </Section>
+
+      <Section id="kent-opening" background="white">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14 xl:gap-16">
+          <RevealFrom direction="left" className="min-w-0">
+            <SectionImage
+              src="/about/crashed-bentley.webp"
+              alt="Damaged Bentley Continental GT with front-end collision damage"
+            />
+          </RevealFrom>
+
+          <RevealFrom direction="right" className="min-w-0">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              Anywhere in Kent
+            </p>
+            <p className="mt-5 text-base leading-relaxed text-text-secondary md:text-lg">
+              You searched Kent because the car is sitting somewhere in the
+              county, on a drive in Maidstone, in a lock-up near Ashford, on a
+              terraced street in Chatham where it stopped, and every quote you have
+              had treats it as disposal. We only buy supercars, and Kent is our
+              home patch, we are based in Medway. There is no third-party
+              network, no local driver matched from a platform, and no figure
+              worked out by the tonne.
+            </p>
+            <p className="mt-5 text-base leading-relaxed text-text-secondary md:text-lg">
+              Submit your reg, mileage, postcode and what the fault is through
+              the form below. The valuation is free, there is no obligation, and
+              nothing on this page is a standing offer, the number comes from
+              looking at your car.
+            </p>
+          </RevealFrom>
+        </div>
+      </Section>
+
+      <Section id="kent-worth" background="black" compact>
+        <RevealGroup className="text-center">
+          <RevealItem>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              What a broken supercar has actually been worth
+            </p>
+          </RevealItem>
+          <RevealItem>
+            <p className="mt-4 font-numeral text-4xl font-medium italic tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+              £10,000 – £100,000+
+            </p>
+          </RevealItem>
+          <RevealItem>
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-white/55 md:text-base">
+              Money actually paid. The right car can go higher still depending on
+              model, mileage and specification. No figure on a page is a
+              valuation, where a car sits in the range depends on:
+            </p>
+          </RevealItem>
+          <RevealItem>
+            <ul className="mt-6 flex flex-wrap items-center justify-center gap-2">
+              {PRICE_MOVERS.map((mover) => (
+                <li
+                  key={mover}
+                  className="rounded-full border border-white/15 bg-white/[0.04] px-4 py-2 text-sm font-medium text-white/80"
+                >
+                  {mover}
+                </li>
+              ))}
+            </ul>
+          </RevealItem>
+        </RevealGroup>
+      </Section>
+
+      <Section id="kent-scrap-message" background="green" compact>
+        <RevealFrom direction="right" className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl lg:leading-[1.12]">
+            One fault does not make a supercar scrap
+          </h2>
+          <p className="mt-5 text-base leading-relaxed text-white/75 md:text-lg">
+            Competitor pages anchor at £50 to £400 and price by metal weight.
+            None name a single supercar fault. This page does, because which
+            fault it is moves the offer, and describing it accurately on the
+            form is what makes the number accurate.
+          </p>
+          <Button
+            href={VALUATION_HREF}
+            variant="inverse"
+            showArrow
+            className="mt-8"
+          >
+            Get your figure
+          </Button>
+        </RevealFrom>
+      </Section>
+
+      <Section
+        id="kent-sequence"
+        background="black"
+        className="relative overflow-hidden border-t border-border-primary"
+      >
+        <SectionGlow position="right" />
+
+        <div className="relative z-10 grid items-stretch gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14">
+          <div className="flex min-w-0 flex-col">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              Offer, collection, payment
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
+              In that order, with no gap
+            </h2>
+            <p className="mt-4 max-w-prose text-base leading-relaxed text-white/65">
+              Four out of seven competitor pages leave the seller exposed between
+              handover and money. This sequence does not.
+            </p>
+
+            <RevealGroup as="ol" className="mt-8 flex flex-col gap-2.5 lg:hidden">
+              {SEQUENCE.map((item, index) => (
+                <SequenceStep
+                  key={item.step}
+                  step={item.step}
+                  title={item.title}
+                  body={item.body}
+                  index={index}
+                />
+              ))}
+            </RevealGroup>
+
+            <div className="mt-10 hidden lg:mt-auto lg:block lg:pt-8">
+              <SectionImage
+                src="/how-it-works/enter-details-phone.webp"
+                alt="Person entering their supercar details on the We Buy Broken Supercars website on a phone"
+              />
+            </div>
+          </div>
 
           <RevealGroup
-            as="ul"
-            className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/55"
+            as="ol"
+            className="hidden flex-col gap-2.5 lg:flex"
           >
-            {HERO_TRUST_POINTS.map((point, index) => (
-              <RevealItem
-                as="li"
-                key={point}
-                className="flex list-none items-center gap-2"
-              >
-                {index > 0 && <span aria-hidden="true">·</span>}
-                {point}
-              </RevealItem>
+            {SEQUENCE.map((item, index) => (
+              <SequenceStep
+                key={item.step}
+                step={item.step}
+                title={item.title}
+                body={item.body}
+                index={index}
+              />
             ))}
           </RevealGroup>
 
-          <RevealGroup className="mt-8">
-            <RevealItem>
-              <Button
-                href={VALUATION_HREF}
-                variant="primary"
-                primaryTone="accent"
-                showArrow
-              >
-                Get your free valuation
-              </Button>
-            </RevealItem>
-          </RevealGroup>
-        </div>
-      </Section>
-
-      <Section id="kent-intro" background="offwhite">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14 xl:gap-16">
-          <RevealFrom direction="left" className="min-w-0">
-            <SettleImage className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
-              <Image
-                src="/about/jag-f-pace-centred.png"
-                alt="White Lamborghini Urus SUV"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={90}
-                className="object-cover object-center"
-              />
-            </SettleImage>
-          </RevealFrom>
-
-          <RevealFrom direction="right" className="min-w-0">
-            <RevealGroup>
-              <RevealItem>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-                  ANYWHERE IN KENT
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-bg-dark md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                  A repair bill or a scrap figure is not the only answer
-                </h2>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  If there is a supercar sitting on your drive or at the kerb that
-                  will not start, will not come out of limp mode, or has failed
-                  an MOT on something expensive, you have probably already had
-                  one of two conversations. A garage has quoted a repair bill
-                  worth more than the car, or someone has offered you a scrap
-                  figure that felt insulting.
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-4 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  Neither is the only answer. We buy broken supercars across Kent
-                  in any condition, running or not, and the offer is worked out
-                  on the car itself. The valuation is free, there is no
-                  obligation, and nothing needs fixing, cleaning or moving
-                  first.
-                </p>
-              </RevealItem>
-            </RevealGroup>
+          <RevealFrom direction="left" className="min-w-0 lg:hidden">
+            <SectionImage
+              src="/how-it-works/enter-details-phone.webp"
+              alt="Person entering their supercar details on the We Buy Broken Supercars website on a phone"
+            />
           </RevealFrom>
         </div>
-      </Section>
-
-      <Section
-        id="kent-worth"
-        background="green"
-        className="relative overflow-hidden"
-      >
-        <GreenPanelBackdrop />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 z-[1]"
-        >
-          <div
-            className="absolute inset-0 lg:hidden"
-            style={{
-              clipPath: "polygon(66% 0, 100% 0, 100% 100%, 56% 100%)",
-              background:
-                "linear-gradient(90deg, var(--red-dark) 0%, var(--red-primary) 5%, color-mix(in srgb, var(--red-primary) 45%, transparent) 38%, color-mix(in srgb, var(--red-primary) 12%, transparent) 62%, transparent 100%)",
-            }}
-          />
-          <div
-            className="absolute inset-0 hidden lg:block"
-            style={{
-              clipPath: "polygon(61% 0, 100% 0, 100% 100%, 51% 100%)",
-              background:
-                "linear-gradient(90deg, var(--red-dark) 0%, var(--red-primary) 5%, color-mix(in srgb, var(--red-primary) 45%, transparent) 38%, color-mix(in srgb, var(--red-primary) 12%, transparent) 62%, transparent 100%)",
-            }}
-          />
-        </div>
-
-        <div className="relative z-10 grid items-start gap-8 lg:grid-cols-[minmax(0,0.28fr)_minmax(0,0.72fr)] lg:gap-12 xl:gap-16">
-          <RevealFrom direction="left" className="hidden lg:block">
-            <p className="block font-numeral text-[4.5rem] font-medium italic leading-[0.8] tracking-tight text-white/20">
-              £1.2k
-            </p>
-          </RevealFrom>
-
-          <RevealFrom direction="right" className="min-w-0">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">
-              WHAT A BROKEN JAGUAR HAS ACTUALLY BEEN WORTH
-            </p>
-            <p className="mt-5 max-w-3xl text-3xl font-bold leading-[1.12] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[3.15rem] lg:leading-[1.1]">
-              £1,200 to £10,000.{" "}
-              <span className="font-numeral font-medium italic text-white">
-                Money actually paid.
-              </span>
-            </p>
-            <RevealLine className="mt-8 h-px w-24 bg-white/40" />
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
-              A Jag with a serious fault is still worth real money, and the
-              number you were given by a yard is not the ceiling. Where a
-              particular car falls in that spread comes down to the model, the
-              mileage, the specification and options, and above all which fault
-              it has. Read the range as evidence rather than as an offer, and
-              let us look at your car before you decide what it is worth.
-            </p>
-          </RevealFrom>
-        </div>
-      </Section>
-
-      <Section
-        id="kent-pricing"
-        background="black"
-        className="relative overflow-hidden"
-      >
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-          <div
-            className="absolute -left-32 top-1/2 h-[24rem] w-[24rem] -translate-y-1/2 rounded-full opacity-50 blur-3xl"
-            style={{
-              background: "radial-gradient(circle, color-mix(in srgb, var(--red-primary) 9%, transparent) 0%, transparent 68%)",
-            }}
-          />
-        </div>
-
-        <div className="relative z-10">
-          <SectionHeading
-            align="left"
-            theme="dark"
-            eyebrow="PRICED ON THE WHOLE CAR"
-            title="Not weighed in as scrap"
-            intro="A scrap yard's offer is arithmetic. Ours is priced on what the whole car is worth. That gap is usually why the figure you were quoted felt wrong."
-          />
-
-          <div className="mt-12 grid gap-6 lg:mt-14 lg:grid-cols-2 lg:gap-10">
-            <RevealFrom direction="left">
-              <ComparisonList
-                title="Scrap-weight pricing"
-                items={SCRAP_ITEMS}
-                variant="muted"
-              />
-            </RevealFrom>
-            <RevealFrom direction="right">
-              <ComparisonList
-                title="Specialist pricing"
-                items={SPECIALIST_ITEMS}
-                variant="highlight"
-              />
-            </RevealFrom>
-          </div>
-        </div>
-      </Section>
-
-      <Section
-        id="kent-faults"
-        background="black"
-        className="relative overflow-hidden !pt-0"
-      >
-        <div className="relative z-10 grid items-start gap-12 border-t border-white/10 pt-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 lg:pt-28 xl:gap-20">
-          <div className="min-w-0">
-            <RevealGroup>
-              <RevealItem>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-                  THE FAULT IS PART OF THE PRICE
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                  Tell us what it is doing
-                </h2>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-4 max-w-md text-base leading-relaxed text-white/65 md:text-lg">
-                  Most online buyers want a reg and a postcode and nothing else.
-                  We ask you to describe the fault as well, because what is
-                  wrong with the car is an input to the price rather than a box
-                  to tick.
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-4 max-w-md text-base leading-relaxed text-white/65 md:text-lg">
-                  If you can name which one it is, the offer comes back sharper.
-                  If all you know is that it stopped and has not moved since,
-                  that is fine, and you are not penalised for it.
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <Button
-                  href={VALUATION_HREF}
-                  variant="primary"
-                  primaryTone="accent"
-                  showArrow
-                  className="mt-8"
-                >
-                  Get your free valuation
-                </Button>
-              </RevealItem>
-            </RevealGroup>
-          </div>
-
-          <RevealFrom direction="right" className="min-w-0 self-center">
-            <div className="rounded-md border border-white/10 bg-white/[0.02] p-3 sm:p-4">
-              <RevealGroup as="ul" className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-2.5">
-                {FAULTS.map((fault) => (
-                  <RevealItem as="li" key={fault.label} className="list-none">
-                    <FaultCell label={fault.label} icon={fault.icon} />
-                  </RevealItem>
-                ))}
-              </RevealGroup>
-            </div>
-          </RevealFrom>
-        </div>
-      </Section>
-
-      <Section id="kent-models" background="white">
-        <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14 xl:gap-16">
-          <div className="min-w-0 lg:sticky lg:top-32 lg:order-2 lg:self-start">
-            <SettleImage className="relative aspect-square overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
-              <Image
-                src="/about/jag-f-pace-centred.png"
-                alt="Grey Lamborghini Urus SUV"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={90}
-                className="object-cover object-center"
-              />
-            </SettleImage>
-          </div>
-
-          <RevealFrom direction="left" className="min-w-0 lg:order-1">
-            <RevealGroup>
-              <RevealItem>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-                  THE JAGUARS WE BUY
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-bg-dark md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                  Every model, in any condition
-                </h2>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  If yours is one of the older cars, you may have assumed nobody
-                  but a yard would be interested by now. That is not the case.
-                  Age on its own does not take a supercar out of the running.
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <ul className="mt-6">
-                  {MODELS.map((model) => (
-                    <SpecRow
-                      key={model.label}
-                      label={model.label}
-                      icon={model.icon}
-                    />
-                  ))}
-                </ul>
-              </RevealItem>
-              <RevealItem>
-                <Button href={VALUATION_HREF} showArrow className="mt-8">
-                  Get your free valuation
-                </Button>
-              </RevealItem>
-            </RevealGroup>
-          </RevealFrom>
-        </div>
-      </Section>
-
-      <Section id="kent-paperwork" background="offwhite">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14 xl:gap-16">
-          <RevealFrom direction="left" className="min-w-0">
-            <SettleImage className="relative aspect-[16/10] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(10,10,10,0.18)] ring-1 ring-red-primary/10">
-              <Image
-                src="/how-it-works/enter-details-phone.jpg"
-                alt="supercar keys, V5 logbook and service history on a wooden surface"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={90}
-                className="object-cover object-center"
-              />
-            </SettleImage>
-          </RevealFrom>
-
-          <RevealFrom direction="right" className="min-w-0">
-            <RevealGroup>
-              <RevealItem>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-                  NO LOGBOOK, NO MOT
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-bg-dark md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                  Has not moved in years? Still fine.
-                </h2>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-5 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  A V5C is not required. Neither is an MOT, and the car does not
-                  need to be driveable. Cars that have been stood on a drive for
-                  years on SORN, flat battery, seized brakes and all, are bought
-                  exactly as they are, and a missing logbook is the single most
-                  common reason people put this off far longer than they need
-                  to.
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-4 max-w-prose text-base leading-relaxed text-text-secondary md:text-lg">
-                  We complete and submit the change of keeper section as part of
-                  every purchase. The duty to tell DVLA the car has been sold
-                  stays with you as the registered keeper, so confirm it
-                  yourself at{" "}
-                  <a
-                    href="https://www.gov.uk/sold-bought-vehicle"
-                    className="font-medium text-red-primary underline-offset-2 hover:underline"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    gov.uk/sold-bought-vehicle
-                  </a>
-                  . It takes about five minutes and confirms on screen.
-                </p>
-              </RevealItem>
-            </RevealGroup>
-          </RevealFrom>
-        </div>
-      </Section>
-
-      <Section
-        id="kent-collection"
-        background="black"
-        className="relative overflow-hidden"
-      >
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-          <div
-            className="absolute -left-24 top-1/2 h-[28rem] w-[28rem] -translate-y-1/2 rounded-full opacity-55 blur-3xl"
-            style={{
-              background: "radial-gradient(circle, color-mix(in srgb, var(--red-primary) 13%, transparent) 0%, transparent 68%)",
-            }}
-          />
-        </div>
-
-        <div className="relative z-10 grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-14 xl:gap-16">
-          <RevealFrom direction="left" className="min-w-0">
-            <figure className="relative mx-auto flex w-full max-w-[280px] items-center justify-center sm:max-w-[320px] lg:mx-0 lg:max-w-none">
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-[8%] rounded-full bg-red-primary/[0.12] blur-3xl"
-              />
-              <div className="relative aspect-square w-full overflow-hidden rounded-full border-2 border-white/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_22px_40px_-24px_rgba(157,13,10,0.8)] ring-2 ring-white/35 ring-offset-2 ring-offset-bg-dark">
-                <GreenPanelBackdrop className="rounded-full" />
-                <UkMapOutline className="relative z-10 h-full w-full p-[18%]" />
-              </div>
-            </figure>
-          </RevealFrom>
-
-          <RevealFrom direction="right" className="min-w-0">
-            <RevealGroup>
-              <RevealItem>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-                  COLLECTION IN KENT
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
-                  On our own trailer, not a third-party network
-                </h2>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-5 max-w-prose text-base leading-relaxed text-white/65 md:text-lg">
-                  Collection is free wherever the supercar is in Kent, and it is
-                  our own recovery that turns up. If the car cannot be driven it
-                  goes on a trailer. Driveway, street, garage forecourt, lock-up
-                  or exactly where it stopped, we come to it.
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <p className="mt-4 max-w-prose text-base leading-relaxed text-white/65 md:text-lg">
-                  Collection is usually within 24 to 48 hours of an accepted
-                  offer, often sooner. Payment is same day, by secure bank
-                  transfer, cleared before we leave.
-                </p>
-              </RevealItem>
-              <RevealItem>
-                <Button
-                  href={VALUATION_HREF}
-                  variant="primary"
-                  primaryTone="accent"
-                  showArrow
-                  className="mt-8"
-                >
-                  Get your free valuation
-                </Button>
-              </RevealItem>
-            </RevealGroup>
-          </RevealFrom>
-        </div>
-      </Section>
-
-      <Section id="kent-towns" background="white">
-        <SectionHeading
-          align="left"
-          eyebrow="ACROSS KENT"
-          title="Towns and villages we collect from"
-          intro="Collection is free from every town in the county. These are the places we cover most often."
-        />
-
-        <RevealGroup
-          as="ul"
-          className="mt-10 grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          {KENT.towns.map((town) => (
-            <RevealItem as="li" key={town.slug} className="list-none">
-              <TownLink town={town} />
-            </RevealItem>
-          ))}
-        </RevealGroup>
-      </Section>
-
-      <Section id="kent-options" background="offwhite">
-        <SectionHeading
-          align="left"
-          eyebrow="THE OTHER OPTIONS"
-          title="What you are weighing up"
-        />
-
-        <RevealGroup className="mt-12 grid gap-6 md:grid-cols-3">
-          {OTHER_OPTIONS.map((option) => (
-            <RevealItem key={option.title}>
-              <article className="h-full rounded-md border border-border-primary bg-white p-6 shadow-[0_10px_30px_-20px_rgba(10,10,10,0.28)] sm:p-8">
-                <h3 className="text-lg font-bold tracking-tight text-bg-dark">
-                  {option.title}
-                </h3>
-                <p className="mt-4 text-sm leading-relaxed text-text-secondary md:text-[0.9375rem]">
-                  {option.body}
-                </p>
-              </article>
-            </RevealItem>
-          ))}
-        </RevealGroup>
       </Section>
 
       <Section
@@ -808,33 +705,462 @@ export default function KentHubPage() {
         background="green"
         className="relative overflow-hidden"
       >
-        <GreenPanelBackdrop />
-        <RevealGroup className="relative z-10 max-w-4xl">
-          <RevealItem>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white">
-              KENT IS OUR HOME COUNTY
-            </p>
-          </RevealItem>
-          <RevealItem>
-            <p className="mt-5 text-2xl font-bold leading-snug tracking-tight text-white sm:text-3xl md:text-[2rem] lg:text-[2.35rem] lg:leading-[1.15]">
-              We are based in Medway, so a Kent seller is dealing with a
-              Kent-based buyer rather than an enquiry passed on to whoever
-              happens to be nearest.
-            </p>
-          </RevealItem>
-          <RevealItem>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
-              Beyond the county, collection is free anywhere in mainland UK,
-              from the south coast to the Scottish border, so if the supercar is
-              in Kent but you are not, that changes nothing. Send the reg, the
-              mileage and the postcode, tell us what the car is doing, and we
-              will come back with a free offer and no obligation.
-            </p>
-          </RevealItem>
-        </RevealGroup>
+        <div className="relative z-10 grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14 xl:gap-16">
+          <RevealGroup className="min-w-0">
+            <RevealItem>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
+                Kent is our home county
+              </p>
+            </RevealItem>
+            <RevealItem>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
+                Based in Medway
+              </h2>
+            </RevealItem>
+            <RevealItem>
+              <p className="mt-5 max-w-prose text-base leading-relaxed text-white/75 md:text-lg">
+                A Kent seller is dealing with a Kent-based buyer rather than an
+                enquiry passed on to whoever happens to be nearest. There is no
+                third-party network and no local driver matched from a platform,
+                the people who quote are the people who collect and the people
+                who pay.
+              </p>
+            </RevealItem>
+            <RevealItem>
+              <p className="mt-4 max-w-prose text-base leading-relaxed text-white/75 md:text-lg">
+                Beyond the county, collection is free anywhere in mainland UK,
+                from the south coast to the Scottish border, so if the supercar
+                is in Kent but you are not, that changes nothing.
+              </p>
+            </RevealItem>
+          </RevealGroup>
+
+          <RevealFrom direction="right" className="min-w-0">
+            <SectionImage
+              src="/about/red-rolls-royce.webp"
+              alt="Red Rolls-Royce supercar"
+              aspect="square"
+            />
+          </RevealFrom>
+        </div>
       </Section>
 
-      <Testimonials />
+      <Section
+        id="kent-regions"
+        background="black"
+        className="relative overflow-hidden border-t border-border-primary"
+      >
+        <SectionGlow position="left" />
+
+        <div className="relative z-10">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              Where the car is standing
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
+              Kent, by area
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-white/65">
+              You searched a county because your town felt too small to be covered.
+              These are the places we collect from, on a trailer, at no cost to
+              you.
+            </p>
+          </div>
+
+          <RevealGroup className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {KENT_REGIONS.map((region) => (
+              <RevealItem key={region.title}>
+                <article className="motion-card-hover h-full rounded-md border border-border-primary bg-bg-surface p-6 transition duration-200 hover:border-red-primary/50 sm:p-7">
+                  <h3 className="text-lg font-bold tracking-tight text-white">
+                    {region.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                    {region.places.join(" · ")}
+                  </p>
+                </article>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+
+          <RevealGroup className="mt-10 rounded-md border border-white/10 bg-white/[0.02] p-6 sm:p-8">
+            <RevealItem>
+              <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+                All Kent towns
+              </p>
+            </RevealItem>
+            <RevealItem>
+              <div className="flex flex-wrap justify-center gap-2">
+                {KENT.towns.map((town) => (
+                  <TownChip key={town.slug} town={town} theme="dark" />
+                ))}
+              </div>
+            </RevealItem>
+          </RevealGroup>
+        </div>
+      </Section>
+
+      <Section
+        id="kent-faults"
+        background="black"
+        className="relative overflow-hidden border-t border-white/[0.06]"
+      >
+        <SectionGlow position="right" />
+
+        <div className="relative z-10 grid items-start gap-10 lg:grid-cols-[minmax(0,0.4fr)_minmax(0,0.6fr)] lg:gap-14 xl:gap-16">
+          <div className="min-w-0 lg:sticky lg:top-28">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              Supercar faults we buy
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
+              We ask what&apos;s actually wrong, not just how bad it looks
+            </h2>
+            <p className="mt-4 max-w-prose text-base leading-relaxed text-white/75">
+              A PDK glitch, a ZF limp mode, a collapsed air suspension strut,
+              each one prices differently. Tell us the specific fault rather than
+              just &ldquo;damaged&rdquo; or &ldquo;non-runner,&rdquo; and the
+              offer reflects it.{" "}
+              <Link
+                href="/blog/common-supercar-faults"
+                className="font-medium text-red-bright underline-offset-2 transition-colors hover:text-white hover:underline"
+              >
+                Read our common faults guide
+              </Link>
+              .
+            </p>
+            <div className="mt-8 hidden lg:block">
+              <SectionImage
+                src="/Smashed_Aston.png"
+                alt="Damaged Aston Martin supercar"
+                aspect="square"
+                overlay="dark"
+              />
+            </div>
+          </div>
+
+          <RevealGroup
+            as="ol"
+            className="overflow-hidden rounded-md border border-white/12 bg-bg-surface-light shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
+          >
+            {FAULTS.map((fault, index) => (
+              <RevealItem
+                as="li"
+                key={fault.title}
+                className="list-none border-t border-white/10 px-5 transition-colors first:border-t-0 hover:bg-white/[0.025] sm:px-7"
+              >
+                <FaultRow
+                  title={fault.title}
+                  body={fault.body}
+                  index={index}
+                />
+              </RevealItem>
+            ))}
+          </RevealGroup>
+
+          <RevealFrom direction="left" className="min-w-0 lg:hidden">
+            <SectionImage
+              src="/Smashed_Aston.png"
+              alt="Damaged Aston Martin supercar"
+              aspect="square"
+              overlay="dark"
+            />
+          </RevealFrom>
+        </div>
+      </Section>
+
+      <Section id="kent-models" background="offwhite">
+        <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14 xl:gap-16">
+          <div className="min-w-0">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              Every model, any condition
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-bg-dark md:text-4xl">
+              Every marque, in any condition
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-text-secondary md:text-lg">
+              If yours is one of the older cars, you may have assumed nobody but a
+              yard would be interested by now. That is not the case. Age on its own
+              does not take a supercar out of the running.
+            </p>
+            <ul className="mt-6">
+              {MODELS.map((model) => (
+                <ModelRow key={model.label} label={model.label} icon={model.icon} />
+              ))}
+            </ul>
+            <Button href={VALUATION_HREF} showArrow className="mt-8">
+              Get your free valuation
+            </Button>
+          </div>
+
+          <RevealFrom direction="right" className="min-w-0 lg:sticky lg:top-32 lg:self-start">
+            <SectionImage
+              src="/models/lamborghini-supercar.webp"
+              alt="White Lamborghini Urus SUV"
+              aspect="square"
+            />
+          </RevealFrom>
+        </div>
+      </Section>
+
+      <Section id="kent-salvage" background="black" compact>
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+            Cat S, Cat N and salvage
+          </p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            A valuation case, not end-of-life stock
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <RevealFrom direction="left">
+            <article className="rounded-md border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-red-primary">
+                Cat S
+              </p>
+              <h3 className="mt-3 text-lg font-bold text-white">
+                Recorded structural damage
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-white/60">
+                Priced as a recorded-damage car. Give the category and what work
+                has been done on the form, it is expected information, not a
+                problem.
+              </p>
+            </article>
+          </RevealFrom>
+          <RevealFrom direction="right">
+            <article className="rounded-md border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-red-primary">
+                Cat N
+              </p>
+              <h3 className="mt-3 text-lg font-bold text-white">
+                Recorded non-structural damage
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-white/60">
+                Same principle, a write-off is its own valuation, not folded into
+                scrap arithmetic. We buy all salvage categories.
+              </p>
+            </article>
+          </RevealFrom>
+        </div>
+      </Section>
+
+      <Section
+        id="kent-paperwork"
+        background="black"
+        className="relative overflow-hidden"
+      >
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-32 top-1/2 h-[24rem] w-[24rem] -translate-y-1/2 rounded-full opacity-50 blur-3xl"
+          style={{
+            background:
+              "radial-gradient(circle, color-mix(in srgb, var(--red-primary) 9%, transparent) 0%, transparent 68%)",
+          }}
+        />
+
+        <div className="relative z-10 grid items-stretch gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14">
+          <RevealFrom direction="left" className="min-w-0">
+            <SettleImage
+              className="relative aspect-[16/10] rounded-md bg-bg-dark ring-1 ring-red-primary/20 lg:aspect-auto lg:h-full"
+            >
+              <figure className="relative h-full w-full min-h-[16rem]">
+                <Image
+                  src="/how-it-works/keys-and-logbook.webp"
+                  alt="Supercar keys, V5 logbook and service history on a wooden surface"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={90}
+                  className="object-cover object-center"
+                />
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-bg-dark/40 to-bg-dark/20"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">
+                    Missing paperwork
+                  </p>
+                  <p className="mt-1 font-sans text-lg font-semibold tracking-tight text-white sm:text-xl">
+                    Logbook optional, sale still goes through.
+                  </p>
+                </figcaption>
+              </figure>
+            </SettleImage>
+          </RevealFrom>
+
+          <RevealFrom direction="right" className="flex min-w-0 flex-col">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              What you need, what you get
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
+              <span className="text-red-primary">No V5, no MOT,</span> no problem
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-white/65">
+              Missing documents are normal, not an exception.{" "}
+              <Link
+                href="/blog/dvla-paperwork-selling-broken-car"
+                className="font-medium text-red-primary underline-offset-2 hover:underline"
+              >
+                DVLA paperwork explained
+              </Link>
+              .
+            </p>
+
+            <RevealGroup className="mt-8 flex flex-col gap-2.5">
+              {PAPERWORK.map((doc, index) => (
+                <RevealItem key={doc.title}>
+                  <DocCard
+                    title={doc.title}
+                    body={doc.body}
+                    icon={doc.icon}
+                    index={index}
+                  />
+                </RevealItem>
+              ))}
+            </RevealGroup>
+
+            <p className="mt-6 text-sm leading-relaxed text-white/55 md:text-base">
+              You do not need a logbook or an MOT, and the car does not need to
+              drive. You will still need to confirm the sale to DVLA yourself at{" "}
+              <a
+                href="https://www.gov.uk/sold-bought-vehicle"
+                className="font-medium text-red-primary underline-offset-2 hover:underline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                gov.uk/sold-bought-vehicle
+              </a>
+              .
+            </p>
+          </RevealFrom>
+        </div>
+
+        <RevealFrom direction="left" className="relative z-10 mt-14">
+          <div
+            id="kent-scrapping"
+            className="flex flex-col gap-5 rounded-md border border-red-primary/35 bg-red-primary/[0.06] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:flex-row sm:items-start sm:gap-6 sm:p-8"
+          >
+            <IconSquare
+              icon={AlertTriangle}
+              variant="solid"
+              size="sm"
+              iconSize={20}
+              className="shrink-0"
+            />
+            <div className="min-w-0">
+              <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+                Scrapping is a one-way door
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-white/70 md:text-base">
+                Once a car is scrapped it is issued a Certificate of Destruction
+                and cannot go back on the road, whatever was wrong with it. Find
+                out what your supercar is worth as a car before you take a
+                decision that cannot be undone.
+              </p>
+            </div>
+          </div>
+        </RevealFrom>
+      </Section>
+
+      <Section
+        id="kent-options"
+        background="black"
+        className="relative overflow-hidden border-t border-white/[0.06]"
+      >
+        <SectionGlow position="right" />
+
+        <div className="relative z-10">
+          <RevealGroup className="grid gap-4 sm:grid-cols-3">
+            <RevealItem>
+              <article className="motion-card-hover h-full rounded-md border border-border-primary bg-bg-surface p-6 transition duration-200 hover:border-red-primary/50 sm:p-7">
+                <div className="flex items-start gap-4">
+                  <IconSquare
+                    icon={ShieldCheck}
+                    variant="solid"
+                    size="sm"
+                    iconSize={20}
+                  />
+                  <div className="min-w-0">
+                    <h3 className="text-base font-bold tracking-tight text-white">
+                      20 years in the trade
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-white/65">
+                      Backed by two decades in the motor trade.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </RevealItem>
+            <RevealItem>
+              <article className="motion-card-hover h-full rounded-md border border-border-primary bg-bg-surface p-6 transition duration-200 hover:border-red-primary/50 sm:p-7">
+                <div className="flex items-start gap-4">
+                  <IconSquare
+                    icon={BadgePoundSterling}
+                    variant="solid"
+                    size="sm"
+                    iconSize={20}
+                  />
+                  <div className="min-w-0">
+                    <h3 className="text-base font-bold tracking-tight text-white">
+                      Supercar specialists
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-white/65">
+                      One marque, fair offers from knowing the cars.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </RevealItem>
+            <RevealItem>
+              <article className="motion-card-hover h-full rounded-md border border-border-primary bg-bg-surface p-6 transition duration-200 hover:border-red-primary/50 sm:p-7">
+                <div className="flex items-start gap-4">
+                  <IconSquare
+                    icon={ClipboardCheck}
+                    variant="solid"
+                    size="sm"
+                    iconSize={20}
+                  />
+                  <div className="min-w-0">
+                    <h3 className="text-base font-bold tracking-tight text-white">
+                      Paid upon collection
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-white/65">
+                      Cleared before we leave, same day, every time.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </RevealItem>
+          </RevealGroup>
+
+          <div className="mt-16 lg:mt-20">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
+              The other options
+            </p>
+            <h2 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-white md:text-4xl">
+              What you are weighing up
+            </h2>
+          </div>
+
+          <RevealGroup className="mt-10 grid gap-4 md:grid-cols-3">
+            {OTHER_OPTIONS.map((option, index) => (
+              <RevealItem key={option.title}>
+                <article className="motion-card-hover h-full rounded-md border border-white/10 bg-bg-surface-light p-6 transition duration-200 hover:border-red-primary/40 sm:p-7">
+                  <RevealNumeral className="font-numeral text-2xl font-medium italic leading-none text-red-primary/70">
+                    {String(index + 1).padStart(2, "0")}
+                  </RevealNumeral>
+                  <h3 className="mt-4 text-lg font-bold tracking-tight text-white">
+                    {option.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/70 md:text-[0.9375rem]">
+                    {option.body}
+                  </p>
+                </article>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </Section>
 
       <FAQ faqs={KENT_FAQS} valuationHref={VALUATION_HREF} />
 

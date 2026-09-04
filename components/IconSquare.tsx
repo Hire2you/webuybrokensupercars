@@ -1,6 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 
-type IconSquareVariant = "light" | "solid" | "inverse";
+type IconSquareVariant = "light" | "solid" | "inverse" | "white";
 type IconSquareSize = "sm" | "md";
 
 type IconSquareProps = {
@@ -23,6 +23,7 @@ const VARIANT_CLASSES: Record<IconSquareVariant, string> = {
   light: "border border-red-primary/20 bg-red-primary/[0.08]",
   solid: "bg-red-primary",
   inverse: "bg-white/15",
+  white: "bg-white",
 };
 
 export default function IconSquare({
@@ -35,16 +36,17 @@ export default function IconSquare({
   interactive = false,
 }: IconSquareProps) {
   const iconColor =
-    variant === "solid" || variant === "inverse"
-      ? variant === "solid"
+    variant === "white"
+      ? "var(--bg-dark)"
+      : variant === "solid" || variant === "inverse"
         ? "#ffffff"
-        : undefined
-      : "var(--red-primary)";
-
+        : "var(--red-primary)";
   const iconClass =
-    variant === "solid" || variant === "inverse"
-      ? "text-white"
-      : "text-red-primary";
+    variant === "white"
+      ? "text-bg-dark"
+      : variant === "solid" || variant === "inverse"
+        ? "text-white"
+        : "text-red-primary";
 
   const interactiveClasses =
     variant === "solid" && interactive

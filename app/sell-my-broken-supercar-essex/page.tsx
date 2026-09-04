@@ -518,14 +518,16 @@ export default function EssexHubPage() {
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.34fr)_minmax(0,0.66fr)] lg:gap-14">
           <div className="min-w-0 lg:sticky lg:top-28">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-primary">
-              supercar faults we buy
+              Supercar faults we buy
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-bg-dark md:text-4xl">
-              Named, not bucketed
+              We ask what&apos;s actually wrong, not just how bad it looks
             </h2>
             <p className="mt-4 text-base leading-relaxed text-text-secondary">
-              Every competitor page uses condition buckets only. None name an
-              gearbox fault or a ZF limp mode.{" "}
+              A PDK glitch, a ZF limp mode, a collapsed air suspension strut,
+              each one prices differently. Tell us the specific fault rather than
+              just &ldquo;damaged&rdquo; or &ldquo;non-runner,&rdquo; and the
+              offer reflects it.{" "}
               <Link
                 href="/blog/common-supercar-faults"
                 className="font-medium text-red-primary underline-offset-2 hover:underline"

@@ -31,7 +31,7 @@ const PRIMARY_BRAND_MD =
 const PRIMARY_ACCENT_MD =
   "h-12 px-6 text-sm text-white bg-red-primary hover:bg-red-bright focus-visible:outline-red-primary";
 const PRIMARY_BRAND_LG =
-  "h-14 text-lg text-white bg-red-primary hover:bg-red-bright focus-visible:outline-red-dark";
+  "h-14 px-8 text-lg text-white bg-red-primary hover:bg-red-bright focus-visible:outline-red-dark";
 const INVERSE_MD =
   "h-12 px-6 text-sm font-bold bg-white text-red-primary shadow-[0_10px_24px_-12px_rgba(0,0,0,0.45)] hover:bg-white focus-visible:outline-white";
 const LINK =
