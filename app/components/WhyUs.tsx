@@ -9,8 +9,9 @@ import {
   Truck,
   type LucideIcon,
 } from "lucide-react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion, useInView, useReducedMotion } from "motion/react";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import Section from "@/components/Section";
 import IconSquare from "@/components/IconSquare";
 import UkLocationPin from "./UkLocationPin";
@@ -20,6 +21,7 @@ import {
   REVEAL_DURATION,
   REVEAL_X,
   SETTLE_SCALE_FROM,
+  VIEWPORT,
 } from "@/lib/motion";
 import type { Variants } from "motion/react";
 const ICON_SIZE = 26;
@@ -130,6 +132,35 @@ function useWhyUsImageVariants(): {
 
 function WhyUsImage() {
   const { pinVariants, carVariants } = useWhyUsImageVariants();
+  const reducedMotion = useReducedMotion();
+  const [mapPlay, setMapPlay] = useState(false);
+  const pinWrapRef = useRef<HTMLDivElement>(null);
+  const pinInView = useInView(pinWrapRef, VIEWPORT);
+
+  useEffect(() => {
+    if (!reducedMotion && pinInView) {
+      setMapPlay(true);
+    }
+  }, [pinInView, reducedMotion]);
+
+  useEffect(() => {
+    if (reducedMotion || mapPlay || !pinWrapRef.current) return;
+
+    const timeout = window.setTimeout(() => {
+      const rect = pinWrapRef.current?.getBoundingClientRect();
+      if (!rect) return;
+
+      const inView =
+        rect.top < window.innerHeight * 0.9 &&
+        rect.bottom > window.innerHeight * 0.1;
+
+      if (inView) {
+        setMapPlay(true);
+      }
+    }, 800);
+
+    return () => window.clearTimeout(timeout);
+  }, [mapPlay, reducedMotion]);
 
   return (
     <figure className="flex flex-col pt-20 pb-0 sm:pt-16 lg:min-h-0 lg:h-full lg:pt-0 lg:pb-0 max-lg:-mb-8">
@@ -140,7 +171,14 @@ function WhyUsImage() {
         <div className="pointer-events-none absolute inset-x-0 top-[12%] mx-auto h-32 w-32 rounded-full bg-red-primary/[0.05] blur-3xl sm:h-40 sm:w-40" />
       </div>
 
-      <RevealGroup className="relative mx-auto w-full max-w-[min(78vw,260px)] shrink-0 overflow-visible sm:max-w-[min(84vw,300px)] lg:mx-0 lg:max-w-none">
+      <RevealGroup
+        className="relative mx-auto w-full max-w-[min(78vw,260px)] shrink-0 overflow-visible sm:max-w-[min(84vw,300px)] lg:mx-0 lg:max-w-none"
+        onViewportEnter={() => {
+          if (!reducedMotion) {
+            setMapPlay(true);
+          }
+        }}
+      >
         <motion.div
           variants={carVariants}
           className="relative z-10 overflow-hidden rounded-none"
@@ -156,10 +194,11 @@ function WhyUsImage() {
           />
         </motion.div>
         <motion.div
+          ref={pinWrapRef}
           variants={pinVariants}
           className="pointer-events-none absolute bottom-[calc(83%-130px)] left-1/2 z-0 w-full -translate-x-1/2 sm:bottom-[calc(84%-130px)] lg:max-w-[360px]"
         >
-          <UkLocationPin className="w-full" />
+          <UkLocationPin className="w-full" play={mapPlay} />
         </motion.div>
       </RevealGroup>
     </figure>

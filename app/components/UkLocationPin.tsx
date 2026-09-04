@@ -3,6 +3,7 @@ import { UkMapAnimatedPaths } from "./UkMapAnimatedPaths";
 
 type UkLocationPinProps = {
   className?: string;
+  play?: boolean;
 };
 
 type UkMapOutlineProps = {
@@ -36,7 +37,10 @@ export function UkMapOutline({ className = "" }: UkMapOutlineProps) {
   );
 }
 
-export default function UkLocationPin({ className = "" }: UkLocationPinProps) {
+export default function UkLocationPin({
+  className = "",
+  play = false,
+}: UkLocationPinProps) {
   const mapScale = 1.18;
   const mapOffsetX = (200 - UK_MAP_VIEW_SIZE * mapScale) / 2;
   const mapOffsetY = 24;
@@ -95,7 +99,7 @@ export default function UkLocationPin({ className = "" }: UkLocationPinProps) {
           transform={`translate(${mapOffsetX} ${mapOffsetY}) scale(${mapScale})`}
           filter="url(#why-us-map-glow)"
         >
-          <UkMapAnimatedPaths />
+          <UkMapAnimatedPaths play={play} />
         </g>
       </g>
     </svg>
