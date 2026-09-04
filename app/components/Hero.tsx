@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { Phone } from "lucide-react";
+import Image from "next/image";
 import Container from "@/components/Container";
 import ValuationForm from "@/components/ValuationForm";
 import {
@@ -12,6 +12,19 @@ import CarShowcase from "./CarShowcase";
 import HeroRoad from "./HeroRoad";
 import { HeroEntrance, RevealGroup, RevealItem } from "@/components/motion";
 
+function CallNowPhoneIcon({ className = "" }: { className?: string }) {
+  return (
+    <Image
+      src="/phone-icon.webp"
+      alt=""
+      width={42}
+      height={36}
+      aria-hidden
+      className={`h-9 w-auto shrink-0 ${className}`}
+    />
+  );
+}
+
 function CallNowBar() {
   const compactNumber = SITE_PHONE_DISPLAY.replace(/\s/g, "");
 
@@ -21,16 +34,13 @@ function CallNowBar() {
       className="motion-btn-primary flex w-full items-center justify-between gap-2 rounded-sm bg-red-primary px-3 py-4 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plate-yellow md:hidden"
     >
       <span aria-hidden="true" className="phone-tilt-left">
-        <Phone className="phone-shake size-9 shrink-0" strokeWidth={2.25} />
+        <CallNowPhoneIcon className="phone-shake" />
       </span>
       <span className="min-w-0 text-center text-base font-bold uppercase tracking-[0.06em] underline sm:text-lg">
         Call now: {compactNumber}
       </span>
       <span aria-hidden="true" className="phone-tilt-right">
-        <Phone
-          className="phone-shake phone-shake-delayed size-9 shrink-0"
-          strokeWidth={2.25}
-        />
+        <CallNowPhoneIcon className="phone-shake phone-shake-delayed" />
       </span>
     </a>
   );
