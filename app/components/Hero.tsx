@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { Phone } from "lucide-react";
 import Container from "@/components/Container";
 import ValuationForm from "@/components/ValuationForm";
 import {
@@ -20,15 +21,16 @@ function CallNowBar() {
       className="motion-btn-primary flex w-full items-center justify-between gap-2 rounded-sm bg-red-primary px-3 py-4 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plate-yellow md:hidden"
     >
       <span aria-hidden="true" className="phone-tilt-left">
-        <span className="phone-shake text-4xl leading-none">☎️</span>
+        <Phone className="phone-shake size-9 shrink-0" strokeWidth={2.25} />
       </span>
       <span className="min-w-0 text-center text-base font-bold uppercase tracking-[0.06em] underline sm:text-lg">
         Call now: {compactNumber}
       </span>
       <span aria-hidden="true" className="phone-tilt-right">
-        <span className="phone-shake phone-shake-delayed text-4xl leading-none">
-          ☎️
-        </span>
+        <Phone
+          className="phone-shake phone-shake-delayed size-9 shrink-0"
+          strokeWidth={2.25}
+        />
       </span>
     </a>
   );
