@@ -8,12 +8,12 @@ export default function ModelsCtaPanel() {
   return (
     <Reveal className="cta-banner relative mt-12 overflow-hidden rounded-md px-6 py-10 text-center sm:px-10 sm:py-12 md:mt-16 md:px-14 md:py-16">
       <Image
-        src="/supercar-hero.webp"
+        src="/ferrari-bottom.webp"
         alt=""
         fill
         sizes="(max-width: 768px) 100vw, 1152px"
         quality={90}
-        className="pointer-events-none object-cover object-[center_70%] opacity-[0.12]"
+        className="pointer-events-none object-cover object-center opacity-45"
       />
 
       <div className="relative mx-auto flex max-w-xl flex-col items-center">

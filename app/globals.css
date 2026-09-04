@@ -76,7 +76,7 @@ body {
 
 .hero-section {
   background:
-    radial-gradient(circle at 50% 40%, rgba(120, 0, 0, 0.16), transparent 45%),
+    radial-gradient(circle at 50% 40%, rgba(80, 0, 0, 0.05), transparent 45%),
     var(--bg-dark);
 }
 
@@ -111,20 +111,20 @@ body {
   background:
     radial-gradient(
       ellipse 80% 55% at 50% 35%,
-      var(--red-glow),
+      rgba(226, 27, 22, 0.05),
       transparent 58%
     ),
     radial-gradient(
       ellipse 42% 68% at 0% 48%,
-      rgba(226, 27, 22, 0.09),
+      rgba(226, 27, 22, 0.035),
       transparent 52%
     ),
     radial-gradient(
       ellipse 42% 68% at 100% 48%,
-      rgba(226, 27, 22, 0.09),
+      rgba(226, 27, 22, 0.035),
       transparent 52%
     ),
-    radial-gradient(circle at 50% 40%, rgba(120, 0, 0, 0.16), transparent 45%);
+    radial-gradient(circle at 50% 40%, rgba(80, 0, 0, 0.05), transparent 45%);
 }
 
 .hero-pillars {

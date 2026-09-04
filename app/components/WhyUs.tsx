@@ -72,7 +72,7 @@ function BenefitRow({ benefit }: { benefit: Benefit }) {
       <div className="flex items-start gap-4">
         <IconSquare
           icon={Icon}
-          variant="light"
+          variant="solid"
           iconSize={ICON_SIZE}
           strokeWidth={ICON_STROKE}
         />
