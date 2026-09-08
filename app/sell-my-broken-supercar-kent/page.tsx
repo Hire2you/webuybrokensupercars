@@ -535,7 +535,7 @@ export default function KentHubPage() {
           <RevealFrom direction="right" className="min-w-0">
             <SettleImage className="relative aspect-square w-full">
               <Image
-                src="/Crashed_Bentley.png"
+                src="/about/crashed-bentayga.webp"
                 alt="Damaged red Bentley Bentayga with front-end collision damage"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
