@@ -217,7 +217,7 @@ function DocCard({
 }) {
   return (
     <article className="flex h-full flex-col rounded-md border border-border-primary bg-white p-6 shadow-[0_10px_30px_-20px_rgba(10,10,10,0.2)]">
-      <IconSquare icon={Icon} variant="light" iconSize={24} strokeWidth={2.25} />
+      <IconSquare icon={Icon} variant="solid" iconSize={24} strokeWidth={2.25} />
       <h3 className="mt-4 text-base font-bold tracking-tight text-bg-dark">
         {title}
       </h3>
@@ -440,7 +440,7 @@ export default function EssexHubPage() {
           <RevealFrom direction="right">
             <div className="rounded-md border-2 border-red-primary/20 bg-text-primary p-6 sm:p-8">
               <div className="flex items-start gap-4">
-                <IconSquare icon={Truck} variant="light" iconSize={26} />
+                <IconSquare icon={Truck} variant="solid" iconSize={26} />
                 <div>
                   <p className="text-sm font-bold uppercase tracking-[0.14em] text-red-primary">
                     What we do not claim

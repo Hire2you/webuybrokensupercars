@@ -455,7 +455,7 @@ function ModelRow({
     <li className="flex items-center gap-3.5 border-b border-black/[0.08] py-4 last:border-b-0">
       <IconSquare
         icon={Icon}
-        variant="light"
+        variant="solid"
         size="sm"
         iconSize={16}
         strokeWidth={2.5}
