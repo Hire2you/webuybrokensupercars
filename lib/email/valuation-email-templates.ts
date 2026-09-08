@@ -2,17 +2,21 @@ import { SITE_EMAIL, SITE_PHONE_DISPLAY, SITE_PHONE_TEL } from "@/components/sit
 import type { ValuationSubmission } from "@/lib/valuation";
 
 const BRAND = {
-  green: "#0a3d2a",
-  greenDark: "#04211a",
-  jetBlack: "#0a0a0a",
-  offWhite: "#f5f6f5",
-  white: "#ffffff",
-  ink: "#141414",
-  slate: "#5b5b5b",
-  greySecondary: "#66716f",
-  greyBorder: "#dde3e1",
+  bg: "#f4f4f4",
+  header: "#050505",
+  surface: "#ffffff",
+  surfaceLight: "#f7f7f7",
+  red: "#e21b16",
+  redDark: "#9d0d0a",
+  text: "#080808",
+  textSecondary: "#5c5c5c",
+  muted: "#777777",
+  border: "#e4e4e4",
+  headerBorder: "#171717",
   plateYellow: "#ffd200",
   plateBlue: "#003399",
+  white: "#ffffff",
+  black: "#000000",
 } as const;
 
 const SITE_URL =
@@ -64,20 +68,21 @@ function emailShell(title: string, body: string) {
       </noscript>
     <![endif]-->
     <style>
+      :root { color-scheme: light; }
       body, table, td, p, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
       table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; }
       img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
       body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
     </style>
   </head>
-  <body style="margin:0;padding:0;background-color:${BRAND.offWhite};width:100%;">
+  <body style="margin:0;padding:0;background-color:${BRAND.bg};width:100%;">
     <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;mso-hide:all;">
       ${escapeHtml(title)}
     </div>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="${BRAND.offWhite}" style="background-color:${BRAND.offWhite};border-collapse:collapse;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="${BRAND.bg}" style="background-color:${BRAND.bg};border-collapse:collapse;">
       <tr>
-        <td align="center" style="padding:16px 12px;">
-          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:480px;border-collapse:collapse;">
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:520px;border-collapse:collapse;border:1px solid ${BRAND.border};">
             ${body}
           </table>
         </td>
@@ -90,7 +95,7 @@ function emailShell(title: string, body: string) {
 
 function sectionLabel(title: string) {
   return `
-    <p style="margin:0 0 12px;font-family:${FONT};font-size:11px;font-weight:700;line-height:1.4;color:${BRAND.green};text-transform:uppercase;letter-spacing:0.18em;">
+    <p style="margin:0 0 12px;font-family:${FONT};font-size:11px;font-weight:700;line-height:1.4;color:${BRAND.red};text-transform:uppercase;letter-spacing:0.22em;">
       ${escapeHtml(title)}
     </p>
   `;
@@ -99,16 +104,16 @@ function sectionLabel(title: string) {
 function detailField(label: string, value: string, href?: string) {
   const safeValue = escapeHtml(value);
   const valueHtml = href
-    ? `<a href="${href}" style="color:${BRAND.green};text-decoration:none;font-weight:700;">${safeValue}</a>`
+    ? `<a href="${href}" style="color:${BRAND.red};text-decoration:none;font-weight:700;">${safeValue}</a>`
     : safeValue;
 
   return `
     <tr>
       <td style="padding:0 0 14px 0;font-family:${FONT};">
-        <p style="margin:0 0 4px;font-size:11px;line-height:1.4;color:${BRAND.greySecondary};text-transform:uppercase;letter-spacing:0.08em;font-weight:600;">
+        <p style="margin:0 0 4px;font-size:11px;line-height:1.4;color:${BRAND.muted};text-transform:uppercase;letter-spacing:0.08em;font-weight:600;">
           ${escapeHtml(label)}
         </p>
-        <p style="margin:0;font-size:18px;line-height:1.35;font-weight:700;color:${BRAND.ink};word-break:break-word;">
+        <p style="margin:0;font-size:18px;line-height:1.35;font-weight:700;color:${BRAND.text};word-break:break-word;">
           ${valueHtml}
         </p>
       </td>
@@ -118,9 +123,9 @@ function detailField(label: string, value: string, href?: string) {
 
 function cardBlock(title: string, rows: string) {
   return `
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;margin-bottom:16px;border:1px solid ${BRAND.greyBorder};background-color:${BRAND.white};">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;margin-bottom:16px;border:1px solid ${BRAND.border};background-color:${BRAND.surfaceLight};">
       <tr>
-        <td style="padding:16px 18px;font-family:${FONT};">
+        <td bgcolor="${BRAND.surfaceLight}" style="background-color:${BRAND.surfaceLight};padding:16px 18px;font-family:${FONT};">
           ${sectionLabel(title)}
           <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;">
             ${rows}
@@ -134,7 +139,10 @@ function cardBlock(title: string, rows: string) {
 function emailHeader() {
   return `
     <tr>
-      <td bgcolor="${BRAND.jetBlack}" style="background-color:${BRAND.jetBlack};padding:18px 20px;border:2px solid ${BRAND.green};border-bottom:none;">
+      <td bgcolor="${BRAND.red}" height="4" style="background-color:${BRAND.red};font-size:0;line-height:0;height:4px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td bgcolor="${BRAND.header}" style="background-color:${BRAND.header};padding:20px 24px;border-bottom:1px solid ${BRAND.headerBorder};">
         <img
           src="${SITE_URL}/logo.webp"
           alt="We Buy Broken Supercars"
@@ -150,14 +158,14 @@ function emailHeader() {
 function emailHero(title: string, subtitle: string) {
   return `
     <tr>
-      <td bgcolor="${BRAND.green}" style="background-color:${BRAND.green};padding:20px;border-left:2px solid ${BRAND.green};border-right:2px solid ${BRAND.green};">
-        <p style="margin:0 0 6px;font-family:${FONT};font-size:11px;font-weight:700;line-height:1.4;color:#ffffff;text-transform:uppercase;letter-spacing:0.18em;opacity:0.85;">
+      <td bgcolor="${BRAND.surface}" style="background-color:${BRAND.surface};padding:24px 24px 8px;border-left:4px solid ${BRAND.red};">
+        <p style="margin:0 0 8px;font-family:${FONT};font-size:11px;font-weight:700;line-height:1.4;color:${BRAND.red};text-transform:uppercase;letter-spacing:0.22em;">
           Valuation form
         </p>
-        <h1 style="margin:0 0 8px;font-family:${FONT};font-size:24px;font-weight:700;line-height:1.15;color:#ffffff;text-transform:uppercase;">
+        <h1 style="margin:0 0 8px;font-family:${FONT};font-size:26px;font-weight:700;line-height:1.15;color:${BRAND.text};text-transform:uppercase;letter-spacing:-0.02em;">
           ${escapeHtml(title)}
         </h1>
-        <p style="margin:0;font-family:${FONT};font-size:14px;line-height:1.5;color:#ffffff;opacity:0.9;">
+        <p style="margin:0;font-family:${FONT};font-size:14px;line-height:1.5;color:${BRAND.textSecondary};">
           ${escapeHtml(subtitle)}
         </p>
       </td>
@@ -168,11 +176,11 @@ function emailHero(title: string, subtitle: string) {
 function emailFooter(note: string) {
   return `
     <tr>
-      <td bgcolor="${BRAND.greenDark}" style="background-color:${BRAND.greenDark};padding:18px 20px;border:2px solid ${BRAND.green};border-top:none;font-family:${FONT};">
-        <p style="margin:0 0 6px;font-size:12px;line-height:1.6;color:#ffffff;opacity:0.85;">
+      <td bgcolor="${BRAND.bg}" style="background-color:${BRAND.bg};padding:20px 24px;border-top:1px solid ${BRAND.border};font-family:${FONT};">
+        <p style="margin:0 0 6px;font-size:12px;line-height:1.6;color:${BRAND.textSecondary};">
           ${escapeHtml(note)}
         </p>
-        <p style="margin:0;font-size:12px;line-height:1.6;color:#ffffff;opacity:0.65;">
+        <p style="margin:0;font-size:12px;line-height:1.6;color:${BRAND.muted};">
           We Buy Broken Supercars · ${escapeHtml(SITE_URL.replace(/^https?:\/\//, ""))}
         </p>
       </td>
@@ -182,13 +190,13 @@ function emailFooter(note: string) {
 
 function registrationPlate(reg: string) {
   return `
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;border:2px solid #000000;background-color:${BRAND.plateYellow};">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;border:2px solid ${BRAND.black};background-color:${BRAND.plateYellow};">
       <tr>
         <td bgcolor="${BRAND.plateBlue}" width="34" style="background-color:${BRAND.plateBlue};padding:0 8px;text-align:center;vertical-align:middle;">
-          <span style="display:block;font-family:${FONT};font-size:10px;font-weight:700;line-height:1;color:#ffffff;">GB</span>
+          <span style="display:block;font-family:${FONT};font-size:10px;font-weight:700;line-height:1;color:${BRAND.white};">GB</span>
         </td>
         <td style="padding:10px 16px;text-align:center;">
-          <span style="display:block;font-family:${FONT};font-size:26px;font-weight:700;line-height:1;color:#000000;letter-spacing:0.12em;text-transform:uppercase;">
+          <span style="display:block;font-family:${FONT};font-size:26px;font-weight:700;line-height:1;color:${BRAND.black};letter-spacing:0.12em;text-transform:uppercase;">
             ${escapeHtml(reg)}
           </span>
         </td>
@@ -199,22 +207,22 @@ function registrationPlate(reg: string) {
 
 function conditionBadge(condition: string) {
   return `
-    <span style="display:inline-block;padding:8px 14px;background-color:${BRAND.offWhite};border:1px solid ${BRAND.greyBorder};font-family:${FONT};font-size:14px;font-weight:700;line-height:1.3;color:${BRAND.green};text-transform:uppercase;">
+    <span style="display:inline-block;padding:8px 14px;background-color:${BRAND.surface};border:1px solid ${BRAND.red};font-family:${FONT};font-size:14px;font-weight:700;line-height:1.3;color:${BRAND.red};text-transform:uppercase;letter-spacing:0.06em;">
       ${escapeHtml(condition)}
     </span>
   `;
 }
 
 function actionButton(label: string, href: string, primary: boolean) {
-  const bg = primary ? BRAND.green : BRAND.white;
-  const color = primary ? "#ffffff" : BRAND.green;
-  const border = primary ? BRAND.green : BRAND.green;
+  const bg = primary ? BRAND.red : BRAND.white;
+  const color = primary ? BRAND.white : BRAND.red;
+  const border = BRAND.red;
 
   return `
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;margin-bottom:12px;">
       <tr>
         <td align="center" bgcolor="${bg}" style="background-color:${bg};border:2px solid ${border};">
-          <a href="${href}" style="display:block;padding:16px 20px;font-family:${FONT};font-size:14px;font-weight:700;line-height:1.2;color:${color};text-decoration:none;text-transform:uppercase;letter-spacing:0.08em;">
+          <a href="${href}" style="display:block;padding:16px 20px;font-family:${FONT};font-size:14px;font-weight:700;line-height:1.2;color:${color};text-decoration:none;text-transform:uppercase;letter-spacing:0.1em;">
             ${escapeHtml(label)}
           </a>
         </td>
@@ -250,7 +258,7 @@ export function buildLeadEmailHtml(values: ValuationSubmission) {
       `Submitted ${submittedAt} via webuybrokensupercars.co.uk`,
     )}
     <tr>
-      <td bgcolor="${BRAND.white}" style="background-color:${BRAND.white};padding:20px 18px;border-left:2px solid ${BRAND.green};border-right:2px solid ${BRAND.green};font-family:${FONT};">
+      <td bgcolor="${BRAND.surface}" style="background-color:${BRAND.surface};padding:20px 24px 24px;border-left:4px solid ${BRAND.red};font-family:${FONT};">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;">
           <tr>
             <td align="center" style="padding-bottom:18px;">
@@ -259,19 +267,19 @@ export function buildLeadEmailHtml(values: ValuationSubmission) {
           </tr>
           <tr>
             <td align="center" style="padding-bottom:20px;">
-              <p style="margin:0 0 4px;font-size:20px;font-weight:700;line-height:1.2;color:${BRAND.green};text-transform:uppercase;">
+              <p style="margin:0 0 4px;font-size:20px;font-weight:700;line-height:1.2;color:${BRAND.text};text-transform:uppercase;letter-spacing:-0.02em;">
                 ${escapeHtml(values.make)} ${escapeHtml(values.model)}
               </p>
-              <p style="margin:0;font-size:14px;line-height:1.5;color:${BRAND.greySecondary};">
+              <p style="margin:0;font-size:14px;line-height:1.5;color:${BRAND.textSecondary};">
                 ${escapeHtml(values.mileage)} miles · ${escapeHtml(values.postcode)}
               </p>
             </td>
           </tr>
         </table>
 
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;margin-bottom:16px;border:1px solid ${BRAND.greyBorder};background-color:${BRAND.offWhite};">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;margin-bottom:16px;border:1px solid ${BRAND.border};background-color:${BRAND.surfaceLight};">
           <tr>
-            <td style="padding:16px 18px;">
+            <td bgcolor="${BRAND.surfaceLight}" style="background-color:${BRAND.surfaceLight};padding:16px 18px;">
               ${sectionLabel("Vehicle condition")}
               ${conditionBadge(values.condition)}
             </td>
@@ -284,7 +292,7 @@ export function buildLeadEmailHtml(values: ValuationSubmission) {
         ${actionButton("Reply to customer", mailtoHref, true)}
         ${actionButton("Call customer", telHref, false)}
 
-        <p style="margin:4px 0 0;font-size:12px;line-height:1.6;color:${BRAND.greySecondary};text-align:center;">
+        <p style="margin:4px 0 0;font-size:12px;line-height:1.6;color:${BRAND.muted};text-align:center;">
           Reply directly to this email to reach ${escapeHtml(values.name)}.
         </p>
       </td>
@@ -310,13 +318,13 @@ export function buildConfirmationEmailHtml(values: ValuationSubmission) {
       "Thanks for requesting a valuation with We Buy Broken Supercars.",
     )}
     <tr>
-      <td bgcolor="${BRAND.white}" style="background-color:${BRAND.white};padding:20px 18px;border-left:2px solid ${BRAND.green};border-right:2px solid ${BRAND.green};font-family:${FONT};">
-        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:${BRAND.ink};">
+      <td bgcolor="${BRAND.surface}" style="background-color:${BRAND.surface};padding:20px 24px 24px;border-left:4px solid ${BRAND.red};font-family:${FONT};">
+        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:${BRAND.text};">
           Hi ${escapeHtml(values.name)},
         </p>
-        <p style="margin:0 0 18px;font-size:16px;line-height:1.6;color:${BRAND.slate};">
+        <p style="margin:0 0 18px;font-size:16px;line-height:1.6;color:${BRAND.textSecondary};">
           We have received your valuation request for your
-          <strong style="color:${BRAND.green};">${escapeHtml(values.make)} ${escapeHtml(values.model)}</strong>.
+          <strong style="color:${BRAND.text};">${escapeHtml(values.make)} ${escapeHtml(values.model)}</strong>.
         </p>
 
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;margin-bottom:18px;">
@@ -329,16 +337,16 @@ export function buildConfirmationEmailHtml(values: ValuationSubmission) {
 
         ${cardBlock("Your submission", submissionRows)}
 
-        <p style="margin:0;font-size:16px;line-height:1.6;color:${BRAND.slate};">
+        <p style="margin:0;font-size:16px;line-height:1.6;color:${BRAND.textSecondary};">
           Our team will review your details and be in touch shortly with a no-obligation offer.
           Free nationwide collection and same-day payment when you accept.
         </p>
 
-        <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:${BRAND.greySecondary};">
+        <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:${BRAND.muted};">
           Questions? Call
-          <a href="${SITE_PHONE_TEL}" style="color:${BRAND.green};text-decoration:none;font-weight:700;">${escapeHtml(SITE_PHONE_DISPLAY)}</a>
+          <a href="${SITE_PHONE_TEL}" style="color:${BRAND.red};text-decoration:none;font-weight:700;">${escapeHtml(SITE_PHONE_DISPLAY)}</a>
           or email
-          <a href="mailto:${SITE_EMAIL}" style="color:${BRAND.green};text-decoration:none;font-weight:700;">${escapeHtml(SITE_EMAIL)}</a>.
+          <a href="mailto:${SITE_EMAIL}" style="color:${BRAND.red};text-decoration:none;font-weight:700;">${escapeHtml(SITE_EMAIL)}</a>.
         </p>
       </td>
     </tr>

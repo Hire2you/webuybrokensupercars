@@ -8,7 +8,7 @@ import type { ValuationSubmission } from "@/lib/valuation";
 
 const VERIFIED_SEND_DOMAIN = "webuybrokensupercars.co.uk";
 const DEFAULT_FROM =
-  "We Buy Broken Supercars <valuations@webuybrokensupercars.co.uk>";
+  "We Buy Broken Supercars <sales@webuybrokensupercars.co.uk>";
 
 function getResendClient() {
   const apiKey = process.env.RESEND_API_KEY;
@@ -33,14 +33,14 @@ function getFromAddress() {
   const email = extractEmailAddress(configured).toLowerCase();
   const domain = email.split("@")[1];
 
-  if (domain !== VERIFIED_SEND_DOMAIN) {
-    console.warn(
-      `RESEND_FROM_EMAIL uses "${email}" but only @${VERIFIED_SEND_DOMAIN} is verified. Using default sender.`,
-    );
-    return DEFAULT_FROM;
+  if (domain === VERIFIED_SEND_DOMAIN) {
+    return configured;
   }
 
-  return configured;
+  console.warn(
+    `RESEND_FROM_EMAIL uses "${email}" but only @${VERIFIED_SEND_DOMAIN} is verified. Using default sender.`,
+  );
+  return DEFAULT_FROM;
 }
 
 function getLeadRecipients(): string[] {
