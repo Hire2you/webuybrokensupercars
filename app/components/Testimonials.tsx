@@ -93,28 +93,28 @@ function ReviewCard({
         role="separator"
         aria-hidden="true"
       />
-      <footer className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex min-w-0 items-center gap-3">
-          <span
-            aria-hidden="true"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-primary/15 text-sm font-bold text-red-primary"
-          >
-            {initial}
-          </span>
-          <cite className="min-w-0 not-italic">
-            <span className="block truncate font-semibold text-text-primary">
+      <footer className="flex items-start gap-3">
+        <span
+          aria-hidden="true"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-primary/15 text-sm font-bold text-red-primary"
+        >
+          {initial}
+        </span>
+        <div className="min-w-0">
+          <cite className="not-italic">
+            <span className="block font-semibold text-text-primary">
               {review.name}
             </span>
             {review.location ? (
-              <span className="block truncate text-sm text-text-muted">
+              <span className="block text-sm text-text-muted">
                 {review.location}
               </span>
             ) : null}
           </cite>
+          <span className="mt-2 inline-block rounded-sm border border-border-primary bg-bg-dark px-3 py-1 text-xs font-medium text-text-muted">
+            {review.modelTag}
+          </span>
         </div>
-        <span className="w-fit shrink-0 rounded-sm border border-border-primary bg-bg-dark px-3 py-1 text-xs font-medium text-text-muted">
-          {review.modelTag}
-        </span>
       </footer>
     </article>
   );
