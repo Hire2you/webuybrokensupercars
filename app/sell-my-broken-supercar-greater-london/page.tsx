@@ -3,7 +3,7 @@ import RegionalLandingPage, {
 } from "@/components/RegionalLandingPage";
 import { getRegionalPage } from "@/lib/regional-pages";
 
-const page = getRegionalPage("sell-my-broken-supercar-essex");
+const page = getRegionalPage("sell-my-broken-supercar-greater-london");
 export const metadata = regionalMetadata(page);
 
 export default function Page() {

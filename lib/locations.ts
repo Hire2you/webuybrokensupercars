@@ -1,3 +1,5 @@
+import { REGIONAL_PAGES } from "@/lib/regional-pages";
+
 export type LocationTown = {
   name: string;
   slug: string;
@@ -57,45 +59,47 @@ export const COUNTIES: LocationCounty[] = [
       town("Whitstable"),
     ],
   },
-  {
-    name: "Essex",
-    slug: "sell-my-broken-supercar-essex",
-    title: "Sell My Broken Supercar in Essex",
-    description:
-      "Broken, damaged, non-running and write-off supercars bought across Essex. Priced on the whole car by Supercar specialists, with free collection on our own recovery and same-day payment.",
-    areaServed: ["Essex", "Medway", "Mainland UK"],
-    towns: [
-      town("Basildon"),
-      town("Billericay"),
-      town("Braintree"),
-      town("Brentwood"),
-      town("Canvey Island"),
-      town("Chelmsford"),
-      town("Clacton-on-Sea"),
-      town("Colchester"),
-      town("Epping"),
-      town("Grays"),
-      town("Great Dunmow"),
-      town("Halstead"),
-      town("Harlow"),
-      town("Harwich"),
-      town("Ingatestone"),
-      town("Leigh-on-Sea"),
-      town("Maldon"),
-      town("Manningtree"),
-      town("Rayleigh"),
-      town("Rochford"),
-      town("Saffron Walden"),
-      town("Southend-on-Sea"),
-      town("Stanford-le-Hope"),
-      town("Thaxted"),
-      town("Tilbury"),
-      town("Walton-on-the-Naze"),
-      town("Westcliff-on-Sea"),
-      town("Wickford"),
-      town("Witham"),
-    ],
-  },
+  ...REGIONAL_PAGES.map((page) => ({
+    name: page.name,
+    slug: page.slug,
+    title: `Sell Your Broken Supercar in ${page.name}`,
+    description: page.description,
+    areaServed: [page.name, "Mainland UK"],
+    towns:
+      page.name === "Essex"
+        ? [
+            town("Basildon"),
+            town("Billericay"),
+            town("Braintree"),
+            town("Brentwood"),
+            town("Canvey Island"),
+            town("Chelmsford"),
+            town("Clacton-on-Sea"),
+            town("Colchester"),
+            town("Epping"),
+            town("Grays"),
+            town("Great Dunmow"),
+            town("Halstead"),
+            town("Harlow"),
+            town("Harwich"),
+            town("Ingatestone"),
+            town("Leigh-on-Sea"),
+            town("Maldon"),
+            town("Manningtree"),
+            town("Rayleigh"),
+            town("Rochford"),
+            town("Saffron Walden"),
+            town("Southend-on-Sea"),
+            town("Stanford-le-Hope"),
+            town("Thaxted"),
+            town("Tilbury"),
+            town("Walton-on-the-Naze"),
+            town("Westcliff-on-Sea"),
+            town("Wickford"),
+            town("Witham"),
+          ]
+        : [],
+  })),
 ];
 
 export function getCountyBySlug(slug: string): LocationCounty | undefined {
