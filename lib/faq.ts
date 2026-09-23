@@ -46,43 +46,39 @@ export const SITE_FAQS: FaqItem[] = [
 
 export const KENT_FAQS: FaqItem[] = [
   {
-    question: "Who actually buys a broken supercar in Kent?",
+    question: "Can I sell a supercar that won’t start?",
     answer:
-      "We do, direct from the owner. There's no auction, no middleman and no listing. We only buy supercars, so a non-runner or an MOT failure is a normal day's work rather than an awkward case.",
+      "Yes, we consider non-running supercars. Explain what happens when you try to start it, any known diagnosis and whether the vehicle can roll and steer. This also helps us plan collection.",
   },
   {
-    question: "Is a Kent scrap yard's figure ever the right answer for a supercar?",
+    question: "Do I need to repair the car before requesting a valuation?",
     answer:
-      "Sometimes. If the car has been stripped, burnt out or reduced to a shell, weight really is most of what's left. For a complete supercar with one significant fault, it almost never is.",
+      "No. You can request a valuation for the car in its current condition before deciding whether to spend more on repairs.",
   },
   {
-    question:
-      "Do you buy Cat S and Cat N supercars in Kent, including ones already repaired?",
+    question: "Is collection free in Kent?",
     answer:
-      "Yes, all salvage categories, whether the car is still damaged or has since been repaired. Tell us the category and what work has been done, and both go into the figure.",
+      "Yes, we offer free collection across Kent when you accept an offer. We’ll confirm the location and collection arrangements with you before booking.",
   },
   {
-    question:
-      "I've lost the V5C and my supercar has been on SORN for years in Kent. Can I still sell it?",
+    question: "Do you buy the car yourselves?",
     answer:
-      "Yes. No logbook and no MOT is fine, and the car doesn't need to start or move. You'll still need to confirm the sale to DVLA yourself once we've collected it.",
+      "We buy cars directly and also work with specialist buyers. We’ll explain who the proposed buyer is and how the transaction would work before you agree to sell.",
   },
   {
-    question:
-      "How soon can you collect a broken supercar from Kent, and when do I get paid?",
+    question: "Can I enquire about a Cat S or Cat N supercar?",
     answer:
-      "Collection is usually within 24 to 48 hours of you accepting the offer, often sooner. Payment is made the same day by secure bank transfer, and it clears before we leave with the car.",
+      "Yes, we consider enquiries for Cat S and Cat N vehicles. Tell us the recorded category, describe the damage and include details of any repairs already completed.",
   },
   {
-    question: "Will the offer change when you turn up to collect in Kent?",
+    question: "How quickly can my car be collected?",
     answer:
-      "The offer is built from what you tell us, so the more accurate your description of the fault and condition, the more solid it is. If something material was missed, we'd talk it through before the car is loaded.",
+      "Collection timing depends on your location, the vehicle’s condition and availability. Once an offer is accepted, we’ll agree a suitable collection date with you.",
   },
   {
-    question:
-      "My supercar is blocking a driveway in Kent and can't be driven. Do I need to move it?",
+    question: "When will I receive payment?",
     answer:
-      "No. It goes on a trailer from wherever it's sitting. Mention any tight access, a locked gate or a shared drive when you enquire so we bring the right kit.",
+      "Payment arrangements are confirmed before collection, and funds must be cleared before your car leaves.",
   },
 ];
 

@@ -29,9 +29,9 @@ export const COUNTIES: LocationCounty[] = [
   {
     name: "Kent",
     slug: "sell-my-broken-supercar-kent",
-    title: "Sell My Broken Supercar in Kent",
+    title: "Sell Your Broken Supercar in Kent",
     description:
-      "Broken, damaged and non-running supercars bought across Kent, any model. Priced on the whole car, not scrap weight. Free collection, same-day payment, no V5C.",
+      "Sell your broken, damaged or non-running supercar in Kent. Based in Medway, we offer specialist valuations and free collection. Request a valuation today.",
     areaServed: ["Kent", "Medway", "Mainland UK"],
     towns: [
       town("Ashford"),
