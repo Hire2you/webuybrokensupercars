@@ -344,7 +344,7 @@ export function buildConfirmationEmailHtml(values: ValuationSubmission) {
 
         <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:${BRAND.muted};">
           Questions? Call
-          <a href="${SITE_PHONE_TEL}" style="color:${BRAND.red};text-decoration:none;font-weight:700;">${escapeHtml(SITE_PHONE_DISPLAY)}</a>
+          <a href="tel:${SITE_PHONE_TEL}" style="color:${BRAND.red};text-decoration:none;font-weight:700;">${escapeHtml(SITE_PHONE_DISPLAY)}</a>
           or email
           <a href="mailto:${SITE_EMAIL}" style="color:${BRAND.red};text-decoration:none;font-weight:700;">${escapeHtml(SITE_EMAIL)}</a>.
         </p>
