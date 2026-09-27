@@ -16,6 +16,7 @@ import { buildPageMetadata, locationPageJsonLd } from "@/lib/seo";
 import { SITE_CONTACT } from "@/lib/site";
 import { COUNTIES } from "@/lib/locations";
 import type { RegionalPage } from "@/lib/regional-pages";
+import TownLinks from "@/components/TownLinks";
 
 const eyebrow =
   "text-xs font-semibold uppercase tracking-[0.22em] text-red-primary";
@@ -81,9 +82,11 @@ export default function RegionalLandingPage({ page }: { page: RegionalPage }) {
           areaServed: [page.name],
           faqs: page.faqs,
           breadcrumbName: page.name,
+          parent: page.parent,
         })}
       />
 
+      {page.parent && <nav aria-label="Breadcrumb" className="mx-auto flex max-w-6xl flex-wrap gap-x-3 gap-y-1 px-6 pt-6 text-sm text-text-secondary"><Link href="/" className="hover:text-white">Home</Link><span aria-hidden>/</span><Link href={page.parent.path} className="hover:text-white">{page.parent.name}</Link><span aria-hidden>/</span><span aria-current="page">{page.name}</span></nav>}
       <Section
         id="location-hero"
         background="black"
@@ -364,6 +367,7 @@ export default function RegionalLandingPage({ page }: { page: RegionalPage }) {
         </div>
       </Section>
 
+      <TownLinks countySlug={page.slug} />
       <FAQ faqs={page.faqs} valuationHref={valuationHref} />
 
       <Section id="valuation" background="black" className="cta-banner-section">

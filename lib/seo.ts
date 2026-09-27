@@ -146,6 +146,7 @@ export function faqPageJsonLd(faqs: FaqItem[]) {
 }
 
 type LocationPageJsonLdOptions = {
+  parent?: { name: string; path: string };
   title: string;
   description: string;
   path: string;
@@ -156,6 +157,7 @@ type LocationPageJsonLdOptions = {
 };
 
 export function locationPageJsonLd({
+  parent,
   title,
   description,
   path,
@@ -204,11 +206,12 @@ export function locationPageJsonLd({
           },
           {
             "@type": "ListItem",
-            position: 2,
+            position: parent ? 3 : 2,
             name: breadcrumbName ?? title,
             item: url,
           },
-        ],
+          ...(parent ? [{ "@type": "ListItem", position: 2, name: parent.name, item: absoluteUrl(parent.path) }] : []),
+        ].sort((a, b) => a.position - b.position),
       },
       {
         "@type": "FAQPage",

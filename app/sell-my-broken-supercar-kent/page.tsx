@@ -19,6 +19,7 @@ import {
 } from "@/components/motion";
 import { buildPageMetadata, locationPageJsonLd } from "@/lib/seo";
 import { SITE_CONTACT } from "@/lib/site";
+import TownLinks from "@/components/TownLinks";
 
 const county = getCountyBySlug("sell-my-broken-supercar-kent");
 if (!county) throw new Error("Missing Kent county configuration");
@@ -598,6 +599,7 @@ export default function KentHubPage() {
         </div>
       </Section>
 
+      <TownLinks countySlug={KENT.slug} />
       <FAQ faqs={KENT_FAQS} valuationHref={VALUATION_HREF} />
 
       <Section id="valuation" background="black" className="cta-banner-section">

@@ -1,0 +1,86 @@
+{
+  "name": "Maidstone",
+  "slug": "maidstone",
+  "parentName": "Kent",
+  "parentSlug": "sell-my-broken-supercar-kent",
+  "image": "red",
+  "description": "Sell your broken supercar in Maidstone. Engine faults, damage and non-runners considered, with specialist valuations and free collection by arrangement.",
+  "hero": "A costly fault does not have to mean another round of repairs. Request a valuation for your broken supercar in Maidstone and discuss a sale with free collection from the agreed location.",
+  "introTitle": "Get a second option before approving a major repair",
+  "intro": [
+    "If your Porsche is waiting for an engine decision or your Aston Martin needs gearbox work, an estimate alone does not tell you what the complete car could be worth to a buyer. Share the model, mileage, history and diagnosis so the enquiry can be assessed in context.",
+    "We consider damaged and non-running supercars in Maidstone, including cars on driveways, at independent workshops or in storage. The car does not need to be driven to us for the initial enquiry. Explain which problems are confirmed and which are still being investigated.",
+    "Our team is based in Medway. Maidstone collection is arranged after an offer is accepted and the vehicle’s access requirements are understood. If the car is at a garage in Allington or elsewhere around town, use that collection address rather than your home postcode."
+  ],
+  "collectionTitle": "Collecting a supercar from Maidstone",
+  "collectionIntro": "Before a collection is booked, describe where the car is standing and whether it can be moved. A road-going appearance does not necessarily mean a vehicle is ready to load.",
+  "collection": [
+    {
+      "title": "A workshop diagnosis",
+      "body": "Ask the garage whether the engine, gearbox or wheels have been removed and whether the car can be released. Tell us where any detached parts are kept and whether they are included with the vehicle."
+    },
+    {
+      "title": "A driveway in a residential area",
+      "body": "Mention gates, a narrow entrance or a steep approach. If air suspension has dropped or a damaged bumper is close to the ground, describe that so loading can be planned around the clearance."
+    },
+    {
+      "title": "Storage beyond the town centre",
+      "body": "For locations around Bearsted, Loose or nearby villages, provide the full postcode and entrance details. Let us know about locked compounds, unmade approaches and the times someone can attend."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries in Maidstone and the surrounding area. The locations below help describe collection coverage; they are not separate business premises.",
+  "areas": [
+    {
+      "title": "Maidstone and nearby neighbourhoods",
+      "body": "Town centre, Allington, Barming, Penenden Heath and Tovil. Tell us the actual parking or workshop address."
+    },
+    {
+      "title": "Around Maidstone",
+      "body": "Bearsted, Loose and surrounding villages. An exact postcode and a short description of the entrance help us discuss access."
+    }
+  ],
+  "preparationTitle": "What a repair estimate can tell the buyer",
+  "preparation": [
+    {
+      "title": "Diagnosis versus proposed work",
+      "body": "Separate the fault the garage has identified from items it recommends replacing as a precaution. Share the written findings if available rather than summarising the whole estimate as engine failure."
+    },
+    {
+      "title": "Condition outside the fault",
+      "body": "Include service history, interior condition and photographs of the bodywork. A buyer needs to understand the rest of the vehicle as well as the component that has failed."
+    },
+    {
+      "title": "Release and collection arrangements",
+      "body": "Check who holds the keys, whether all parts are available and the garage’s opening hours. Tell us if the car needs to be collected by an agreed date; availability must be confirmed."
+    }
+  ],
+  "closing": "Send the car’s details and Maidstone collection postcode. We’ll discuss the condition and any proposed offer, so you can compare selling as it stands with the repair option.",
+  "faqs": [
+    {
+      "question": "Can I request a valuation while my car is at a Maidstone garage?",
+      "answer": "Yes. Send the diagnosis, repair estimate and actual garage address. Explain whether anything has been removed and confirm the workshop can release the vehicle before collection is agreed."
+    },
+    {
+      "question": "Do you collect around Allington and Bearsted?",
+      "answer": "Yes, enquiries are welcome from Allington, Bearsted and the wider Maidstone area. Include the full postcode and any gates, narrow entrances or other access details."
+    },
+    {
+      "question": "Should I authorise an engine repair before contacting you?",
+      "answer": "You can enquire with the fault in its current state. Share what is known and any estimate you already have. A valuation gives you another option to consider before deciding whether further repairs suit you."
+    }
+  ],
+  "research": {
+    "date": "2026-09-27",
+    "primaryKeyword": "sell broken supercar Maidstone",
+    "secondaryKeywords": [
+      "sell non-running supercar Maidstone",
+      "damaged supercar buyer Maidstone"
+    ],
+    "sources": [
+      "https://www.visitmaidstone.com/",
+      "https://www.maidstoneautocentre.co.uk/sell-your-car/",
+      "https://www.quickcashcars.co.uk/areas/maidstone_sell_my_car/"
+    ],
+    "finding": "Search snapshot contains general vehicle buyers and scrap services. Focus on complete specialist-car assessment, diagnosis versus estimate and garage release. No search-volume or difficulty figures asserted."
+  }
+}

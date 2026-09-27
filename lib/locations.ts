@@ -1,4 +1,5 @@
 import { REGIONAL_PAGES } from "@/lib/regional-pages";
+import { TOWN_LOCATIONS } from "@/lib/town-locations";
 
 export type LocationTown = {
   name: string;
@@ -101,6 +102,14 @@ export const COUNTIES: LocationCounty[] = [
         : [],
   })),
 ];
+
+for (const location of TOWN_LOCATIONS) {
+  const parent = COUNTIES.find((county) => county.slug === location.parentSlug);
+  if (!parent) throw new Error(`Missing parent area for ${location.name}`);
+  const existing = parent.towns.find((item) => item.slug === location.slug);
+  if (existing) existing.published = true;
+  else parent.towns.push({ name: location.name, slug: location.slug, published: true });
+}
 
 export function getCountyBySlug(slug: string): LocationCounty | undefined {
   return COUNTIES.find((county) => county.slug === slug);

@@ -2,6 +2,7 @@ import type { FaqItem } from "@/lib/faq";
 
 type TextBlock = { title: string; body: string };
 export type RegionalPage = {
+  parent?: { name: string; path: string };
   name: string;
   slug: string;
   description: string;
