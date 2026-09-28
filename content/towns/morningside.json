@@ -1,0 +1,87 @@
+{
+  "name": "Morningside",
+  "slug": "morningside",
+  "parentName": "Edinburgh",
+  "parentSlug": "sell-my-broken-supercar-edinburgh",
+  "image": "evening",
+  "description": "Sell your broken supercar in Morningside, Edinburgh. Little-used cars, non-runners and damaged vehicles considered, with specialist valuations and free collection.",
+  "hero": "If your supercar in Morningside is spending more time parked than driven, a fault may be the point at which you choose to sell. Request a specialist valuation in its current condition.",
+  "introTitle": "A clear next step for a supercar you no longer use",
+  "intro": [
+    "A low annual mileage does not tell the whole story of a car's condition. It may have been parked after a fault, left awaiting a repair or used less as your circumstances changed. Tell us what happened and what you know about it now.",
+    "We consider broken supercars in Morningside using the individual vehicle's specification, mileage, service history and known problems. An engine warning, electrical issue or non-running condition can be assessed without you first committing to a repair programme.",
+    "Where the car has not been used recently, distinguish current observations from how it behaved on its last drive. We review the information before discussing a direct purchase or specialist buyer, and you choose whether to proceed."
+  ],
+  "collectionTitle": "Plan the handover before bringing the car out",
+  "collectionIntro": "Free collection is arranged after agreement. A little-used car may need its loading and access requirements assessed even when it was driveable when parked.",
+  "collection": [
+    {
+      "title": "Its present parking position",
+      "body": "Tell us whether the car is inside a garage, on a drive or in shared parking. Include entrance clearance, slopes and space around the vehicle."
+    },
+    {
+      "title": "Whether it can move",
+      "body": "Explain what you know about the tyres, steering and brakes, and whether the car can roll. If you have not checked recently, say so rather than assuming normal operation."
+    },
+    {
+      "title": "Access and attendance",
+      "body": "Confirm who has the keys and can attend collection. If the vehicle is stored away from your home, provide the storage address and any appointment requirements."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries from Morningside in Edinburgh, including the Morningside Road area and nearby Bruntsfield.",
+  "areas": [
+    {
+      "title": "Morningside and Morningside Road",
+      "body": "Give the car's actual collection postcode and describe the garage, driveway or parking entrance. Each location is assessed for a suitable loading plan."
+    },
+    {
+      "title": "Nearby Bruntsfield",
+      "body": "Bruntsfield enquiries are covered through our Edinburgh service. Tell us if access is shared or if a building contact needs to arrange entry."
+    }
+  ],
+  "preparationTitle": "Explain the history of a little-used car",
+  "preparation": [
+    {
+      "title": "Last use and first symptoms",
+      "body": "Give the approximate last-use date and the reason you stopped driving it. Mention any warning or mechanical issue noticed before it was parked."
+    },
+    {
+      "title": "Maintenance records",
+      "body": "Share available service invoices and work carried out during storage. A complete account of known maintenance is more useful than relying on low mileage alone."
+    },
+    {
+      "title": "Current photographs",
+      "body": "Provide recent photographs of the car, cabin and visible faults. If the dashboard or odometer cannot be accessed, explain that rather than using an old reading as though it were current."
+    }
+  ],
+  "closing": "Tell us about your broken supercar in Morningside and why it is off the road. We will review its details and discuss an offer and collection from the agreed Edinburgh location.",
+  "faqs": [
+    {
+      "question": "Can I sell a little-used supercar in Morningside with a new fault?",
+      "answer": "Yes, we can consider it. Explain the fault, when the car was last used and any available service or diagnostic history. Low mileage is one detail in the wider assessment."
+    },
+    {
+      "question": "Should I start a car that has been standing before enquiring?",
+      "answer": "You can enquire without starting it. Tell us when it last ran and what is known about its present condition. Do not attempt a restart if you have concerns that it may be unsafe or cause damage."
+    },
+    {
+      "question": "Can you collect from a garage in Morningside or nearby Bruntsfield?",
+      "answer": "We can assess collection from either area. Provide the exact address, entrance and clearance details, and tell us whether the vehicle rolls and steers. Timing is confirmed after agreement."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Morningside Edinburgh",
+    "secondaryKeywords": [
+      "non-running supercar Morningside",
+      "sell faulty supercar Edinburgh"
+    ],
+    "sources": [
+      "https://rubbishcars.com/areas/edinburgh",
+      "https://scrapacarscotland.com/scrap-your-car-in-edinburgh",
+      "https://www.edinburgh.gov.uk/downloads/file/36517/bruntsfield-morningside-town-centre",
+      "https://www.edinburgh.gov.uk/downloads/file/23386/morningside-conservation-area-character-appraisal"
+    ],
+    "finding": "Reviewed results include Edinburgh-wide broken-car and scrap services covering Morningside. The page focuses on little-used specialist vehicles with developing faults and accurate current-condition information. Council documents verify Morningside Road and nearby Bruntsfield geography without implying a local office."
+  }
+}
