@@ -1,0 +1,86 @@
+{
+  "name": "Brentwood",
+  "slug": "brentwood",
+  "parentName": "Essex",
+  "parentSlug": "sell-my-broken-supercar-essex",
+  "image": "evening",
+  "description": "Sell your broken supercar in Brentwood. Gearbox faults, engine problems and non-runners considered, with specialist valuations and free collection by arrangement.",
+  "hero": "A supercar that starts but will not select a gear can still be considered for purchase. Tell us about your faulty car in Brentwood for a specialist valuation and free collection once arrangements are agreed.",
+  "introTitle": "The engine can run while the car remains undriveable",
+  "intro": [
+    "A gearbox warning, clutch problem or loss of drive can leave a supercar parked despite an engine that appears to run normally. Describe what the car actually does when you enquire from Brentwood, rather than using only the label non-runner.",
+    "We consider transmission faults alongside engine, electrical, suspension and accident-damage enquiries. Include the precise model, mileage and maintenance record, and share any specialist findings. Tell us whether a repair has been attempted and if parts have been removed.",
+    "The sale and collection are discussed with our Medway-based team. A car at a Brentwood workshop may need different release arrangements from one in a private garage in Shenfield or Hutton; use the address where it currently stands."
+  ],
+  "collectionTitle": "Tell us what happens when the car is put in gear",
+  "collectionIntro": "The condition of the drivetrain affects both the assessment and the equipment needed for recovery. Do not assume a running engine means the car can be driven onto transport.",
+  "collection": [
+    {
+      "title": "Neutral and parking brake",
+      "body": "Explain whether neutral can be selected and the parking brake released. Tell us if these functions depend on a battery that is flat or unreliable."
+    },
+    {
+      "title": "Wheels and movement",
+      "body": "Mention a wheel that locks, a dragging brake or any known drivetrain damage. State whether the car rolls freely without asking anyone to force it into motion."
+    },
+    {
+      "title": "Where recovery can reach",
+      "body": "Give entrance details, available loading space and workshop opening hours where relevant. A narrow drive or enclosed garage needs to be considered before a slot is agreed."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries from Brentwood and nearby locations. Share the full postcode and the car’s current condition so collection can be discussed.",
+  "areas": [
+    {
+      "title": "Brentwood and Warley",
+      "body": "Homes, private garages and workshop locations in Brentwood and the Warley area."
+    },
+    {
+      "title": "Shenfield and Hutton",
+      "body": "Enquiries from Shenfield, Hutton and surrounding addresses are welcome. The exact location and access determine the collection plan."
+    }
+  ],
+  "preparationTitle": "Describe a transmission fault clearly",
+  "preparation": [
+    {
+      "title": "The symptom",
+      "body": "Tell us whether the car will not select a gear, loses drive, shifts harshly or displays a warning. Include when the symptoms began and whether they are constant."
+    },
+    {
+      "title": "The investigation",
+      "body": "Share the diagnostic report and any repair estimate. Separate a confirmed component failure from possible causes the workshop has not yet ruled out."
+    },
+    {
+      "title": "The vehicle around the fault",
+      "body": "Provide mileage, specification and service history, plus other known issues. The buyer assesses the whole vehicle rather than the transmission in isolation."
+    }
+  ],
+  "closing": "Send the details of your Brentwood supercar and the symptoms you have noticed. We’ll review the enquiry and discuss a possible offer and collection without requiring the car to drive.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar that starts but will not select a gear?",
+      "answer": "Yes, you can enquire in that condition. Describe gear selection, warning messages and whether neutral and the parking brake work. Include any diagnostic information you already have."
+    },
+    {
+      "question": "Do you cover Shenfield and Hutton?",
+      "answer": "Yes. We welcome enquiries from Shenfield, Hutton, Warley and the wider Brentwood area. Use the postcode where the car is actually kept."
+    },
+    {
+      "question": "Do I need to make the car roll before collection?",
+      "answer": "Tell us if it does not roll freely so suitable recovery can be discussed. Do not assume a brake or transmission problem has to be repaired first; the collection plan depends on the details."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell broken supercar Brentwood",
+    "secondaryKeywords": [
+      "sell supercar gearbox fault Brentwood",
+      "non-runner supercar Shenfield"
+    ],
+    "sources": [
+      "https://www.brentwood.gov.uk/wards-polling-districts-stations",
+      "https://scrapacar-london.co.uk/brentwood.htm",
+      "https://www.gt-autos.co.uk/"
+    ],
+    "finding": "Search results cover general non-runner removal and a classic-car specialist, rather than proving no competition. Content concentrates on transmission symptoms and recovery readiness. Council geography supports Shenfield, Hutton and Warley."
+  }
+}
