@@ -1,0 +1,87 @@
+{
+  "name": "Shawlands",
+  "slug": "shawlands",
+  "parentName": "Glasgow",
+  "parentSlug": "sell-my-broken-supercar-glasgow",
+  "image": "red",
+  "description": "Sell your broken supercar in Shawlands, Glasgow. Recurring faults, damaged cars and non-runners considered, with specialist valuations and free collection.",
+  "hero": "If repeated faults have taken the enjoyment out of your supercar, you can explore selling it in its present condition. Request a specialist valuation in Shawlands, Glasgow.",
+  "introTitle": "When another repair is no longer the route you want",
+  "intro": [
+    "A fault that returns after repair can make it difficult to decide what to do next. If your supercar is in Shawlands, we can review its present condition without requiring you to promise that the previous repair solved the problem.",
+    "Explain the sequence of symptoms and work carried out. Service records and invoices help distinguish the car's longer-term history from the issue it has now. There is no need to pay for a fresh diagnosis simply to start an enquiry.",
+    "We consider broken supercars individually and explain the proposed sale before you commit. We buy directly and also introduce specialist buyers, with free collection arranged after an offer and the transport requirements are agreed."
+  ],
+  "collectionTitle": "Arrange collection around the car's current condition",
+  "collectionIntro": "Describe how the car is parked today and what still works. A previous period of normal running does not tell us how it will load now.",
+  "collection": [
+    {
+      "title": "Current movement",
+      "body": "Tell us whether it starts, rolls and steers, and whether the parking brake releases. Mention if the fault is unpredictable so collection does not rely on it behaving normally."
+    },
+    {
+      "title": "Shared spaces",
+      "body": "If the car is in shared parking, explain the entrance and available loading space. Confirm who can open gates and whether anyone else needs notice."
+    },
+    {
+      "title": "Workshop handover",
+      "body": "Where a repairer holds the car, check its release arrangements and list any removed parts. Collection timing is confirmed after these practical details are agreed."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries across Shawlands on Glasgow's Southside. Tell us the exact location rather than relying on a nearby landmark.",
+  "areas": [
+    {
+      "title": "Shawlands Cross and surrounding streets",
+      "body": "Send the postcode and parking details for the vehicle. Access from a street, courtyard or garage is assessed individually before collection is booked."
+    },
+    {
+      "title": "Kilmarnock Road area",
+      "body": "If the car is kept near Kilmarnock Road or the Shawlands Arcade area, describe the actual entrance and parking position. The nearest main road is not necessarily the loading point."
+    }
+  ],
+  "preparationTitle": "Build a clear picture of a recurring fault",
+  "preparation": [
+    {
+      "title": "A short timeline",
+      "body": "Tell us when the original symptoms appeared, when work was carried out and when the problem returned. Approximate dates are useful if exact dates are unavailable."
+    },
+    {
+      "title": "Invoices and findings",
+      "body": "Share existing reports and invoices. Separate what the workshop confirmed from what was suggested, and mention parts replaced during earlier attempts."
+    },
+    {
+      "title": "Other condition details",
+      "body": "Include damage, warning lights, modifications and missing items beyond the main fault. We assess the complete car, not just the latest repair invoice."
+    }
+  ],
+  "closing": "Tell us about your broken supercar in Shawlands and the repairs already attempted. We will assess the information and discuss your sale and Glasgow collection options.",
+  "faqs": [
+    {
+      "question": "Can I sell a Shawlands supercar if the same fault keeps returning?",
+      "answer": "Yes, recurring faults can be considered. Explain the symptoms, previous work and current condition, and share any existing reports. We assess the information before proposing an offer."
+    },
+    {
+      "question": "Do previous repair bills guarantee a higher offer?",
+      "answer": "No. They provide useful history, but an offer reflects the car's present condition and the buyer's assessment. Tell us what was repaired and whether the issue has been resolved."
+    },
+    {
+      "question": "Can you arrange collection if the fault only happens sometimes?",
+      "answer": "We can assess collection, but need to know that the issue is intermittent. Explain whether it affects starting, steering, braking or movement so the transport plan does not depend on a trouble-free drive."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Shawlands",
+    "secondaryKeywords": [
+      "faulty supercar Shawlands Glasgow",
+      "non-running supercar Glasgow Southside"
+    ],
+    "sources": [
+      "https://www.scrapmycar.net/locations/scrap-car-glasgow",
+      "https://motorsalvagegroup.co.uk/breakers-yard/glasgow/",
+      "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/submissiondocuments.asp?submissionid=110101",
+      "https://onlineservices.glasgow.gov.uk/councillorsandcommittees/viewSelectedDocument.asp?c=P62AFQ81UTDNT1DX"
+    ],
+    "finding": "Reviewed results are mainly Glasgow-wide scrap and salvage services mentioning Shawlands. The page focuses on recurring-fault supercars and repair history. Council records verify Shawlands Cross and the Kilmarnock Road/Arcade geography without making claims about current road access rules."
+  }
+}
