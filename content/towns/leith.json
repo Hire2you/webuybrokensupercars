@@ -1,0 +1,87 @@
+{
+  "name": "Leith",
+  "slug": "leith",
+  "parentName": "Edinburgh",
+  "parentSlug": "sell-my-broken-supercar-edinburgh",
+  "image": "front",
+  "description": "Sell your broken supercar in Leith, Edinburgh. Specialist valuations for damaged cars and non-runners, with free collection and loading access agreed in advance.",
+  "hero": "A broken supercar taking up a parking space in Leith can be difficult to move on. Request a specialist valuation and tell us where it is kept so collection can be planned properly.",
+  "introTitle": "Sell your Leith supercar in its current condition",
+  "intro": [
+    "You can enquire about a damaged or non-running supercar without first bringing it to a buyer. Start with the registration, mileage, service history and a description of the problem, including any existing workshop findings.",
+    "We assess cars in Leith individually, from engine and gearbox faults to electrical problems and unfinished repairs. We may buy directly or introduce a specialist buyer, and explain the proposed arrangements before you decide to proceed.",
+    "Collection is part of our mainland UK service, coordinated by our Medway-based team. The car's condition and the access at its Edinburgh location are checked before a transport date is agreed."
+  ],
+  "collectionTitle": "Agree the loading point before collection",
+  "collectionIntro": "A postcode alone may not show how the car can be reached. Send details of the entrance, parking position and any site restrictions.",
+  "collection": [
+    {
+      "title": "Street access",
+      "body": "Tell us about signs or restrictions affecting the road outside and where the car is parked. Collection needs an appropriate loading arrangement; a nearby road may not provide direct access."
+    },
+    {
+      "title": "Courtyards and garages",
+      "body": "Show gates, narrow entrances and any height restriction. If the car is in managed parking, confirm who can authorise and provide access at the agreed time."
+    },
+    {
+      "title": "Vehicle movement",
+      "body": "Explain whether it can roll, steer and release its brakes. Do not try to drive an unsafe car to a more convenient position for the collection team."
+    }
+  ],
+  "coverageIntro": "We welcome supercar sale enquiries across Leith, including the Shore and the Leith Walk area.",
+  "areas": [
+    {
+      "title": "Leith and the Shore",
+      "body": "Give the precise storage location and explain how the car can be approached. Access near the Shore should be checked for the particular street and property."
+    },
+    {
+      "title": "Leith Walk area",
+      "body": "If the car is off Leith Walk, identify the actual entrance or side-street access. Tell us if a building manager or workshop contact needs to be present."
+    }
+  ],
+  "preparationTitle": "Prepare a useful enquiry before arranging access",
+  "preparation": [
+    {
+      "title": "Current vehicle photographs",
+      "body": "Show the whole car and visible faults, plus its parking position. Photographs of the approach can help us understand access without asking you to move it."
+    },
+    {
+      "title": "Known mechanical information",
+      "body": "Share symptoms, workshop reports and details of work attempted. Tell us what is unknown as well as what has been diagnosed."
+    },
+    {
+      "title": "Availability and keys",
+      "body": "Confirm who holds the keys and can attend the handover. Tell us about any deadline, while allowing for collection timing to be agreed after assessment."
+    }
+  ],
+  "closing": "Tell us about your broken supercar in Leith and its current parking arrangements. We will review the vehicle and discuss a sale with free collection by agreement.",
+  "faqs": [
+    {
+      "question": "Can you consider a broken supercar parked near the Shore in Leith?",
+      "answer": "Yes. Provide the car's details and exact location. Access and an appropriate loading arrangement need to be checked before a collection date is confirmed."
+    },
+    {
+      "question": "Do I need to move my car out of managed parking before selling?",
+      "answer": "Not simply to make an enquiry. Describe the entrance, clearances and parking position so collection can be assessed. Do not attempt an unsafe move; any necessary arrangements should be agreed first."
+    },
+    {
+      "question": "Can you collect if I live elsewhere but the car is in Leith?",
+      "answer": "We can assess collection from the car's Leith location. Tell us who can provide access and the keys, and agree the seller and handover arrangements before proceeding."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Leith",
+    "secondaryKeywords": [
+      "non-running supercar Leith Edinburgh",
+      "damaged supercar buyer Leith"
+    ],
+    "sources": [
+      "https://motorsalvagegroup.co.uk/sell-broken-car/edinburgh/",
+      "https://www.cartakeback.com/branches/edinburgh/",
+      "https://www.edinburgh.gov.uk/summertime-city/getting-around-city/2",
+      "https://www.edinburgh.gov.uk/cycling-walking-projects-1/leith-connections/6"
+    ],
+    "finding": "Reviewed results include Edinburgh-wide salvage and scrap buyers covering Leith. The page targets specialist supercar enquiries and collection access. Council sources confirm the Shore and Leith Walk geography and reinforce checking the actual access instead of asserting uniform parking availability."
+  }
+}
