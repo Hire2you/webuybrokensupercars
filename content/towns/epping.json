@@ -1,0 +1,86 @@
+{
+  "name": "Epping",
+  "slug": "epping",
+  "parentName": "Essex",
+  "parentSlug": "sell-my-broken-supercar-essex",
+  "image": "front",
+  "description": "Sell your broken supercar in Epping, Essex. Specialist valuations for non-runners and cars with unresolved faults, with free collection by arrangement.",
+  "hero": "An intermittent fault can make selling a supercar difficult to plan. Tell us what is happening with your car in Epping, Essex, and request a valuation in its current condition.",
+  "introTitle": "Sell with the fault explained, even without a final diagnosis",
+  "intro": [
+    "A dashboard warning that comes and goes, a starting problem or a car that repeatedly returns to the workshop can leave you unsure what to do next. You can approach us before committing to another round of repairs.",
+    "We review broken supercars in Epping using the information available: model, mileage, service records, symptoms and any workshop findings. An unresolved fault is something to explain clearly, rather than a reason to describe the car as fault-free.",
+    "Tell us if the problem only happens when the car is warm, after standing or under particular conditions. We can consider a direct purchase or discuss a specialist buyer once we understand the vehicle. An enquiry does not commit you to a sale."
+  ],
+  "collectionTitle": "Collection from Epping and the surrounding parish",
+  "collectionIntro": "The starting point is the car's current location. Share the postcode and access details so collection can be assessed before a date is agreed.",
+  "collection": [
+    {
+      "title": "A car that sometimes starts",
+      "body": "Tell us whether it starts consistently and whether it can move under its own power. Collection planning should not depend on an intermittent fault staying away."
+    },
+    {
+      "title": "Private driveways and entrances",
+      "body": "Describe gates, slopes and space to turn near the car. If access is shared, agree who can let the collection team in and when."
+    },
+    {
+      "title": "Workshop release",
+      "body": "If the car is at a garage, confirm its contact details and that it is ready to release. Explain any dismantling or loose parts before transport is arranged."
+    }
+  ],
+  "coverageIntro": "Our Essex collection service covers Epping, including enquiries from nearby Coopersale and Fiddlers Hamlet.",
+  "areas": [
+    {
+      "title": "Epping town",
+      "body": "We can assess collection from a home or workshop in Epping. Use the vehicle's location in your enquiry if it differs from your home address."
+    },
+    {
+      "title": "Coopersale and Fiddlers Hamlet",
+      "body": "These communities are within Epping parish. Send the exact postcode and photographs of the access if the property is difficult to locate or approach."
+    }
+  ],
+  "preparationTitle": "Make an intermittent fault easier to assess",
+  "preparation": [
+    {
+      "title": "Describe a typical occurrence",
+      "body": "Explain what you see or hear, how frequently it happens and when it first appeared. There is no need to recreate the fault by driving the car."
+    },
+    {
+      "title": "Keep diagnostic findings together",
+      "body": "Existing reports and fault-code printouts can help, but distinguish a confirmed diagnosis from a suggested cause. Tell us if a warning has returned after repair."
+    },
+    {
+      "title": "Include the wider history",
+      "body": "Service records, recent repairs and any modifications provide context. Mention other known defects even when the intermittent problem is the main reason for selling."
+    }
+  ],
+  "closing": "Start with the details you have about your Epping supercar. We will review its condition and discuss a suitable sale and collection arrangement.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar in Epping with an intermittent fault?",
+      "answer": "Yes, we can consider it. Describe when the fault occurs and share any existing workshop findings. We assess known problems and uncertainty before confirming the proposed purchase."
+    },
+    {
+      "question": "Do I need to pay for more diagnostics before enquiring?",
+      "answer": "No new diagnostic report is required to make an enquiry. Share what you already know and explain what remains unresolved. Further information may be requested during assessment."
+    },
+    {
+      "question": "Can collection be arranged from Coopersale or Fiddlers Hamlet?",
+      "answer": "Yes, enquiries from both are covered by our Epping area service. Tell us the actual location, access and whether the car can roll and steer so collection can be agreed."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Epping Essex",
+    "secondaryKeywords": [
+      "faulty supercar buyer Epping",
+      "non-running supercar Epping"
+    ],
+    "sources": [
+      "https://www.eppingcarbuyer.com/market-and-sell",
+      "https://www.salvargo.co.uk/scrap-my-car-epping/",
+      "https://www.eppingtowncouncil.gov.uk/_UserFiles/Files/_Other/158722-EppingNPlan-Feb20232.pdf"
+    ],
+    "finding": "Results include managed car-selling services, scrap buyers and unrelated Australian Epping businesses. The page explicitly identifies Essex and addresses unresolved faults; the council neighbourhood plan supports the Coopersale and Fiddlers Hamlet coverage."
+  }
+}
