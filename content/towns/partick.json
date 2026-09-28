@@ -1,0 +1,87 @@
+{
+  "name": "Partick",
+  "slug": "partick",
+  "parentName": "Glasgow",
+  "parentSlug": "sell-my-broken-supercar-glasgow",
+  "image": "evening",
+  "description": "Sell your broken supercar in Partick, Glasgow. Specialist valuations for non-runners and damaged cars, with free collection once arrangements are agreed.",
+  "hero": "Have a broken supercar parked in Partick? Tell us about the car and its location for a specialist valuation, with free collection arranged as part of our mainland UK service.",
+  "introTitle": "A specialist sale enquiry for your Partick supercar",
+  "intro": [
+    "When a supercar becomes a non-runner, selling it can involve more than agreeing a price. You need a buyer who understands the car's condition and a collection plan that works where it is parked.",
+    "We consider supercars in Partick with engine failure, gearbox problems, electrical faults and damage. Send the specification, mileage and history alongside an accurate description of what is wrong. A workshop report is helpful if you already have one.",
+    "Our team is based in Medway, Kent, and arranges collection in Glasgow by agreement. We explain whether we would buy directly or introduce a specialist buyer, and confirm timing after the vehicle and access have been assessed."
+  ],
+  "collectionTitle": "Collection from a West End parking space or workshop",
+  "collectionIntro": "The exact parking position helps us plan more accurately than a postcode alone. Tell us how a collection vehicle can approach the car.",
+  "collection": [
+    {
+      "title": "Shared rear access",
+      "body": "If the car is behind a building or reached by a shared lane, send photographs and describe any gate or narrow turn. Confirm who can provide access on the day."
+    },
+    {
+      "title": "Street-side parking",
+      "body": "Mention signs, parking restrictions and the available loading space. We need an agreed collection point; do not move a faulty car just to place it closer to the road."
+    },
+    {
+      "title": "Workshop storage",
+      "body": "Give the workshop address and contact, and confirm the car can be released. Explain dismantling or removed components so transport can be planned around the actual vehicle."
+    }
+  ],
+  "coverageIntro": "This page covers Partick in Glasgow's West End, with nearby Thornwood enquiries also welcome through our Glasgow service.",
+  "areas": [
+    {
+      "title": "Partick",
+      "body": "Tell us whether the car is at home, in shared parking or with a repairer. The vehicle's collection address may be different from your own address."
+    },
+    {
+      "title": "Thornwood and nearby West End locations",
+      "body": "Include the exact postcode and access details when enquiring. We assess each location and agree timing rather than promising an immediate collection."
+    }
+  ],
+  "preparationTitle": "Make the first conversation useful",
+  "preparation": [
+    {
+      "title": "State whether it moves",
+      "body": "Explain whether the engine starts, the car can roll and the steering unlocks. These are separate details and all can affect collection."
+    },
+    {
+      "title": "Bring the history together",
+      "body": "Service records, recent invoices and details of previous repairs help explain the car beyond its current fault. Mention known modifications and missing parts."
+    },
+    {
+      "title": "Agree who can attend",
+      "body": "Tell us who holds the keys and can release the vehicle. If someone needs to arrange time away from work, discuss availability before the collection date is confirmed."
+    }
+  ],
+  "closing": "Request a valuation for your broken supercar in Partick. Share its condition and storage details so we can discuss an offer and a practical Glasgow collection.",
+  "faqs": [
+    {
+      "question": "Can you buy a non-running supercar in Partick?",
+      "answer": "We can consider non-running supercars in Partick. Send the vehicle details, known faults and any workshop findings. We assess the car before confirming a buyer, offer and collection arrangements."
+    },
+    {
+      "question": "Can collection be assessed from a shared lane or rear parking area?",
+      "answer": "Yes. Provide photographs, access information and any clearance limits. We confirm whether a suitable collection plan is possible before agreeing the transport date."
+    },
+    {
+      "question": "Do I need to bring the car from Glasgow to Kent?",
+      "answer": "No. Collection is arranged from the agreed Glasgow location after the sale and access details are confirmed. Our Medway base does not require you to drive a broken car to us."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Partick",
+    "secondaryKeywords": [
+      "non-running supercar Partick Glasgow",
+      "supercar buyer Glasgow West End"
+    ],
+    "sources": [
+      "https://trickeyscrapmetal.co.uk/partick/",
+      "https://motorsalvagegroup.co.uk/breakers-yard/glasgow/",
+      "https://onlineservices.glasgow.gov.uk/CouncillorsandCommittees/viewSelectedDocument.asp?c=P62AFQDNDXZLDNT1ZL",
+      "https://www.glasgowwestend.co.uk/guide-to-partick-glasgow-west-end/"
+    ],
+    "finding": "The reviewed local results concentrate on scrap and breaking services. This page targets specialist supercar sale intent and practical access in Partick, with an explicit Medway base and arranged Glasgow collection. Council and local area sources support Partick and nearby Thornwood geography."
+  }
+}
