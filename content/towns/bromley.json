@@ -1,0 +1,86 @@
+{
+  "name": "Bromley",
+  "slug": "bromley",
+  "parentName": "South London",
+  "parentSlug": "sell-my-broken-supercar-south-london",
+  "image": "lineup",
+  "description": "Sell your broken supercar in Bromley. Compare selling as it stands with further repairs, with a specialist valuation and free collection by arrangement.",
+  "hero": "Facing another repair estimate for your supercar in Bromley? Request a valuation for the car as it stands, then decide whether a sale is the right next step.",
+  "introTitle": "Consider your options before authorising more work",
+  "intro": [
+    "An engine or gearbox estimate can leave a difficult decision: spend more on the car or move on. We provide a route to request a valuation for a faulty supercar in Bromley without first presenting it as a repaired vehicle.",
+    "The assessment takes account of the actual car, including its specification, history, mileage and condition. A repair estimate helps explain the issue, but it is not a promise of the price you will receive or a simple deduction from a fault-free car's advertised value.",
+    "You can share more than one workshop opinion if they differ. Be clear about what is confirmed and what further investigation is proposed. We review that information before discussing a direct purchase or an introduction to a specialist buyer."
+  ],
+  "collectionTitle": "Arranging a practical Bromley handover",
+  "collectionIntro": "Once an offer is accepted, free collection is planned around the car's condition and its agreed location.",
+  "collection": [
+    {
+      "title": "Home collection",
+      "body": "Tell us whether the car is on a drive, in a garage or within shared parking. Photos of entrances and the loading space help identify any access needs."
+    },
+    {
+      "title": "Cars awaiting repair",
+      "body": "If work has started, describe what has been dismantled and whether the vehicle can roll. Confirm with the workshop that it can be released before agreeing a collection date."
+    },
+    {
+      "title": "A complete handover",
+      "body": "Have the available keys, vehicle records and included parts ready together. Check the agreed payment has cleared before the car leaves."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries in Bromley and nearby areas including Bickley and Shortlands as part of our South London collection service.",
+  "areas": [
+    {
+      "title": "Bromley town",
+      "body": "Use the postcode where the car is kept, whether that is home, a repairer or storage. Collection timing is confirmed after the vehicle and access are assessed."
+    },
+    {
+      "title": "Bickley and Shortlands",
+      "body": "Tell us about any gates, shared driveways or restricted parking at the proposed collection point. Each address is assessed individually."
+    }
+  ],
+  "preparationTitle": "Information that makes repair-or-sell comparisons clearer",
+  "preparation": [
+    {
+      "title": "The written estimate",
+      "body": "Share the proposed work and whether the quote covers a confirmed repair or further investigation. You can enquire with the information already available."
+    },
+    {
+      "title": "The whole vehicle",
+      "body": "Include cosmetic issues, other warning lights and modifications alongside the main fault. A buyer needs the overall condition, not only the item on the estimate."
+    },
+    {
+      "title": "Your intended timing",
+      "body": "Tell us if you are comparing options or ready to sell. If a workshop has set a release deadline, mention it early so we can discuss feasible arrangements."
+    }
+  ],
+  "closing": "Send your Bromley supercar's details and any existing repair findings. A no-obligation valuation gives you another option to consider before deciding what to do with the car.",
+  "faqs": [
+    {
+      "question": "Can I sell my Bromley supercar instead of paying for an engine repair?",
+      "answer": "We can consider a car with engine faults in its current condition. Share the symptoms, any written estimate and whether the vehicle has been dismantled. An offer depends on assessment of the whole car."
+    },
+    {
+      "question": "Is the offer simply the repaired value minus the garage quote?",
+      "answer": "No. Model, specification, history, condition, uncertainty and the proposed buyer's assessment all affect an offer. A repair estimate is useful evidence, but does not determine a fixed sale price."
+    },
+    {
+      "question": "Can I enquire while deciding whether to repair the car?",
+      "answer": "Yes. The valuation enquiry is without obligation. Explain that you are comparing options and provide the current condition so we can assess the car accurately."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Bromley",
+    "secondaryKeywords": [
+      "supercar engine failure Bromley",
+      "faulty prestige car buyer Bromley"
+    ],
+    "sources": [
+      "https://www.saintmotors.com/",
+      "https://www.jbcarsalesltd.co.uk/sell-my-car-bromley.html",
+      "https://www.bromley.gov.uk/downloads/file/2325/bromley-town-centre-spd"
+    ],
+    "finding": "Results include established prestige retailers, general buyers and scrap services. The page addresses repair-versus-sale intent for faulty specialist cars, with no claim that a valuation equals retail value less repairs. The council town-centre document supports nearby Bickley and Shortlands references."
+  }
+}
