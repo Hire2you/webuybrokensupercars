@@ -1,0 +1,86 @@
+{
+  "name": "Tunbridge Wells",
+  "slug": "tunbridge-wells",
+  "parentName": "Kent",
+  "parentSlug": "sell-my-broken-supercar-kent",
+  "image": "red",
+  "description": "Sell your broken supercar in Tunbridge Wells. Get a specialist assessment of engine, gearbox or electrical faults, with free collection once a sale is agreed.",
+  "hero": "A major repair quote can change your plans for a supercar. Tell us about your faulty or non-running car in Tunbridge Wells and explore a sale with free collection by arrangement.",
+  "introTitle": "Compare the repair option with an offer for the car as it stands",
+  "intro": [
+    "A gearbox warning or engine fault can leave you deciding how much more time and money to put into a car. Before committing to further work, you can ask for a valuation based on its current condition. An offer depends on the complete vehicle and the information available about the problem.",
+    "We consider damaged and non-running Ferrari, Lamborghini, McLaren, Porsche and other specialist cars in Royal Tunbridge Wells. Include the model, mileage and history alongside a repair estimate. If the diagnosis is still uncertain, explain what has been checked and what remains a possibility.",
+    "Our team is based in Medway and arranges collection from agreed Tunbridge Wells locations. Tell us if the car is in a garage, at a specialist or on a drive where ground clearance could affect loading."
+  ],
+  "collectionTitle": "Agree the access before agreeing the collection day",
+  "collectionIntro": "Being able to start the engine and being able to load the car are different questions. Give us enough detail to plan both the sale and the recovery.",
+  "collection": [
+    {
+      "title": "Low ground clearance",
+      "body": "Explain whether a front splitter, lowered suspension or damaged underbody affects moving the car. Mention a sloping drive or sharp change of surface at the entrance."
+    },
+    {
+      "title": "A vehicle awaiting diagnosis",
+      "body": "Tell us whether the workshop still needs access and when it can release the car. Share the current diagnosis rather than assuming an estimate guarantees the extent of the fault."
+    },
+    {
+      "title": "A shared or private garage",
+      "body": "Confirm the person who can open the garage and make the route clear. If the car cannot select neutral or its wheels are locked, flag that before recovery is booked."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries in Royal Tunbridge Wells and the surrounding area. Nearby towns and villages are covered through the same agreed collection process.",
+  "areas": [
+    {
+      "title": "Royal Tunbridge Wells",
+      "body": "Town-centre and residential locations, including vehicles kept at a workshop or a private garage."
+    },
+    {
+      "title": "Neighbouring locations",
+      "body": "Southborough and Rusthall, with other nearby addresses considered using the full collection postcode."
+    }
+  ],
+  "preparationTitle": "Make a repair-versus-sale comparison with clear information",
+  "preparation": [
+    {
+      "title": "Understand the estimate",
+      "body": "Keep the diagnosed fault separate from additional recommended work. Share any uncertainty or potential further investigation noted by the garage."
+    },
+    {
+      "title": "Describe the rest of the car",
+      "body": "Record mileage, service history, specification and known body or interior damage. A fault is one part of the assessment, not the whole description."
+    },
+    {
+      "title": "Confirm what an offer assumes",
+      "body": "Ask which condition details still need confirming. Accurate information about the vehicle and included parts helps avoid misunderstandings at collection."
+    }
+  ],
+  "closing": "Send the details of your Tunbridge Wells supercar and any diagnosis you already have. We’ll discuss a possible sale and collection before you decide whether it suits your plans.",
+  "faqs": [
+    {
+      "question": "Can I get a valuation before approving a gearbox repair?",
+      "answer": "Yes. Describe the gearbox symptoms or diagnosis, mileage and overall condition. A valuation for the car as it stands gives you an option to consider alongside the repair estimate."
+    },
+    {
+      "question": "Is Southborough covered as well as Tunbridge Wells?",
+      "answer": "Yes. We welcome enquiries from Southborough, Rusthall and nearby locations. Give the full postcode where the car is kept so access and collection can be discussed."
+    },
+    {
+      "question": "Can you collect a very low car from a sloping drive?",
+      "answer": "The approach and clearance need to be assessed first. Explain the gradient and any suspension or body damage. Photographs of the car and access can help establish a suitable plan."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell broken supercar Tunbridge Wells",
+    "secondaryKeywords": [
+      "faulty supercar buyer Royal Tunbridge Wells",
+      "sell supercar gearbox fault Tunbridge Wells"
+    ],
+    "sources": [
+      "https://www.kingsberg.uk/sell-your-supercar",
+      "https://www.compassgaragetrade.co.uk/sell-your-car/",
+      "https://visittunbridgewells.com/plan-your-trip/towns-villages/"
+    ],
+    "finding": "Local results include specialist brokerage and dealer selling services. Page addresses the distinct faulty-car enquiry and repair-estimate decision. Official visitor source confirms nearby Southborough and Rusthall."
+  }
+}
