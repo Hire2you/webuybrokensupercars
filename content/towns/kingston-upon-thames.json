@@ -1,0 +1,86 @@
+{
+  "name": "Kingston upon Thames",
+  "slug": "kingston-upon-thames",
+  "parentName": "Greater London",
+  "parentSlug": "sell-my-broken-supercar-greater-london",
+  "image": "front",
+  "description": "Sell your broken supercar in Kingston upon Thames. Clutch faults, gearbox problems and non-runners considered, with specialist valuations and free collection.",
+  "hero": "A clutch or transmission problem can leave a valuable car off the road. Request a specialist valuation for your broken supercar in Kingston upon Thames, with collection planned around its condition.",
+  "introTitle": "When a running engine does not mean a driveable car",
+  "intro": [
+    "A car may start normally but refuse to select a gear, struggle to move or display a transmission warning. If that describes your supercar in Kingston upon Thames, tell us what happens rather than simply marking it as running.",
+    "We consider cars with clutch, gearbox and drivetrain faults as well as other mechanical problems and damage. Existing specialist findings help us understand the issue, but you can start an enquiry without a complete diagnosis.",
+    "The proposed value depends on the whole vehicle: its model, specification, mileage, history and condition. We explain whether the sale would be a direct purchase or involve a specialist buyer before you decide to accept."
+  ],
+  "collectionTitle": "Plan loading before trying to move the car",
+  "collectionIntro": "Free collection follows agreement on the sale and transport requirements. Share any fault that affects movement, even if the engine still starts.",
+  "collection": [
+    {
+      "title": "Gear selection",
+      "body": "Explain whether the car selects neutral and whether the wheels can turn. If you do not know, say so; do not force controls to test it for collection."
+    },
+    {
+      "title": "Brakes and steering",
+      "body": "Mention a parking brake that will not release or steering that remains locked. These details help assess suitable recovery equipment and access."
+    },
+    {
+      "title": "Collection space",
+      "body": "Give the location and describe the route from the parking position to the road. Photos are useful where gates, ramps or other vehicles limit room."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries from Kingston upon Thames and nearby Norbiton and Surbiton as part of our Greater London service.",
+  "areas": [
+    {
+      "title": "Kingston and Norbiton",
+      "body": "A car kept at home, in storage or at a workshop can be considered. Give the actual collection postcode and the contact who can provide access."
+    },
+    {
+      "title": "Surbiton",
+      "body": "Enquiries from nearby Surbiton are also welcome. Explain any shared parking arrangements and the vehicle's loading condition when requesting a valuation."
+    }
+  ],
+  "preparationTitle": "Help us understand the transmission problem",
+  "preparation": [
+    {
+      "title": "Describe the symptoms",
+      "body": "Tell us about warnings, noises or loss of drive and when they began. A clear description is more useful than guessing which component needs replacing."
+    },
+    {
+      "title": "Share work already done",
+      "body": "Include clutch or gearbox invoices, diagnostic reports and any relevant repair history. Let us know if the problem returned after work was completed."
+    },
+    {
+      "title": "Explain the present condition",
+      "body": "Mention dismantling, fluid leaks or components stored separately. Tell us if the car's condition changes after the initial enquiry so the assessment stays accurate."
+    }
+  ],
+  "closing": "Tell us about your Kingston upon Thames supercar and how the fault affects its movement. We will review the details and discuss an offer and collection plan.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar in Kingston with a failed clutch or gearbox?",
+      "answer": "Yes, we can consider clutch and transmission faults. Describe the symptoms and share any existing diagnosis, along with the vehicle's history and current condition."
+    },
+    {
+      "question": "What if the gearbox will not select neutral?",
+      "answer": "Make this clear before collection is arranged. The vehicle may need a different loading approach, which must be assessed in advance. Do not force it into gear or attempt to tow it without an agreed recovery plan."
+    },
+    {
+      "question": "Can a workshop in Norbiton or Surbiton be the collection point?",
+      "answer": "Yes, a workshop location can be considered. Confirm the car can be released, provide access details and tell us about any removed or loose components."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Kingston upon Thames",
+    "secondaryKeywords": [
+      "supercar gearbox fault Kingston",
+      "non-running supercar Kingston upon Thames"
+    ],
+    "sources": [
+      "https://www.surreycarbuyers.co.uk/sell-my-car/kingston/",
+      "https://scraplocal.co.uk/sell/scrap-car/collection-areas/kingston-upon-thames",
+      "https://www.kingston.gov.uk/leisure-and-community/about-kingston/kingstons-neighbourhoods"
+    ],
+    "finding": "Local results include general car buyers with recovery and scrap-car services. The page focuses on specialist clutch and gearbox sale enquiries, with loading details that distinguish starting from being driveable. Council neighbourhood information supports Kingston, Norbiton and nearby Surbiton coverage."
+  }
+}
