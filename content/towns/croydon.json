@@ -1,0 +1,87 @@
+{
+  "name": "Croydon",
+  "slug": "croydon",
+  "parentName": "South London",
+  "parentSlug": "sell-my-broken-supercar-south-london",
+  "image": "red",
+  "description": "Sell your broken supercar in Croydon. Specialist valuations for damaged cars and non-runners, with free collection from an agreed home or workshop location.",
+  "hero": "If your supercar is off the road in Croydon, you can enquire without arranging a drive to a buyer. Tell us about the fault and where the car is kept for a specialist valuation.",
+  "introTitle": "A sale route for a supercar you cannot drive to an appointment",
+  "intro": [
+    "A car with an engine problem, accident damage or a serious warning light is not always practical to present at a buying centre. Our Croydon service starts with the vehicle's details and condition, followed by collection arrangements if a sale is agreed.",
+    "We consider supercars and prestige performance models individually. Send the registration, mileage, history and known defects, including any existing workshop estimate. We will explain whether we propose to buy directly or introduce a specialist buyer.",
+    "If the car is currently occupying a garage bay, tell us at the start. A release deadline is useful information, but collection still needs to be agreed around the vehicle and access; making an enquiry does not reserve an immediate collection slot."
+  ],
+  "collectionTitle": "Tell us where your Croydon car is waiting",
+  "collectionIntro": "A precise collection plan is especially useful when the vehicle is in a shared car park, workshop or restricted street.",
+  "collection": [
+    {
+      "title": "Workshop appointments",
+      "body": "Ask who can release the car and when they are available. Let us know if the garage has removed components or needs notice before the vehicle can leave."
+    },
+    {
+      "title": "Parking and access",
+      "body": "Mention any signs, gates, loading restrictions or entry arrangements at the location. Do not assume a vehicle transporter can wait in the same place as a normal car."
+    },
+    {
+      "title": "The loading condition",
+      "body": "Confirm whether all wheels are fitted, the steering unlocks and the car can roll. A running engine does not by itself mean the vehicle can be loaded normally."
+    }
+  ],
+  "coverageIntro": "We consider collection enquiries throughout Croydon, with the actual address and access checked before arrangements are confirmed.",
+  "areas": [
+    {
+      "title": "Croydon and South Croydon",
+      "body": "Send the postcode for the home, garage or workshop where the vehicle is currently kept. We can discuss access with you before agreeing collection."
+    },
+    {
+      "title": "Purley and Sanderstead",
+      "body": "These areas are also covered by our South London service. Describe the driveway or parking position and any slope or narrow entrance that needs assessment."
+    }
+  ],
+  "preparationTitle": "Get ready for a workshop-to-buyer handover",
+  "preparation": [
+    {
+      "title": "Keep the findings clear",
+      "body": "Share the workshop's written findings if available. Explain what is confirmed, what is suspected and which work has already been completed."
+    },
+    {
+      "title": "Check what leaves with the car",
+      "body": "List keys, service records, loose parts and accessories included in the sale. Ensure anything held separately can be made available at the agreed time."
+    },
+    {
+      "title": "Agree the release details",
+      "body": "Confirm the car is available for collection and identify the person handling access. Let us know promptly if its location or condition changes after the valuation."
+    }
+  ],
+  "closing": "Request a valuation for your broken supercar in Croydon and tell us whether it is at home or with a garage. We can then discuss an offer and practical collection arrangements.",
+  "faqs": [
+    {
+      "question": "Can you collect a broken supercar from a Croydon workshop?",
+      "answer": "Collection from a workshop can be arranged once the sale, release arrangements and access are confirmed. Tell us the garage location, contact and whether parts have been removed."
+    },
+    {
+      "question": "Do I have to drive my car to you for a valuation?",
+      "answer": "No. Start with the online form and the car's details. We may ask for photographs or more information before confirming an offer; collection is arranged following agreement."
+    },
+    {
+      "question": "Can I request an urgent collection if my garage needs the space?",
+      "answer": "Tell us the deadline when enquiring. We will check what is possible, but timing depends on assessment, access and transport availability and is not guaranteed by submitting the form."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Croydon",
+    "secondaryKeywords": [
+      "non-running supercar Croydon",
+      "damaged supercar buyer Croydon"
+    ],
+    "sources": [
+      "https://rubbishcars.com/areas/croydon",
+      "https://www.croydoncarbuyer.co.uk/",
+      "https://www.croydon.gov.uk/planning-and-regeneration/planning-policy/local-plan-review/neighbourhood-planning/neighbourhood-areas",
+      "https://www.croydon.gov.uk/parking/parking-restrictions/list-controlled-parking-zones"
+    ],
+    "finding": "Reviewed results include general broken-car and local car-buying services. The page targets specialist cars that cannot be driven to an appointment, with workshop-release guidance and verified Croydon neighbourhood coverage. No universal local parking rule is asserted."
+  }
+}
