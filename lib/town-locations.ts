@@ -5,6 +5,11 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
     "parentSlug": "sell-my-broken-supercar-kent"
   },
   {
+    "name": "Billericay",
+    "slug": "billericay",
+    "parentSlug": "sell-my-broken-supercar-essex"
+  },
+  {
     "name": "Brentwood",
     "slug": "brentwood",
     "parentSlug": "sell-my-broken-supercar-essex"
