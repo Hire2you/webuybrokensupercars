@@ -1,0 +1,85 @@
+{
+  "name": "Wimbledon",
+  "slug": "wimbledon",
+  "parentName": "South London",
+  "parentSlug": "sell-my-broken-supercar-south-london",
+  "image": "evening",
+  "description": "Sell your broken supercar in Wimbledon. Request a specialist valuation for a damaged or non-running car, with free collection and access checked in advance.",
+  "hero": "A non-running supercar in a garage or managed car park needs a collection plan that suits the location. Tell us about your Wimbledon car and request a specialist valuation.",
+  "introTitle": "A broken supercar sale starts with the car and its location",
+  "intro": [
+    "If your supercar is no longer being used because of a mechanical fault or damage, you can ask us to assess it where it stands. There is no need to arrange a journey to a buying centre before making an enquiry.",
+    "In Wimbledon, give us both the condition details and the storage arrangements. A car in a private garage may need a different approach from one in a shared parking area. We check these details before confirming collection.",
+    "The vehicle's model, specification, service history and known issues help inform the proposed purchase. We may buy directly or introduce a specialist buyer, and explain the arrangements before you decide to proceed."
+  ],
+  "collectionTitle": "Check garage access before a collection is booked",
+  "collectionIntro": "Free collection is arranged after agreement. Accurate access information helps avoid a plan that cannot work at the property.",
+  "collection": [
+    {
+      "title": "Height and width",
+      "body": "If the car is behind a low entrance or in covered parking, provide the posted clearance and entrance width where known. Include a photo rather than estimating that a transporter will fit."
+    },
+    {
+      "title": "Ramps and ground clearance",
+      "body": "Show the route out, including ramps, sharp changes of angle and any low bodywork. Tell us about lowered suspension or a suspension fault that affects clearance."
+    },
+    {
+      "title": "Managed parking",
+      "body": "Confirm who controls the gate or barrier and whether a collection appointment needs to be coordinated with building management. Share access arrangements through the agreed contact."
+    }
+  ],
+  "coverageIntro": "Collection enquiries are welcome across Wimbledon, including Wimbledon Village, the Broadway and South Wimbledon.",
+  "areas": [
+    {
+      "title": "Wimbledon Village and the town centre",
+      "body": "Tell us the vehicle's precise location and whether there is suitable access from the road. We assess individual properties rather than assuming all parking is accessible."
+    },
+    {
+      "title": "South Wimbledon",
+      "body": "Home, storage and workshop locations can be considered. If the vehicle is at a separate address from the seller, make that clear on the enquiry."
+    }
+  ],
+  "preparationTitle": "Useful details for a low-clearance or immobilised car",
+  "preparation": [
+    {
+      "title": "How the car sits now",
+      "body": "Mention collapsed suspension, damaged wheels or bodywork close to the ground. Current photographs help show the position without needing to move the vehicle."
+    },
+    {
+      "title": "What can be operated",
+      "body": "Explain whether the steering unlocks, the brakes release and the car can roll. Let us know about electrical faults that prevent normal access or operation."
+    },
+    {
+      "title": "Who will attend",
+      "body": "Identify who can provide the keys and access at collection. Agree attendance and availability before the transport date is confirmed."
+    }
+  ],
+  "closing": "Tell us about your broken supercar in Wimbledon and the space it is parked in. We will assess the details and discuss a sale with collection suited to the circumstances.",
+  "faqs": [
+    {
+      "question": "Can you collect a supercar from covered parking in Wimbledon?",
+      "answer": "We can assess the possibility, but need the clearance, entrance and ramp details first. Collection is only confirmed once a suitable recovery and access plan has been agreed."
+    },
+    {
+      "question": "Will you consider a car with a suspension fault?",
+      "answer": "Yes, suspension faults can be considered. Tell us how the car currently sits and whether it can roll, and share photographs so its valuation and transport needs can be assessed."
+    },
+    {
+      "question": "Does your Wimbledon service include Wimbledon Village and South Wimbledon?",
+      "answer": "Yes. We welcome enquiries from both areas as well as Wimbledon town centre. Give the actual storage postcode and access information when requesting your valuation."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Wimbledon",
+    "secondaryKeywords": [
+      "non-running supercar Wimbledon",
+      "damaged supercar collection Wimbledon"
+    ],
+    "sources": [
+      "https://www.classicparade.com/supercar-hire-locations/wimbledon-london",
+      "https://www.merton.gov.uk/leisure-recreation-and-culture/history-and-heritage/about-merton"
+    ],
+    "finding": "The focused supercar search returned mixed promotional and unrelated results rather than a clear set of comparable specialist buyers; this does not establish low keyword difficulty. The page addresses collection access and low-clearance vehicles. Merton Council confirms Wimbledon Village, the Broadway and South Wimbledon within the Wimbledon town-centre grouping."
+  }
+}
