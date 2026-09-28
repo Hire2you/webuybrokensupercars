@@ -1,0 +1,87 @@
+{
+  "name": "Ashford",
+  "slug": "ashford",
+  "parentName": "Kent",
+  "parentSlug": "sell-my-broken-supercar-kent",
+  "image": "evening",
+  "description": "Sell a broken or non-running supercar in Ashford, Kent. Discuss mechanical faults, stored cars and unfinished repairs, with free collection by arrangement.",
+  "hero": "Has your supercar been left waiting for parts, an engine repair or a decision? Request a specialist valuation in Ashford and explore selling it in its present condition, with free collection once agreed.",
+  "introTitle": "A route to selling a project that has stopped moving",
+  "intro": [
+    "A repair can begin with a clear plan and then stall as the scope or cost changes. If your supercar is part-way through work in Ashford, explain what has been completed, what is dismantled and what is still outstanding. We consider the vehicle as it stands.",
+    "An incomplete Ferrari, a stored Lamborghini and a Porsche with a diagnosed engine fault each need a different assessment. The exact model, specification and service record matter, together with the parts that remain with the car. Send recent photographs rather than relying only on images taken before work began.",
+    "Our Medway-based team arranges collection in Ashford, Kent. If the car is at a workshop or storage compound, the person holding it will need to confirm access and release arrangements before a collection slot is agreed."
+  ],
+  "collectionTitle": "Arrange collection around the car’s current state",
+  "collectionIntro": "A project vehicle may need more preparation for handover than a complete non-runner. Describe its condition and all the items that need to travel with it.",
+  "collection": [
+    {
+      "title": "Removed components",
+      "body": "List any engine, gearbox, panels or trim stored separately. Tell us whether the parts are packed, labelled and available at the same address; do not assume loose items can all be carried without discussion."
+    },
+    {
+      "title": "Workshop or compound access",
+      "body": "Give the collection postcode, opening hours and gate contact. Explain whether the car is on its wheels or supported on equipment that belongs to the workshop."
+    },
+    {
+      "title": "A car at home",
+      "body": "Tell us about driveway access, ground clearance and whether the wheels turn. A stored car may have a flat battery or seized brakes in addition to its original fault."
+    }
+  ],
+  "coverageIntro": "We consider enquiries across Ashford and its surrounding neighbourhoods. Use the postcode where the vehicle is kept so the proposed collection can be assessed.",
+  "areas": [
+    {
+      "title": "Ashford and Willesborough",
+      "body": "Town-centre locations and Willesborough, including vehicles at homes, garages or secure storage."
+    },
+    {
+      "title": "Kennington and the south of Ashford",
+      "body": "Kennington, Kingsnorth and surrounding locations. Tell us about the actual entrance, not only the main road address."
+    }
+  ],
+  "preparationTitle": "Build a clear inventory before you enquire",
+  "preparation": [
+    {
+      "title": "What is attached?",
+      "body": "Explain whether the drivetrain, wheels, suspension and body panels are fitted. Pictures showing the car from all sides help the buyer understand its completeness."
+    },
+    {
+      "title": "What comes with the car?",
+      "body": "Identify removed components, replacement parts and available paperwork. Describe their condition and location rather than including their original purchase cost as an assumed addition to value."
+    },
+    {
+      "title": "What is still uncertain?",
+      "body": "Separate completed repairs from proposed work. If nobody has confirmed the original fault, say so; the enquiry can begin with the information currently available."
+    }
+  ],
+  "closing": "Send your Ashford supercar’s details, its repair status and collection postcode. We’ll discuss the vehicle and the practical arrangements before you decide whether to accept an offer.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar with the engine removed?",
+      "answer": "You can enquire. Explain the vehicle’s completeness, the engine’s condition and where all removed parts are stored. Any offer and collection plan depend on the full details."
+    },
+    {
+      "question": "Do you cover Willesborough and Kingsnorth?",
+      "answer": "Yes. We welcome enquiries from Willesborough, Kingsnorth and the wider Ashford area. Include the exact postcode and any workshop or storage access arrangements."
+    },
+    {
+      "question": "Do I need to finish an abandoned repair first?",
+      "answer": "You can request an assessment in the current condition. Describe work already done and parts still needed before deciding whether to spend more on completing the repair."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell broken supercar Ashford Kent",
+    "secondaryKeywords": [
+      "non-running supercar Ashford",
+      "sell unfinished supercar project Ashford"
+    ],
+    "sources": [
+      "https://simonfurlonger.co.uk/sell-your-car/",
+      "https://www.quickcashcars.co.uk/areas/ashford_sell_my_car/",
+      "https://www.ashford.gov.uk/maps/",
+      "https://www.ashford.gov.uk/planning-and-development/planning-applications/strategic-development/south-of-ashford-garden-community/"
+    ],
+    "finding": "Search results include an actual Ashford specialist dealer as well as generic and scrap buyers. Differentiate through incomplete-project condition and component inventory; do not claim an absence of specialist competition."
+  }
+}

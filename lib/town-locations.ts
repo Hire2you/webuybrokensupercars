@@ -1,5 +1,10 @@
 export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[] = [
   {
+    "name": "Ashford",
+    "slug": "ashford",
+    "parentSlug": "sell-my-broken-supercar-kent"
+  },
+  {
     "name": "Canterbury",
     "slug": "canterbury",
     "parentSlug": "sell-my-broken-supercar-kent"
