@@ -1,0 +1,86 @@
+{
+  "name": "Richmond",
+  "slug": "richmond",
+  "parentName": "Greater London",
+  "parentSlug": "sell-my-broken-supercar-greater-london",
+  "image": "red",
+  "description": "Sell your broken supercar in Richmond upon Thames. Damaged cars and non-runners considered, with specialist assessment and free collection by arrangement.",
+  "hero": "Looking to sell a damaged or faulty supercar in Richmond upon Thames? Share the car's details and current condition for a specialist valuation, with collection arranged after agreement.",
+  "introTitle": "Describe the damage, then let us assess the car",
+  "intro": [
+    "A visible scrape and a car that cannot be moved need different assessments. When enquiring about your Richmond supercar, explain the damage you can see and any problems with starting, steering or rolling.",
+    "Photographs and existing inspection records help us understand the vehicle, but they do not replace the information you already know. Tell us about previous damage and repairs as well as the fault that prompted you to sell.",
+    "We consider each vehicle on its merits, including marque, specification, mileage, history and condition. We will explain the proposed buyer and terms before you proceed, whether the purchase is direct or through a specialist introduction."
+  ],
+  "collectionTitle": "A collection plan that reflects the damage",
+  "collectionIntro": "Collection is free once the purchase and transport requirements are agreed. Tell us about any condition that could affect loading.",
+  "collection": [
+    {
+      "title": "Wheels and suspension",
+      "body": "Show damaged wheels and how the car sits. Explain whether it can roll or whether a wheel has been pushed out of position; do not attempt to force it to move."
+    },
+    {
+      "title": "Loose or detached parts",
+      "body": "Mention panels, glass or components that are loose or stored separately. Identify the parts intended to be included so the sale and transport plan are clear."
+    },
+    {
+      "title": "The route out",
+      "body": "Photograph the space around the car and the approach to it. Gates, tight turns and parking arrangements should be checked before a collection date is confirmed."
+    }
+  ],
+  "coverageIntro": "This page covers Richmond upon Thames in Greater London. We also welcome enquiries from nearby Kew and Petersham.",
+  "areas": [
+    {
+      "title": "Richmond and Richmond Hill",
+      "body": "Give the postcode where the vehicle is currently located. If it is on a sloping drive or behind a shared entrance, include those details with the enquiry."
+    },
+    {
+      "title": "Kew and Petersham",
+      "body": "Collection can be assessed as part of our wider Richmond-area service. Tell us about access and whether someone needs to attend to release the car."
+    }
+  ],
+  "preparationTitle": "Photographs and records that help a damage assessment",
+  "preparation": [
+    {
+      "title": "Start with the whole car",
+      "body": "Provide current views of the front, rear and both sides, then closer photographs of visible damage. Include the cabin and dashboard where safely accessible."
+    },
+    {
+      "title": "Explain the sequence",
+      "body": "Tell us when the damage occurred and what has been inspected or repaired since. Do not present a suspected issue as a confirmed diagnosis."
+    },
+    {
+      "title": "Share known history",
+      "body": "Mention recorded damage history and supply existing reports if available. State what you know and what remains uncertain so the buyer can assess the vehicle fairly."
+    }
+  ],
+  "closing": "Request a valuation for your broken supercar in Richmond upon Thames. Accurate condition details help us discuss a suitable buyer and an agreed collection plan.",
+  "faqs": [
+    {
+      "question": "Can I sell an accident-damaged supercar in Richmond?",
+      "answer": "We can consider damaged supercars, subject to assessment. Explain the damage, provide current photographs and share any existing inspection or history information before an offer is confirmed."
+    },
+    {
+      "question": "What if damage stops one of the wheels turning?",
+      "answer": "Tell us before collection is booked and provide a photograph if it is safe to do so. The recovery method must suit the vehicle; do not force or drag the car into a different position."
+    },
+    {
+      "question": "Is this service for Richmond in London?",
+      "answer": "Yes. This page covers Richmond upon Thames in Greater London, including enquiries from nearby Kew and Petersham. Our team is based in Medway and arranges collection by agreement."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Richmond upon Thames",
+    "secondaryKeywords": [
+      "damaged supercar Richmond London",
+      "non-running supercar Richmond"
+    ],
+    "sources": [
+      "https://webuybrokenlandrovers.co.uk/sell-your-land-rover-or-range-rover-in-richmond-upon-thames/",
+      "https://www.richmond.gov.uk/ward_map_of_the_borough",
+      "https://www.richmond.gov.uk/media/15935/adopted_local_plan_interim.pdf"
+    ],
+    "finding": "A marque-specific broken-vehicle buyer appears in the reviewed results. This page makes the London location explicit and provides damage-assessment guidance for supercars. Council ward and village information supports the Richmond, Richmond Hill, Kew and Petersham references."
+  }
+}
