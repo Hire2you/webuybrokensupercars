@@ -1,0 +1,85 @@
+{
+  "name": "Canterbury",
+  "slug": "canterbury",
+  "parentName": "Kent",
+  "parentSlug": "sell-my-broken-supercar-kent",
+  "image": "front",
+  "description": "Sell your broken supercar in Canterbury, Kent. Specialist valuations for damaged cars and non-runners, with free collection from an agreed location.",
+  "hero": "A supercar stuck in a garage or waiting for repairs in Canterbury can be assessed where it stands. Tell us about the fault for a specialist valuation and free collection once a sale is agreed.",
+  "introTitle": "A non-runner does not need a test drive to start an enquiry",
+  "intro": [
+    "A conventional viewing is difficult when your Ferrari will not start or your Porsche cannot be driven reliably. Begin with its registration, mileage and history, then describe what happened before it stopped. There is no need to move it into town for an initial valuation.",
+    "We consider mechanical failures, electrical problems and accident damage in Canterbury, Kent. A car can look complete while having a major underlying fault, so include diagnostic findings and details of any repair work already started.",
+    "Our Medway-based team discusses the proposed buyer and collection arrangements with you. For a vehicle in a courtyard, a shared garage or a workshop, the access route is part of that conversation."
+  ],
+  "collectionTitle": "Make the collection address clear",
+  "collectionIntro": "The entrance used by a recovery vehicle may be different from the building’s postal address. Explain how the car is reached before a slot is confirmed.",
+  "collection": [
+    {
+      "title": "Courtyards and gated spaces",
+      "body": "Mention entrance width, any tight turn and who can open a barrier or gate. Tell us if a car is blocked in rather than assuming it can be moved on collection day."
+    },
+    {
+      "title": "Workshop collections",
+      "body": "Give the garage’s opening times and release contact. Explain whether the car is assembled, which keys are available and where removed parts are stored."
+    },
+    {
+      "title": "Outer neighbourhoods and villages",
+      "body": "For Harbledown or other locations beyond the centre, supply the complete postcode and directions to the correct entrance. Describe gradients or unmade surfaces if relevant."
+    }
+  ],
+  "coverageIntro": "Collection enquiries are welcome across Canterbury and nearby locations. We use the actual vehicle address to agree access and timing.",
+  "areas": [
+    {
+      "title": "Canterbury city",
+      "body": "Central Canterbury, St Dunstan’s and Thanington, including private parking, garages and workshop premises."
+    },
+    {
+      "title": "Harbledown and surrounding areas",
+      "body": "Harbledown and nearby villages can be discussed with the full collection postcode. These are service areas, not branch locations."
+    }
+  ],
+  "preparationTitle": "Describe a non-starting car without guessing the diagnosis",
+  "preparation": [
+    {
+      "title": "What happened last time?",
+      "body": "Explain whether it stopped while driving, failed to start after storage or developed a warning beforehand. Say what you know without assuming every starting problem is engine failure."
+    },
+    {
+      "title": "What has been checked?",
+      "body": "Share any diagnostic report, parts replaced and remaining uncertainty. If a garage has ruled out a fault, that can be useful alongside the work it recommends."
+    },
+    {
+      "title": "Can it be loaded?",
+      "body": "Tell us about the keys, tyres, steering, brakes and ground clearance. Mechanical assessment and recovery planning need different details, so include both."
+    }
+  ],
+  "closing": "Send the car’s details and Canterbury postcode. We’ll review what is known about its condition and explain the next step before you decide whether to sell.",
+  "faqs": [
+    {
+      "question": "Is this service for Canterbury in Kent?",
+      "answer": "Yes. This page covers Canterbury, Kent, and nearby collection locations. Include the full UK postcode when you enquire so the vehicle address is clear."
+    },
+    {
+      "question": "Can you collect from a courtyard near Canterbury city centre?",
+      "answer": "Access must be assessed first. Describe the entrance, turns, gates and any restrictions, and tell us whether the car rolls and steers. We can then discuss workable recovery arrangements."
+    },
+    {
+      "question": "What if I do not know why my supercar will not start?",
+      "answer": "Describe what happens when you try to start it and any checks already completed. A confirmed diagnosis is helpful but is not required to make an initial valuation enquiry."
+    }
+  ],
+  "research": {
+    "date": "2026-09-27",
+    "primaryKeyword": "sell broken supercar Canterbury Kent",
+    "secondaryKeywords": [
+      "non-running supercar Canterbury",
+      "damaged supercar buyer Canterbury"
+    ],
+    "sources": [
+      "https://docs.canterbury.gov.uk/files/planning-conservation-areas/Canterbury%20conservation%20area%20appraisal.pdf",
+      "https://www.quickcashcars.co.uk/areas/canterbury_sell_my_car/"
+    ],
+    "finding": "Results mix UK buyers with New Zealand results, so clarify Canterbury, Kent. Local source establishes St Dunstan’s/Harbledown context. Focus on non-starter information and courtyard access; no restrictions or timing invented."
+  }
+}
