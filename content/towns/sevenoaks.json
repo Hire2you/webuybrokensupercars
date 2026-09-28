@@ -1,0 +1,86 @@
+{
+  "name": "Sevenoaks",
+  "slug": "sevenoaks",
+  "parentName": "Kent",
+  "parentSlug": "sell-my-broken-supercar-kent",
+  "image": "lineup",
+  "description": "Sell your broken supercar in Sevenoaks. Stored cars, mechanical faults and non-runners considered, with specialist valuations and free collection by arrangement.",
+  "hero": "If your supercar has become a car you store rather than drive, you can explore a sale in its current condition. Request a Sevenoaks valuation and discuss free collection from the agreed address.",
+  "introTitle": "Assess the car you have now, not how it last drove",
+  "intro": [
+    "A supercar can be put away after a fault and remain in a garage far longer than expected. When enquiring from Sevenoaks, tell us both the original problem and what has happened since. The last time a car ran is useful context, but it is not a substitute for its present condition.",
+    "We consider engine trouble, transmission faults, damage and cars that have not moved for some time. Share the exact model and specification, available service records and recent photographs. Include any battery, tyre, brake or suspension issues that have developed during storage.",
+    "Our Medway-based team can arrange collection in Sevenoaks and nearby settlements. A private drive, shared entrance or secure garage may need specific access arrangements, which are discussed before you agree a collection slot."
+  ],
+  "collectionTitle": "Planning collection from a private garage",
+  "collectionIntro": "Start with the route between the vehicle and the road. Tell us about anything that could affect reaching, moving or loading the car.",
+  "collection": [
+    {
+      "title": "Garage entrances",
+      "body": "Mention low door openings, tight clearances and whether there is room to move around the vehicle. Let us know who holds keys or access controls."
+    },
+    {
+      "title": "Long or sloping drives",
+      "body": "Describe gradients, sharp turns and low ground clearance. If suspension has dropped, include that in the enquiry rather than trying to reposition the vehicle yourself."
+    },
+    {
+      "title": "A car behind other vehicles",
+      "body": "Explain whether the route can be cleared and which days somebody can attend. Collection timing needs to work with access to the property, not only the car’s availability."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries from Sevenoaks and surrounding settlements. Provide the vehicle’s full postcode so nearby locations are identified accurately.",
+  "areas": [
+    {
+      "title": "Sevenoaks town",
+      "body": "Cars at homes, garages and workshops within Sevenoaks. State the collection address if it differs from your own."
+    },
+    {
+      "title": "Surrounding settlements",
+      "body": "Riverhead, Dunton Green, Chipstead and Bessels Green. These are nearby collection areas, not separate branch locations."
+    }
+  ],
+  "preparationTitle": "Useful information for a stored supercar",
+  "preparation": [
+    {
+      "title": "A timeline of the fault",
+      "body": "Explain when it last ran and why it was parked. Include any work since then, even if the original repair was never completed."
+    },
+    {
+      "title": "Current condition photographs",
+      "body": "Recent images of the body, interior, tyres and visible damage help establish what has changed. Mention whether the car has been kept indoors or outside."
+    },
+    {
+      "title": "History and specification",
+      "body": "Tell us the exact version, mileage and available servicing records. Optional equipment and previous repairs help the buyer assess the complete vehicle alongside the fault."
+    }
+  ],
+  "closing": "Send the details of your Sevenoaks supercar and where it is stored. We’ll discuss the condition, proposed buyer and collection requirements before you decide what to do.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar that has been stored for several years?",
+      "answer": "You can enquire without first returning it to running order. Explain why it was stored, when it last ran and what you know about its present condition, including tyres, brakes and available keys."
+    },
+    {
+      "question": "Do you collect in Riverhead or Dunton Green?",
+      "answer": "Yes. Enquiries are welcome from Riverhead, Dunton Green and the surrounding Sevenoaks area. Include the full postcode and any access restrictions at the property."
+    },
+    {
+      "question": "Should I replace the battery before getting a valuation?",
+      "answer": "You can start by describing the battery condition and the original fault. We can discuss what information is needed; replacing one item does not necessarily resolve the reason the car was parked."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell broken supercar Sevenoaks",
+    "secondaryKeywords": [
+      "sell non-running supercar Sevenoaks",
+      "stored supercar buyer Sevenoaks"
+    ],
+    "sources": [
+      "https://www.sevenoaks.gov.uk/download/downloads/id/4332/sevenoaks_district_settlement_hierarchy_2025.pdf",
+      "https://www.sevenoaksautomotive.co.uk/sell-your-car/",
+      "https://www.surreycarbuyers.co.uk/sell-my-car/sevenoaks/"
+    ],
+    "finding": "General dealer and car-buyer pages compete for local selling queries. Use stored-car assessment and garage-access detail. Council evidence distinguishes Sevenoaks town from surrounding settlements; no invented local branch."
+  }
+}
