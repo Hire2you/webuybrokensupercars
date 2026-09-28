@@ -1,0 +1,87 @@
+{
+  "name": "Chelmsford",
+  "slug": "chelmsford",
+  "parentName": "Essex",
+  "parentSlug": "sell-my-broken-supercar-essex",
+  "image": "front",
+  "description": "Sell your broken supercar in Chelmsford. Electrical faults, engine problems and non-runners assessed individually, with free collection after an offer is agreed.",
+  "hero": "A warning light or recurring electrical problem can make a supercar difficult to rely on. Request a specialist valuation in Chelmsford and discuss selling it with its known faults and free collection by arrangement.",
+  "introTitle": "Explain the symptoms, even when the diagnosis is uncertain",
+  "intro": [
+    "Intermittent faults can be frustrating because the car may behave normally one day and refuse to start the next. When you enquire from Chelmsford, describe the pattern: what happens, when it happens and which checks have been completed. You do not need to invent a diagnosis to request a valuation.",
+    "We consider engine, gearbox, electrical and suspension problems as well as accident damage. The exact model and specification, mileage and service history help put a warning light or diagnostic report in context. Tell us about previous repair attempts and whether the symptoms changed afterwards.",
+    "Collection is arranged by our Medway-based team from agreed locations across Chelmsford. If the car cannot be moved reliably, leave the access planning for discussion rather than assuming it can be driven out when recovery arrives."
+  ],
+  "collectionTitle": "Plan for the car’s least reliable condition",
+  "collectionIntro": "If the fault comes and goes, explain what happens when the car will not cooperate. Collection should not depend on hoping it starts that morning.",
+  "collection": [
+    {
+      "title": "Electronic parking or gear selection",
+      "body": "Tell us if a fault prevents selecting neutral or releasing the parking brake. Include whether the vehicle has power and whether the key is recognised."
+    },
+    {
+      "title": "Managed parking or a garage",
+      "body": "Provide entrance details, any height restriction and the person who can grant access. Explain whether the car is behind another vehicle or in an allocated space."
+    },
+    {
+      "title": "A specialist’s premises",
+      "body": "Share the current diagnostic findings and the workshop’s release arrangements. Make clear whether it can be collected assembled and whether the keys and paperwork are on site."
+    }
+  ],
+  "coverageIntro": "We consider Chelmsford enquiries from city-centre locations, residential neighbourhoods and nearby villages. Give the collection postcode with the car’s details.",
+  "areas": [
+    {
+      "title": "Chelmsford city",
+      "body": "Central Chelmsford, Moulsham and Springfield, including homes, private parking and workshop addresses."
+    },
+    {
+      "title": "Writtle and nearby locations",
+      "body": "Writtle and surrounding collection addresses can be discussed using the full postcode and access information."
+    }
+  ],
+  "preparationTitle": "Information that helps explain an intermittent fault",
+  "preparation": [
+    {
+      "title": "A simple symptom timeline",
+      "body": "Note whether the issue occurs from cold, after driving or following a period parked. Describe warning messages accurately without treating a fault code as a confirmed failed component."
+    },
+    {
+      "title": "Previous investigation",
+      "body": "Share reports, invoices and replacement parts fitted in an attempt to resolve the issue. Tell us if a garage found more than one possible cause."
+    },
+    {
+      "title": "Current usability",
+      "body": "Explain whether the car can be started, steered and moved consistently. A vehicle that occasionally runs may still need recovery arranged as a non-runner."
+    }
+  ],
+  "closing": "Send the registration, mileage, fault details and Chelmsford postcode. We’ll discuss the information you have and the proposed next step without requiring you to resolve every uncertainty first.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar with an intermittent electrical fault?",
+      "answer": "Yes, you can enquire. Describe when the problem occurs, the warning messages and any diagnostic or repair work already completed. Be clear about what is confirmed and what remains uncertain."
+    },
+    {
+      "question": "Do you collect from Springfield, Moulsham and Writtle?",
+      "answer": "Yes. We welcome enquiries from these areas and elsewhere around Chelmsford. Include the full postcode where the vehicle is kept and describe any parking or access restrictions."
+    },
+    {
+      "question": "What if the electronic parking brake will not release?",
+      "answer": "Mention it at the outset, along with battery condition and whether the car selects neutral. The recovery plan needs to account for a vehicle that may not roll freely."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell broken supercar Chelmsford",
+    "secondaryKeywords": [
+      "electrical fault supercar Chelmsford",
+      "non-running supercar buyer Chelmsford"
+    ],
+    "sources": [
+      "https://theessexcarbuyers.co.uk/",
+      "https://essexscrap.co.uk/",
+      "https://citylife.chelmsford.gov.uk/posts/explore-chelmsford-on-your-bike",
+      "https://www.chelmsford.gov.uk/your-council/councillors-committees-and-decision-making/councillors/find-a-councillor/"
+    ],
+    "finding": "Search snapshot shows general Essex buying services and Chelmsford scrap specialists. Content focuses on unresolved electrical faults and recovery readiness rather than generic car removal. Official local sources support area names."
+  }
+}
