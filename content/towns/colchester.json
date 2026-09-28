@@ -1,0 +1,86 @@
+{
+  "name": "Colchester",
+  "slug": "colchester",
+  "parentName": "Essex",
+  "parentSlug": "sell-my-broken-supercar-essex",
+  "image": "lineup",
+  "description": "Sell your damaged or broken supercar in Colchester. Accident damage, mechanical faults and non-runners considered, with specialist valuations and free collection.",
+  "hero": "Body damage, a mechanical failure or a car that no longer moves can make a private sale difficult. Request a specialist assessment of your Colchester supercar, with free collection once the sale is agreed.",
+  "introTitle": "Give the buyer the full picture of a damaged supercar",
+  "intro": [
+    "A close-up of a damaged panel tells only part of the story. For a supercar in Colchester, include the overall condition, exact model, mileage and service history alongside the visible damage. Explain whether the engine runs and whether the wheels, steering or suspension have been affected.",
+    "We consider accident-damaged and non-running specialist cars as well as vehicles with engine or gearbox problems. If an insurance category has been recorded, disclose it with the enquiry. Describe any repair work completed since the incident and any parts still missing.",
+    "You can request an assessment without repairing cosmetic damage first. Our Medway-based team reviews the information and discusses the proposed buyer and collection from the address where the vehicle is currently kept."
+  ],
+  "collectionTitle": "Damage can change how a car needs to be collected",
+  "collectionIntro": "Explain what affects movement and loading, not only what the bodywork looks like. The recovery requirements are agreed before collection is booked.",
+  "collection": [
+    {
+      "title": "Wheels and steering",
+      "body": "Tell us if a wheel is damaged, pushed out of alignment or unable to turn. Mention steering faults and any tyre that will not hold pressure."
+    },
+    {
+      "title": "Loose or missing parts",
+      "body": "Describe detached bumpers, broken trim and components stored separately. Share whether they are available with the car and where they are kept."
+    },
+    {
+      "title": "A repair or storage location",
+      "body": "Provide the site's address, release contact and collection hours. Let us know if the vehicle is parked behind other stock or needs a booked appointment to leave."
+    }
+  ],
+  "coverageIntro": "We consider enquiries across Colchester and nearby areas. An accurate collection address helps us assess access for a damaged vehicle.",
+  "areas": [
+    {
+      "title": "Colchester neighbourhoods",
+      "body": "City-centre locations, Lexden and Highwoods, including private garages and residential parking."
+    },
+    {
+      "title": "Stanway and surrounding addresses",
+      "body": "Stanway and nearby collection locations can be discussed using the full postcode and a description of where the car stands."
+    }
+  ],
+  "preparationTitle": "Photographs that make an accident-damage enquiry clearer",
+  "preparation": [
+    {
+      "title": "Start with the whole car",
+      "body": "Provide views from each side before the close-ups. This helps show which panels are affected and the condition of the rest of the vehicle."
+    },
+    {
+      "title": "Show the damage in context",
+      "body": "Include nearby wheels, lights and suspension where visible. Describe any known mechanical issues separately rather than assuming the external damage is the only problem."
+    },
+    {
+      "title": "Include the repair history",
+      "body": "Share available estimates, reports and records of completed work. Tell us what has not been inspected and whether any insurance category is known."
+    }
+  ],
+  "closing": "Send the vehicle details, current photographs and Colchester postcode. We’ll discuss the damage and collection requirements before you decide whether to accept an offer.",
+  "faqs": [
+    {
+      "question": "Can I enquire about a Cat S or Cat N supercar in Colchester?",
+      "answer": "Yes. Include the recorded category, the damage and any completed repairs. The buyer needs the full condition details before assessing the vehicle and proposing an offer."
+    },
+    {
+      "question": "Do you collect from Lexden, Highwoods and Stanway?",
+      "answer": "Yes. Enquiries are welcome from those locations and the wider Colchester area. Use the actual collection postcode and explain any access limitations."
+    },
+    {
+      "question": "What photographs should I send of an accident-damaged car?",
+      "answer": "Start with whole-car views, then add clear pictures of damaged areas, affected wheels and any removed parts. Describe problems that cannot be seen in photographs, including steering or starting issues."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell damaged supercar Colchester",
+    "secondaryKeywords": [
+      "sell broken supercar Colchester",
+      "non-running supercar Colchester"
+    ],
+    "sources": [
+      "https://www.cartakeback.com/branches/colchester/",
+      "https://carandvanbuyer.co.uk/locations/essex/colchester/sell-your-car-colchester/",
+      "https://www.new.colchester.gov.uk/elections/your-councillors-and-mps/councillors-and-mps"
+    ],
+    "finding": "Local results explicitly target damaged vehicles and non-runners. Differentiate with specialist-car damage documentation and loading requirements; official council information confirms neighbourhood names."
+  }
+}
