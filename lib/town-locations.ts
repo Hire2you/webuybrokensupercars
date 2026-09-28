@@ -45,6 +45,11 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
     "parentSlug": "sell-my-broken-supercar-essex"
   },
   {
+    "name": "Greenwich",
+    "slug": "greenwich",
+    "parentSlug": "sell-my-broken-supercar-south-london"
+  },
+  {
     "name": "Kingston upon Thames",
     "slug": "kingston-upon-thames",
     "parentSlug": "sell-my-broken-supercar-greater-london"

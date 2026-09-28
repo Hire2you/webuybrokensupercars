@@ -1,0 +1,86 @@
+{
+  "name": "Greenwich",
+  "slug": "greenwich",
+  "parentName": "South London",
+  "parentSlug": "sell-my-broken-supercar-south-london",
+  "image": "lineup",
+  "description": "Sell your broken supercar in Greenwich, South East London. Electrical faults, damaged cars and non-runners considered, with free collection by arrangement.",
+  "hero": "Electrical problems can leave a supercar unable to start, unlock or move. If yours is in Greenwich, South East London, tell us what works and what does not for a specialist valuation.",
+  "introTitle": "Sell a non-runner without guessing the electrical fault",
+  "intro": [
+    "A car that will not start may have a simple cause or need much more investigation. You do not have to diagnose it yourself before asking us to consider a purchase. Explain what you know and share any workshop findings already available.",
+    "We review supercars in Greenwich with starting problems, warning lights and other electrical faults, as well as mechanical issues and damage. The full vehicle history and condition help us assess the opportunity for a direct purchase or specialist buyer.",
+    "Be specific about functions affected by the fault. A dashboard that lights up, an engine that turns over and a car that can actually move are different pieces of information, and each can matter when arranging collection."
+  ],
+  "collectionTitle": "Access matters when the car has no power",
+  "collectionIntro": "Collection is planned after the proposed sale and recovery needs are agreed. Let us know early if electrical faults affect access or loading.",
+  "collection": [
+    {
+      "title": "Keys and entry",
+      "body": "Tell us which keys are available and whether the doors can be opened normally. Explain a known access problem rather than attempting a forced entry."
+    },
+    {
+      "title": "Steering and parking brake",
+      "body": "Mention if steering remains locked or the parking brake will not release. This allows the loading requirements to be assessed before transport arrives."
+    },
+    {
+      "title": "Property arrangements",
+      "body": "For a shared or managed car park, confirm the entrance, clearance and person responsible for access. Include the car's current position and any restricted turning space."
+    }
+  ],
+  "coverageIntro": "Our Greenwich service covers the London area, including enquiries from Greenwich town centre, Greenwich Peninsula and nearby Charlton.",
+  "areas": [
+    {
+      "title": "Greenwich town centre and Peninsula",
+      "body": "Give the storage postcode and any building or parking-access arrangements. We can assess a home, workshop or managed parking location individually."
+    },
+    {
+      "title": "Charlton",
+      "body": "Nearby Charlton enquiries are welcome under our South London service. Tell us if the car is with a repairer and who will make it available for collection."
+    }
+  ],
+  "preparationTitle": "Useful information for an electrical non-runner",
+  "preparation": [
+    {
+      "title": "What happened first",
+      "body": "Explain whether the problem appeared suddenly, after storage or after other work. Describe the symptoms without assuming a flat battery is the only cause."
+    },
+    {
+      "title": "Existing checks",
+      "body": "Share diagnostic reports and details of previous repairs or attempted fixes. Be clear if a suggested cause has not yet been confirmed."
+    },
+    {
+      "title": "The current state",
+      "body": "Tell us whether the cabin can be accessed, the mileage can be read and the car can roll. If any of these are unknown, we can discuss what information is needed next."
+    }
+  ],
+  "closing": "Start your Greenwich valuation with the car's details and an honest description of the electrical or mechanical problem. We will review it and discuss the sale and collection arrangements.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar in Greenwich that will not start?",
+      "answer": "Yes, we can consider non-running supercars. Tell us what happens when starting is attempted and share any existing diagnosis. There is no need to guess the underlying fault."
+    },
+    {
+      "question": "What if the electrical fault also locks the steering or parking brake?",
+      "answer": "Mention it when enquiring. It can affect the equipment and access needed for collection, so the recovery plan must be agreed before a date is confirmed."
+    },
+    {
+      "question": "Does this page cover Greenwich Peninsula in London?",
+      "answer": "Yes. This service covers Greenwich in South East London, including Greenwich Peninsula and enquiries from nearby Charlton. Provide the actual collection postcode and access details."
+    }
+  ],
+  "research": {
+    "date": "2026-09-28",
+    "primaryKeyword": "sell my broken supercar Greenwich London",
+    "secondaryKeywords": [
+      "non-running supercar Greenwich",
+      "electrical fault supercar Greenwich"
+    ],
+    "sources": [
+      "https://www.millermotorcarsclassics.com/sell-your-car",
+      "https://venividiblog.co.uk/greenwich/",
+      "https://www.royalgreenwich.gov.uk/download/downloads/id/2870/royal_greenwich_local_plan_core_strategy_with_detailed_policies_appendices.pdf"
+    ],
+    "finding": "Broad searches mix Greenwich Connecticut supercar dealers with UK scrap-oriented results. The page explicitly identifies South East London and focuses on electrical non-runners. The council local-plan geography supports Greenwich Peninsula and nearby Charlton; the US dealer is a disambiguation finding, not a local competitor."
+  }
+}
