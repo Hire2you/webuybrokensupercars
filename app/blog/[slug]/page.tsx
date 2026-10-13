@@ -38,19 +38,19 @@ const mdxComponents = {
   ),
   p: (props: ComponentPropsWithoutRef<"p">) => (
     <p
-      className="mt-5 text-base leading-relaxed text-text-secondary md:text-lg"
+      className="mt-5 text-base leading-relaxed text-neutral-700 md:text-lg"
       {...props}
     />
   ),
   ul: (props: ComponentPropsWithoutRef<"ul">) => (
     <ul
-      className="mt-5 list-disc space-y-2 pl-6 text-base leading-relaxed text-text-secondary md:text-lg"
+      className="mt-5 list-disc space-y-2 pl-6 text-base leading-relaxed text-neutral-700 md:text-lg"
       {...props}
     />
   ),
   ol: (props: ComponentPropsWithoutRef<"ol">) => (
     <ol
-      className="mt-5 list-decimal space-y-2 pl-6 text-base leading-relaxed text-text-secondary md:text-lg"
+      className="mt-5 list-decimal space-y-2 pl-6 text-base leading-relaxed text-neutral-700 md:text-lg"
       {...props}
     />
   ),
@@ -176,7 +176,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <SettleImage className="relative aspect-[21/9] overflow-hidden rounded-md shadow-[0_22px_40px_-24px_rgba(157,13,10,0.35)] ring-1 ring-red-primary/10">
             <BlogCoverImage
               src={post.coverImage}
-              alt={post.title}
+              alt={post.coverAlt ?? post.title}
               priority
               sizes="100vw"
             />
@@ -185,7 +185,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </Section>
 
       <Section id="article-content" background="white">
-        <RevealFrom direction="right" className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-3xl">
           <article className="min-w-0">
             <MDXRemote source={post.content} components={mdxComponents} />
           </article>
@@ -194,7 +194,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               Get your free valuation
             </Button>
           </div>
-        </RevealFrom>
+        </div>
       </Section>
 
       <CTAband />

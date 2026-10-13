@@ -11,6 +11,7 @@ export type BlogPostFrontmatter = {
   author: string;
   category: string;
   coverImage: string;
+  coverAlt?: string;
   readingTime?: string;
 };
 
@@ -50,6 +51,7 @@ function parsePostFile(filename: string): BlogPost {
     author: String(data.author ?? ""),
     category: String(data.category ?? ""),
     coverImage: String(data.coverImage ?? ""),
+    coverAlt: data.coverAlt ? String(data.coverAlt) : undefined,
     readingTime: data.readingTime ? String(data.readingTime) : undefined,
     content,
   };
