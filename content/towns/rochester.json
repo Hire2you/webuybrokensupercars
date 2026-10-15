@@ -1,0 +1,84 @@
+{
+  "name": "Rochester",
+  "slug": "rochester",
+  "parentName": "Kent",
+  "parentSlug": "sell-my-broken-supercar-kent",
+  "image": "red",
+  "description": "Sell your broken supercar in Rochester. Specialist assessments for damaged cars, non-runners and unfinished repairs, with free collection by arrangement.",
+  "hero": "A supercar stuck at a workshop still deserves an assessment of the complete vehicle. Tell us about your Rochester car, its condition and any work already started, and request a no-obligation valuation.",
+  "introTitle": "An unfinished repair does not have to become another commitment",
+  "intro": [
+    "A dismantled engine or unresolved gearbox fault can leave you deciding whether to keep funding a repair. You can enquire before making that decision. Send the registration, mileage and workshop findings, and explain what is still unknown.",
+    "We consider broken Ferrari, Lamborghini, McLaren, Porsche and other specialist cars in Rochester. A buyer needs to know what is included: the vehicle, removed components, keys and records. Describe missing parts separately from parts that are simply stored at the garage.",
+    "Our team is based in Medway. We arrange Rochester collection after the offer and loading requirements are agreed. Enquiries are also welcome from nearby Strood and Borstal; give the actual vehicle location rather than assuming your home address is the collection point."
+  ],
+  "collectionTitle": "Plan the release of your Rochester car",
+  "collectionIntro": "A collection can only be organised properly when the person holding the car knows what is being released and to whom.",
+  "collection": [
+    {
+      "title": "At a repair workshop",
+      "body": "Confirm the workshop balance, opening hours and who can release the vehicle. Tell us if it is on a ramp or awaiting reassembly, and whether it will be a complete rolling car at collection."
+    },
+    {
+      "title": "Loose engines and components",
+      "body": "List removed parts and show how they are stored. A car with its engine alongside it needs a different loading discussion from a complete car that simply will not start."
+    },
+    {
+      "title": "At home or in a lock-up",
+      "body": "Photograph the approach as well as the car. Mention gates, a sloping drive, limited turning space or an entrance behind another property. Do not move a stuck car solely to make collection look easier."
+    }
+  ],
+  "coverageIntro": "We cover Rochester and welcome enquiries from neighbouring Medway locations. These are collection areas, not additional branches.",
+  "areas": [
+    {
+      "title": "Rochester and Borstal",
+      "body": "Include the full postcode and where the car is parked. If the collection entrance differs from the postal address, explain how it is reached."
+    },
+    {
+      "title": "Nearby Strood",
+      "body": "Tell us which side of the river the vehicle is on and provide the workshop or storage address. We agree the collection details with you before a vehicle is sent."
+    }
+  ],
+  "preparationTitle": "Make an unfinished project clear to a buyer",
+  "preparation": [
+    {
+      "title": "Identify completed work",
+      "body": "Share invoices and the current diagnosis. Distinguish work already carried out from a quote for work that has not started."
+    },
+    {
+      "title": "Record what comes with the car",
+      "body": "Include keys, service records and removed components. Make clear whether spare wheels or other items shown in photographs are part of the sale."
+    },
+    {
+      "title": "Compare the two options",
+      "body": "Use a written repair scope and an actual as-is offer when deciding what to do. An advertised price for a healthy example is not the same as the proceeds from repairing yours."
+    }
+  ],
+  "closing": "Request a valuation with your Rochester postcode and the car’s current state of assembly. We’ll discuss the proposed buyer, any offer conditions and the collection arrangements before you decide.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar with its engine removed in Rochester?",
+      "answer": "You can enquire. Explain where the engine and other components are held, what is missing and whether the car rolls. Suitability and transport arrangements need to be assessed before an offer or collection is confirmed."
+    },
+    {
+      "question": "Can you collect from my Rochester repairer?",
+      "answer": "Collection can be arranged from an agreed workshop. Confirm the garage can release the car, any outstanding charges and its opening hours before booking."
+    },
+    {
+      "question": "Do I need to finish the repair first?",
+      "answer": "No repair is required simply to request a valuation. Describe the vehicle accurately so you can compare a proposed sale with the cost and scope of finishing the work."
+    }
+  ],
+  "research": {
+    "date": "2026-10-15",
+    "primaryKeyword": "sell broken supercar Rochester",
+    "secondaryKeywords": [
+      "sell non-running supercar Rochester",
+      "damaged supercar buyer Rochester"
+    ],
+    "sources": [
+      "https://www.visitmedway.org/plan-your-visit/car-free-days-around-medway/historic-rochester/"
+    ],
+    "finding": "New area confirmed absent from published town registry. Local geography checked; copy focuses on vehicle-specific assessment and practical access. No local branch, search-volume or ranking claims."
+  }
+}

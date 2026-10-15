@@ -1,0 +1,84 @@
+{
+  "name": "Chiswick",
+  "slug": "chiswick",
+  "parentName": "Greater London",
+  "parentSlug": "sell-my-broken-supercar-greater-london",
+  "image": "front",
+  "description": "Sell your broken supercar in Chiswick. Gearbox faults, engine problems and non-runners assessed, with free collection once the sale and access are agreed.",
+  "hero": "A transmission warning or a car that will not select a gear can make a private sale difficult to arrange. Tell us about your Chiswick supercar and request a valuation with the fault unresolved.",
+  "introTitle": "Describe the gearbox problem without guessing the diagnosis",
+  "intro": [
+    "“Reverse will not engage” gives a buyer different information from “a specialist has confirmed internal gearbox damage”. Share the exact symptoms, warning messages and any diagnostic findings. If the cause remains unknown, make that clear.",
+    "We consider Porsche, Ferrari, McLaren, Lamborghini and other specialist vehicles with mechanical faults or damage in Chiswick. The assessment also considers the rest of the car: model, mileage, history, bodywork and any previous repair work.",
+    "Our Greater London service includes Chiswick, Turnham Green, Grove Park and Strand-on-the-Green. If the car is in managed parking or at a workshop elsewhere, use that actual address. We plan collection around the vehicle rather than expecting you to drive it to us."
+  ],
+  "collectionTitle": "Loading a Chiswick car that cannot drive",
+  "collectionIntro": "Tell us whether the fault affects neutral selection, steering or the parking brake before a collection is agreed.",
+  "collection": [
+    {
+      "title": "Unable to select neutral",
+      "body": "Give the model and current symptoms to the collection team. Do not force the selector or attempt a release procedure without appropriate model-specific advice."
+    },
+    {
+      "title": "Basement or managed parking",
+      "body": "Describe ramps, height limits, barriers and the route to the space. If you need permission from a building manager for access, arrange that before the collection date."
+    },
+    {
+      "title": "Roadside or workshop access",
+      "body": "Explain where a transporter can approach the car and mention any known access or loading restrictions. The operator needs the real location, not just the nearest main road."
+    }
+  ],
+  "coverageIntro": "Chiswick enquiries sit within our Greater London collection service. The following areas describe coverage, not business premises.",
+  "areas": [
+    {
+      "title": "Chiswick and Turnham Green",
+      "body": "Tell us the postcode and whether the vehicle is on a drive, in a garage or at a commercial site."
+    },
+    {
+      "title": "Grove Park and Strand-on-the-Green",
+      "body": "Include entrance details and photographs of the parking position. If the car is held elsewhere for repairs, give that location instead."
+    }
+  ],
+  "preparationTitle": "What helps assess a transmission fault",
+  "preparation": [
+    {
+      "title": "The exact report",
+      "body": "Keep fault codes and the workshop’s written findings if available. A replacement quotation and a confirmed diagnosis are not necessarily the same thing."
+    },
+    {
+      "title": "The car’s behaviour",
+      "body": "Describe whether the fault is intermittent and when it occurs. Do not arrange a road test solely to reproduce a serious warning for a buyer."
+    },
+    {
+      "title": "The proposed repair",
+      "body": "If you have an estimate, explain what it includes and whether work has begun. You can compare it with an as-is offer before authorising further expenditure."
+    }
+  ],
+  "closing": "Request a valuation for your Chiswick supercar with its registration, mileage and known gearbox or other faults. We’ll confirm what further information is needed and discuss collection access.",
+  "faqs": [
+    {
+      "question": "Can I sell a Porsche with a PDK fault in Chiswick?",
+      "answer": "You can request an assessment with a PDK fault. Include the exact warning, symptoms and any specialist report; do not assume every warning requires a complete gearbox replacement."
+    },
+    {
+      "question": "Can collection be arranged from underground parking?",
+      "answer": "It depends on the vehicle and access. Provide ramp, height and barrier details so the collection team can assess the equipment and arrangements needed before confirming."
+    },
+    {
+      "question": "What if the car cannot select neutral?",
+      "answer": "Tell us at the start of the enquiry. That affects loading and must be planned for. Do not try to force the gearbox into neutral just to prepare for collection."
+    }
+  ],
+  "research": {
+    "date": "2026-10-15",
+    "primaryKeyword": "sell broken supercar Chiswick",
+    "secondaryKeywords": [
+      "sell non-running supercar Chiswick",
+      "damaged supercar buyer Chiswick"
+    ],
+    "sources": [
+      "https://www.hounslow.gov.uk/downloads/download/2456/conservation-area-appraisals-and-maps"
+    ],
+    "finding": "New area confirmed absent from published town registry. Local geography checked; copy focuses on vehicle-specific assessment and practical access. No local branch, search-volume or ranking claims."
+  }
+}

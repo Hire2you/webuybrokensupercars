@@ -1,0 +1,84 @@
+{
+  "name": "Southend-on-Sea",
+  "slug": "southend-on-sea",
+  "parentName": "Essex",
+  "parentSlug": "sell-my-broken-supercar-essex",
+  "image": "evening",
+  "description": "Sell a broken supercar in Southend-on-Sea. Non-runners, mechanical faults and damaged cars considered, with a free valuation and collection by arrangement.",
+  "hero": "If your supercar has been standing while you decide what to do with a fault, start with an assessment of its condition today. Request a valuation in Southend-on-Sea without arranging a drive to a buyer.",
+  "introTitle": "Sell a stored supercar with its condition clearly understood",
+  "intro": [
+    "A car that drove into storage may not be ready to drive out. Tell us when it last ran, why it came off the road and what has changed since then. A flat battery, an expired MOT and a confirmed engine fault are different pieces of information.",
+    "We welcome enquiries for damaged and non-running supercars across Southend-on-Sea, including cars at home, in storage or with a repairer. Supply any diagnosis you already have; you do not need to commission work simply to start the conversation.",
+    "Collection enquiries include Westcliff-on-Sea, Leigh-on-Sea, Southchurch, Thorpe Bay and Shoeburyness. Use the postcode where the vehicle is actually kept, and explain any access that needs arranging with a garage, caretaker or storage operator."
+  ],
+  "collectionTitle": "Collection after a period off the road",
+  "collectionIntro": "The loading plan depends on the car’s present condition. If you do not know whether something operates, say so rather than trying it solely for the enquiry.",
+  "collection": [
+    {
+      "title": "A vehicle that has not moved",
+      "body": "Tell us about flat tyres, locked wheels, low suspension or a disconnected battery. Do not assume that starting the engine would establish whether the car is safe to move."
+    },
+    {
+      "title": "A garage or shared parking space",
+      "body": "Include entrance width, any height restriction and whether another vehicle blocks the exit. Let us know if a key or access code must be obtained before collection."
+    },
+    {
+      "title": "A workshop or storage facility",
+      "body": "Confirm release arrangements, opening hours and any balance due. Mention deadlines early; collection timing is agreed after the vehicle and access are assessed."
+    }
+  ],
+  "coverageIntro": "Our Southend-on-Sea page covers the city and its surrounding neighbourhoods within the wider Essex collection service.",
+  "areas": [
+    {
+      "title": "Central and western Southend",
+      "body": "Southend centre, Westcliff-on-Sea and Leigh-on-Sea. Provide the precise parking position and a contact for access."
+    },
+    {
+      "title": "Southchurch, Thorpe Bay and Shoeburyness",
+      "body": "Enquiries are welcome across these areas. Send the actual collection postcode and photographs of any difficult approach."
+    }
+  ],
+  "preparationTitle": "Useful information about a stored car",
+  "preparation": [
+    {
+      "title": "Dates and known faults",
+      "body": "Note when the vehicle was last driven and when the problem appeared. Approximate dates are useful if you identify them as estimates."
+    },
+    {
+      "title": "Current photographs",
+      "body": "Show the bodywork, cabin, wheels and how the car sits. Include visible damage rather than relying entirely on photographs taken before storage."
+    },
+    {
+      "title": "Keys and records",
+      "body": "Locate spare keys, service history and repair invoices. Say whether parts have been removed or the car is declared off the road."
+    }
+  ],
+  "closing": "Send the registration, mileage and Southend-on-Sea collection postcode. An assessment of the car as it stands gives you an alternative to recommissioning it before a sale.",
+  "faqs": [
+    {
+      "question": "Can I enquire if my Southend car has been stored for a long time?",
+      "answer": "Yes. Give the last known running date, the reason it was stored and its current condition. Explain what is uncertain so the assessment and collection plan can account for it."
+    },
+    {
+      "question": "Do you cover Leigh-on-Sea and Shoeburyness?",
+      "answer": "We welcome enquiries from both, as well as Westcliff, Southchurch and Thorpe Bay. Collection is arranged using the exact vehicle location and access details."
+    },
+    {
+      "question": "Must I get the car running before a valuation?",
+      "answer": "No. Start with the information you have. Do not attempt to run a vehicle with an unresolved serious fault solely to support an enquiry; share existing reports and photographs instead."
+    }
+  ],
+  "research": {
+    "date": "2026-10-15",
+    "primaryKeyword": "sell broken supercar Southend-on-Sea",
+    "secondaryKeywords": [
+      "sell non-running supercar Southend-on-Sea",
+      "damaged supercar buyer Southend-on-Sea"
+    ],
+    "sources": [
+      "https://www.visitsouthend.co.uk/explore-the-city"
+    ],
+    "finding": "New area confirmed absent from published town registry. Local geography checked; copy focuses on vehicle-specific assessment and practical access. No local branch, search-volume or ranking claims."
+  }
+}

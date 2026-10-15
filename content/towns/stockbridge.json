@@ -1,0 +1,84 @@
+{
+  "name": "Stockbridge",
+  "slug": "stockbridge",
+  "parentName": "Edinburgh",
+  "parentSlug": "sell-my-broken-supercar-edinburgh",
+  "image": "evening",
+  "description": "Sell your broken supercar in Stockbridge, Edinburgh. Specialist valuations for faulty or stored cars, with free collection after sale and access are agreed.",
+  "hero": "If your supercar is in a Stockbridge garage or storage space while a fault remains unresolved, you can enquire about selling it in its present condition. Start with the vehicle details and actual collection location.",
+  "introTitle": "A clear sale plan for a car you are no longer using",
+  "intro": [
+    "A stored car can become difficult to organise when the keys, paperwork and vehicle are in different places. Before a sale is agreed, establish who can provide access and what is known about the car’s current condition.",
+    "We assess enquiries for broken and damaged supercars in Stockbridge, including vehicles awaiting repairs or a decision about returning them to use. Tell us when the car last ran, why it was parked up and whether it has since been inspected. Do not assume that an earlier healthy condition still describes it.",
+    "Our Edinburgh service includes Stockbridge and enquiries from nearby Comely Bank and Inverleith. We arrange collection from an agreed address after reviewing the car and access. Our team is based in Medway; there is no separate Stockbridge branch."
+  ],
+  "collectionTitle": "Coordinate the keys, access and vehicle",
+  "collectionIntro": "If you are not regularly at the storage location, settle the practical arrangements before choosing a collection date.",
+  "collection": [
+    {
+      "title": "Keys held elsewhere",
+      "body": "Locate the vehicle and garage keys and establish who can attend. Tell us if there is only one key or if access relies on a property manager."
+    },
+    {
+      "title": "A garage with restricted access",
+      "body": "Send photographs of the entrance, approach and parking position. Mention any height limit, ramp, gate or turning restriction rather than assuming a transporter can reach the car."
+    },
+    {
+      "title": "A car that has stood unused",
+      "body": "Explain flat tyres, low suspension, disconnected batteries or any visible leaks. Do not force a stuck wheel or start a car with an unresolved serious fault solely for collection preparation."
+    }
+  ],
+  "coverageIntro": "Stockbridge is part of our Edinburgh collection coverage. Nearby neighbourhoods are included for location guidance, not as claims of additional premises.",
+  "areas": [
+    {
+      "title": "Stockbridge",
+      "body": "Use the full collection postcode and identify the garage or parking space. Let us know if the entrance is on a different street from the postal address."
+    },
+    {
+      "title": "Comely Bank and Inverleith",
+      "body": "Enquiries are welcome from these neighbouring areas. Confirm where the car stands and who can make it available for assessment or collection."
+    }
+  ],
+  "preparationTitle": "Prepare a useful record before the handover",
+  "preparation": [
+    {
+      "title": "Current condition and history",
+      "body": "Photograph the car as it is now and gather service records. Explain the original fault and any changes during storage."
+    },
+    {
+      "title": "Included items",
+      "body": "List keys, documents, spare wheels and removed parts. If something is stored elsewhere, agree whether and how it will be supplied with the car."
+    },
+    {
+      "title": "Buyer and payment details",
+      "body": "Confirm who is purchasing, any inspection conditions and the handover process. The agreed payment must be cleared before the vehicle leaves."
+    }
+  ],
+  "closing": "Send the car’s details and Stockbridge collection postcode to request a valuation. We’ll discuss the fault and the practical arrangements, giving you a sale option before you organise further repair work.",
+  "faqs": [
+    {
+      "question": "Can collection be discussed if I am away from Edinburgh?",
+      "answer": "Yes, but the buyer, payment and access arrangements need to be agreed. Confirm who can attend and is authorised to release the vehicle, and make sure keys and included items are available."
+    },
+    {
+      "question": "Do you cover Comely Bank and Inverleith?",
+      "answer": "We welcome enquiries from both alongside Stockbridge. Provide the exact vehicle location so collection access can be assessed."
+    },
+    {
+      "question": "Can I sell a car with an unresolved fault after storage?",
+      "answer": "You can request a valuation in its current condition. Describe the known symptoms, last running date and any workshop findings, and identify what remains uncertain."
+    }
+  ],
+  "research": {
+    "date": "2026-10-15",
+    "primaryKeyword": "sell broken supercar Stockbridge",
+    "secondaryKeywords": [
+      "sell non-running supercar Stockbridge",
+      "damaged supercar buyer Stockbridge"
+    ],
+    "sources": [
+      "https://www.stockbridgeedinburgh.com/stockbridge-and-inverleith-community-council-edinburgh/"
+    ],
+    "finding": "New area confirmed absent from published town registry. Local geography checked; copy focuses on vehicle-specific assessment and practical access. No local branch, search-volume or ranking claims."
+  }
+}

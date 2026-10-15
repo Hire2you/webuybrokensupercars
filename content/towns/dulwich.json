@@ -1,0 +1,84 @@
+{
+  "name": "Dulwich",
+  "slug": "dulwich",
+  "parentName": "South London",
+  "parentSlug": "sell-my-broken-supercar-south-london",
+  "image": "red",
+  "description": "Sell your broken supercar in Dulwich. Compare an as-is valuation with your repair options, with specialist assessment and free collection by arrangement.",
+  "hero": "Before committing to a major repair, find out whether selling your supercar as it stands suits you better. Request a no-obligation valuation in Dulwich with the diagnosis and information you already have.",
+  "introTitle": "A second option when the repair decision is still open",
+  "intro": [
+    "A repair estimate can leave important questions unanswered: what happens if more damage is found, which work is essential, and whether you still want to keep the car. A valuation gives you a sale option to consider alongside the workshop’s proposal.",
+    "We consider broken, damaged and non-running supercars in Dulwich, including vehicles awaiting an engine decision, suspension repairs or electrical investigation. Explain the symptoms separately from the confirmed diagnosis and tell us if any parts have already been removed.",
+    "Enquiries are welcome from Dulwich Village, East Dulwich and West Dulwich as part of our South London service. Collection can be discussed from home or an agreed workshop once the buyer, sale and access arrangements are clear."
+  ],
+  "collectionTitle": "Agreeing the Dulwich handover",
+  "collectionIntro": "The car’s loading condition and the person available to release it are just as important as the address.",
+  "collection": [
+    {
+      "title": "A driveway or private garage",
+      "body": "Mention a narrow entrance, slope or low front bumper. Photographs help show the approach without requiring you to move a car that may not be safe to drive."
+    },
+    {
+      "title": "A car awaiting a repair decision",
+      "body": "Ask the workshop whether the car is ready for release or needs reassembly. Agree who will settle any diagnosis, storage or other workshop charges before collection."
+    },
+    {
+      "title": "Someone attending for you",
+      "body": "Confirm who holds the keys and who is authorised to handle the handover. Agree the sale and payment arrangements directly with the buyer before asking another person to attend."
+    }
+  ],
+  "coverageIntro": "Dulwich collection enquiries are handled through our South London service. We assess the exact location and vehicle before confirming a booking.",
+  "areas": [
+    {
+      "title": "Dulwich Village and East Dulwich",
+      "body": "Give the full vehicle address and explain whether access is through a shared entrance or a separate garage."
+    },
+    {
+      "title": "West Dulwich and nearby locations",
+      "body": "Send the collection postcode even if your postal address describes a neighbouring area. The vehicle’s actual position determines the access discussion."
+    }
+  ],
+  "preparationTitle": "Compare a repair proposal with an as-is offer",
+  "preparation": [
+    {
+      "title": "Clarify the repair scope",
+      "body": "Separate diagnosis, dismantling and the proposed repair. Note any work whose price cannot be confirmed until further investigation."
+    },
+    {
+      "title": "Show the whole car",
+      "body": "Include condition outside the failed component, service history and specification. A buyer needs the complete picture rather than only the largest repair figure."
+    },
+    {
+      "title": "Check offer conditions",
+      "body": "Ask whether a proposed price depends on inspection, what is included and how collection will work. Compare offers based on the same description of the vehicle."
+    }
+  ],
+  "closing": "Send your Dulwich collection postcode, vehicle details and the known fault. We’ll discuss a proposed sale so you can decide whether to proceed or continue with repairs.",
+  "faqs": [
+    {
+      "question": "Should I accept the repair quote before contacting you?",
+      "answer": "You can request a valuation first. Use the written repair scope and the proposed as-is offer to compare your options; neither route is automatically best for every car."
+    },
+    {
+      "question": "Do you cover East and West Dulwich?",
+      "answer": "Yes, enquiries are welcome from East Dulwich, West Dulwich and Dulwich Village. Provide the actual collection postcode and access details."
+    },
+    {
+      "question": "Can you assess an electrical fault that has not been diagnosed?",
+      "answer": "You can enquire with an unresolved fault. Describe the warning messages and symptoms, what has been tested and any effect on starting or moving the car. An offer may need further information or inspection."
+    }
+  ],
+  "research": {
+    "date": "2026-10-15",
+    "primaryKeyword": "sell broken supercar Dulwich",
+    "secondaryKeywords": [
+      "sell non-running supercar Dulwich",
+      "damaged supercar buyer Dulwich"
+    ],
+    "sources": [
+      "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/dulwich-park"
+    ],
+    "finding": "New area confirmed absent from published town registry. Local geography checked; copy focuses on vehicle-specific assessment and practical access. No local branch, search-volume or ranking claims."
+  }
+}

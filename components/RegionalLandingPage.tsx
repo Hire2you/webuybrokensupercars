@@ -367,7 +367,10 @@ export default function RegionalLandingPage({ page }: { page: RegionalPage }) {
         </div>
       </Section>
 
-      <TownLinks countySlug={page.slug} />
+      <TownLinks
+        countySlug={page.parent ? page.parent.path.slice(1) : page.slug}
+        excludeSlug={page.parent ? page.slug.split("/").pop() : undefined}
+      />
       <FAQ faqs={page.faqs} valuationHref={valuationHref} />
 
       <Section id="valuation" background="black" className="cta-banner-section">

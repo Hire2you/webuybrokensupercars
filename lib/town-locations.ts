@@ -30,6 +30,11 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
     "parentSlug": "sell-my-broken-supercar-essex"
   },
   {
+    "name": "Chiswick",
+    "slug": "chiswick",
+    "parentSlug": "sell-my-broken-supercar-greater-london"
+  },
+  {
     "name": "Colchester",
     "slug": "colchester",
     "parentSlug": "sell-my-broken-supercar-essex"
@@ -37,6 +42,11 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
   {
     "name": "Croydon",
     "slug": "croydon",
+    "parentSlug": "sell-my-broken-supercar-south-london"
+  },
+  {
+    "name": "Dulwich",
+    "slug": "dulwich",
     "parentSlug": "sell-my-broken-supercar-south-london"
   },
   {
@@ -75,9 +85,19 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
     "parentSlug": "sell-my-broken-supercar-glasgow"
   },
   {
+    "name": "Pollokshields",
+    "slug": "pollokshields",
+    "parentSlug": "sell-my-broken-supercar-glasgow"
+  },
+  {
     "name": "Richmond",
     "slug": "richmond",
     "parentSlug": "sell-my-broken-supercar-greater-london"
+  },
+  {
+    "name": "Rochester",
+    "slug": "rochester",
+    "parentSlug": "sell-my-broken-supercar-kent"
   },
   {
     "name": "Sevenoaks",
@@ -88,6 +108,16 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
     "name": "Shawlands",
     "slug": "shawlands",
     "parentSlug": "sell-my-broken-supercar-glasgow"
+  },
+  {
+    "name": "Southend-on-Sea",
+    "slug": "southend-on-sea",
+    "parentSlug": "sell-my-broken-supercar-essex"
+  },
+  {
+    "name": "Stockbridge",
+    "slug": "stockbridge",
+    "parentSlug": "sell-my-broken-supercar-edinburgh"
   },
   {
     "name": "Tunbridge Wells",

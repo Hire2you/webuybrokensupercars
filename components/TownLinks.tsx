@@ -2,10 +2,10 @@ import Link from "next/link";
 import Section from "@/components/Section";
 import { getCountyBySlug, getPublishedTowns, getTownPath } from "@/lib/locations";
 
-export default function TownLinks({ countySlug }: { countySlug: string }) {
+export default function TownLinks({ countySlug, excludeSlug }: { countySlug: string; excludeSlug?: string }) {
   const county = getCountyBySlug(countySlug);
   if (!county) return null;
-  const towns = getPublishedTowns(county);
+  const towns = getPublishedTowns(county).filter((town) => town.slug !== excludeSlug);
   if (!towns.length) return null;
   return <Section id="local-collection-guides" background="black" compact className="border-t border-border-primary">
     <nav aria-label={`${county.name} local collection guides`}>
