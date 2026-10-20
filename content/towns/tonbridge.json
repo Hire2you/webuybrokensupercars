@@ -1,0 +1,88 @@
+{
+  "name": "Tonbridge",
+  "slug": "tonbridge",
+  "parentName": "Kent",
+  "parentSlug": "sell-my-broken-supercar-kent",
+  "image": "red",
+  "description": "Sell your broken supercar in Tonbridge. Request a specialist valuation for engine faults, gearbox problems or a non-runner, with free collection by agreement.",
+  "hero": "A recurring warning light, an unresolved engine fault or a gearbox problem can make selling a supercar feel complicated. Tell us what is happening with your Tonbridge car and request a valuation in its current condition.",
+  "introTitle": "You can enquire before every fault has been diagnosed",
+  "intro": [
+    "Perhaps the car still starts, but you no longer trust it for a journey. Perhaps a workshop has found one problem and further investigation could reveal another. You do not need a complete repair plan just to ask about selling. Start with the symptoms you know and any findings you already have.",
+    "We consider broken Ferrari, Lamborghini, McLaren, Porsche, Aston Martin and other specialist cars in Tonbridge. An assessment takes account of the model, mileage, service history and condition. A description such as “engine light on” is a starting point; explain when it appeared, whether the car runs and what has changed since.",
+    "Our team is based in Medway and arranges collection in Tonbridge once the sale and access details are agreed. We also welcome enquiries from nearby Hildenborough. Use the address where the vehicle is actually kept, whether that is your home, a garage or a repair workshop."
+  ],
+  "collectionTitle": "A car that starts may still need collecting",
+  "collectionIntro": "Let us know how the fault affects the car before a collection date is agreed. There is no need to demonstrate it on the road to make an enquiry.",
+  "collection": [
+    {
+      "title": "Intermittent faults",
+      "body": "Describe when the problem occurs: on startup, once warm or when selecting a gear. Share an existing photograph of the warning or a workshop report if available. Do not repeat a journey simply to reproduce a fault."
+    },
+    {
+      "title": "A car at a Tonbridge garage",
+      "body": "Confirm who holds the keys, when the workshop is open and whether the car is ready to be released. Explain any removed parts or work still in progress, and resolve the workshop's release arrangements before booking collection."
+    },
+    {
+      "title": "Loading from your property",
+      "body": "Photograph the car's parking position and the route to it. Mention a low front splitter, steep entrance, locked gate or restricted turning space, as well as whether the wheels turn and the brakes release."
+    }
+  ],
+  "coverageIntro": "This page covers Tonbridge as part of our Kent collection service. Tonbridge and Tunbridge Wells are different towns, so the full collection postcode helps us plan for the correct location.",
+  "areas": [
+    {
+      "title": "Tonbridge",
+      "body": "We welcome enquiries from owners keeping a car at home or with a local repairer. Give the precise entrance and parking location if it differs from the address used for correspondence."
+    },
+    {
+      "title": "Nearby Hildenborough",
+      "body": "You can enquire for a car kept in Hildenborough too. Tell us about access at that property; a nearby main road does not necessarily mean a transporter can reach the vehicle."
+    }
+  ],
+  "preparationTitle": "Make the known fault and the unknowns clear",
+  "preparation": [
+    {
+      "title": "Describe what you have observed",
+      "body": "Record the warning messages, symptoms and last time the car was used. Keep an observed symptom separate from a suspected cause. If nobody has diagnosed the fault, say so."
+    },
+    {
+      "title": "Keep estimates and completed work separate",
+      "body": "Send relevant invoices, diagnostic findings and any repair estimate. Identify which parts have actually been replaced and whether the same fault returned afterwards."
+    },
+    {
+      "title": "Compare a sale with the work still required",
+      "body": "Ask what a repair quote includes and what remains uncertain. Compare that scope with a proposed offer for the car as it stands, including any inspection conditions, before committing to more work."
+    }
+  ],
+  "closing": "Send your registration, mileage, Tonbridge collection postcode and a clear description of the fault. We’ll review the enquiry and discuss the proposed buyer and collection arrangements before you decide whether to sell.",
+  "faqs": [
+    {
+      "question": "Can I sell a supercar in Tonbridge if the fault has not been diagnosed?",
+      "answer": "You can request a valuation with the information you have. Describe the symptoms and any checks already completed. We may need further details before making an offer, and will explain any conditions rather than treating an unconfirmed diagnosis as fact."
+    },
+    {
+      "question": "Do I need to drive the car to you?",
+      "answer": "No. We arrange collection from an agreed location after the offer and access requirements are confirmed. Tell us if the car is unsafe to drive or has a fault that could worsen with use."
+    },
+    {
+      "question": "Is this the same collection area as Tunbridge Wells?",
+      "answer": "Tonbridge has its own page within our Kent coverage. We also cover Tunbridge Wells, but the towns are separate. Include the full postcode and actual vehicle address so we can discuss the correct collection point."
+    }
+  ],
+  "research": {
+    "date": "2026-10-20",
+    "primaryKeyword": "sell broken supercar Tonbridge",
+    "secondaryKeywords": [
+      "sell non-running supercar Tonbridge",
+      "damaged supercar buyer Tonbridge",
+      "sell Porsche with faults Tonbridge"
+    ],
+    "sources": [
+      "https://www.tmbc.gov.uk/planning/character-area-appraisals-adopted-documents",
+      "https://www.horsepower-motor-centre.co.uk/sell-your-car",
+      "https://www.webuyanycar.com/branch-locator/tonbridge-pipers-business-centre/",
+      "https://foskers.com/showroom/sell-your-car"
+    ],
+    "finding": "DataForSEO UK Google Ads lookup: exact local supercar terms returned null volume; broader sell my car Tonbridge returned 10. Do not interpret null as zero or paid competition as SEO difficulty. UK desktop SERP for the broader term returned Horsepower Motor Centre, We Buy Any Car and general buyers. Page differentiates through unresolved faults, no requirement to drive to an appointment, and collection disclosure. Tonbridge absent from the 45-page live sitemap audit."
+  }
+}

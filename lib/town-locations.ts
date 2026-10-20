@@ -70,6 +70,11 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
     "parentSlug": "sell-my-broken-supercar-edinburgh"
   },
   {
+    "name": "Loughton",
+    "slug": "loughton",
+    "parentSlug": "sell-my-broken-supercar-essex"
+  },
+  {
     "name": "Maidstone",
     "slug": "maidstone",
     "parentSlug": "sell-my-broken-supercar-kent"
@@ -118,6 +123,11 @@ export const TOWN_LOCATIONS: { name: string; slug: string; parentSlug: string }[
     "name": "Stockbridge",
     "slug": "stockbridge",
     "parentSlug": "sell-my-broken-supercar-edinburgh"
+  },
+  {
+    "name": "Tonbridge",
+    "slug": "tonbridge",
+    "parentSlug": "sell-my-broken-supercar-kent"
   },
   {
     "name": "Tunbridge Wells",

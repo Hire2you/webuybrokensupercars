@@ -1,0 +1,87 @@
+{
+  "name": "Loughton",
+  "slug": "loughton",
+  "parentName": "Essex",
+  "parentSlug": "sell-my-broken-supercar-essex",
+  "image": "front",
+  "description": "Sell your broken or damaged supercar in Loughton. Specialist valuations for accident damage, mechanical faults and non-runners, with free agreed collection.",
+  "hero": "A damaged supercar needs more than a registration-only estimate. If your car is in Loughton, tell us about the damage, its mechanical condition and any repairs already started. We’ll review it for a no-obligation valuation.",
+  "introTitle": "Sell with the damage explained from the start",
+  "intro": [
+    "A scraped bumper, damaged suspension and a car that cannot be moved are very different propositions. Clear photographs and an honest account help a buyer understand yours. You can ask about selling before paying for cosmetic repairs or arranging transport to a showroom.",
+    "We consider damaged and non-running Ferrari, Lamborghini, McLaren, Porsche, Audi R8 and other specialist cars in Loughton. Mechanical faults are welcome too. Include damage you can see, problems you have been told about and anything that has not been inspected.",
+    "Our Essex service includes Loughton and Debden. Collection is coordinated by our Medway-based team after a sale and suitable loading arrangements are agreed. We do not have a separate Loughton branch. If the car is with a repairer outside the area, give that location rather than your home postcode."
+  ],
+  "collectionTitle": "Show how the damage affects moving the car",
+  "collectionIntro": "A collection plan depends on more than whether the engine starts. Tell us about wheel, steering, suspension or body damage that could affect loading.",
+  "collection": [
+    {
+      "title": "Wheel and suspension damage",
+      "body": "Explain whether the car sits unevenly, a wheel is obstructed or it cannot roll or steer. Share photographs of its current position. Do not attempt to straighten, tow or reposition it just to prepare an enquiry."
+    },
+    {
+      "title": "Low or loose bodywork",
+      "body": "Mention a damaged splitter, hanging panel or loose undertray. Include photographs from a safe position so the collection requirements can be discussed without asking you to crawl under the car."
+    },
+    {
+      "title": "A gated drive or managed garage",
+      "body": "Provide the approach, entrance width and any height restriction. Confirm who can open gates or authorise access, and whether another vehicle would need to be moved before collection."
+    }
+  ],
+  "coverageIntro": "We welcome enquiries across Loughton, including Debden and Debden Green. These location references describe collection coverage, not separate buying offices.",
+  "areas": [
+    {
+      "title": "Loughton and the High Road area",
+      "body": "Give the full postcode and the actual location of the car. For a garage or parking space behind a property, explain which entrance provides access and whether it is shared."
+    },
+    {
+      "title": "Debden and Debden Green",
+      "body": "Send the collection address and describe the parking position. Where the car is with a workshop, confirm its release arrangements and any restrictions on collection times."
+    }
+  ],
+  "preparationTitle": "What to include with a damaged-supercar enquiry",
+  "preparation": [
+    {
+      "title": "Photographs of the whole vehicle",
+      "body": "Show each side as well as the damaged area. Close-ups help with detail, but wider views show where the damage sits and whether there are other affected panels."
+    },
+    {
+      "title": "Repair and damage records",
+      "body": "Share any inspection report, repair estimate and invoices for work already completed. State a recorded insurance category if known; if the status is uncertain, explain that rather than guessing."
+    },
+    {
+      "title": "Parts, keys and current condition",
+      "body": "List removed or missing components and confirm what is included in the sale. Tell us whether the car starts, rolls and steers, and whether its condition has changed since the photographs were taken."
+    }
+  ],
+  "closing": "Request a valuation for your Loughton supercar with its current condition and collection location. We’ll discuss any further information needed, explain the proposed buyer and agree the handover details before collection.",
+  "faqs": [
+    {
+      "question": "Can I sell an accident-damaged supercar in Loughton?",
+      "answer": "You can enquire about accident damage, including a car awaiting repairs. Send photographs, any inspection findings and a recorded insurance category if known. The vehicle and loading requirements are assessed individually before an offer or collection is confirmed."
+    },
+    {
+      "question": "Should I repair cosmetic damage before requesting a valuation?",
+      "answer": "You do not need to repair the car just to make an enquiry. Show the damage as it is and disclose any underlying concerns. A proposed as-is offer gives you an option to compare with the cost and scope of repairs."
+    },
+    {
+      "question": "What if my Loughton car cannot roll or steer?",
+      "answer": "Tell us before collection is arranged. Describe which wheels or steering components are affected and where the car stands. Recovery requirements need to be confirmed for that vehicle and location; do not assume a standard loading arrangement will be suitable."
+    }
+  ],
+  "research": {
+    "date": "2026-10-20",
+    "primaryKeyword": "sell broken supercar Loughton",
+    "secondaryKeywords": [
+      "sell damaged supercar Loughton",
+      "non-running supercar buyer Loughton",
+      "sell accident-damaged supercar Essex"
+    ],
+    "sources": [
+      "https://www.loughton-tc.gov.uk/_UserFiles/Files/Documents%20and%20Policies/Loughton%20Community%20Tree%20Strategy.pdf",
+      "https://loughtonmotorcompany.co.uk/sell-your-car/",
+      "https://scrapacar-london.co.uk/loughton.htm"
+    ],
+    "finding": "DataForSEO UK keyword lookup returned null volume for local supercar terms and sell my car Loughton. UK desktop supercar SERP returned mainly non-local prestige landing pages, which is not proof of low competition. Broader local SERP API task returned provider error; public web research found Loughton Motor Company dealer-managed selling and general scrap/non-runner buyers. This page focuses on damaged specialist vehicles, evidence of condition and loading needs. Loughton absent from the 45-page live sitemap audit."
+  }
+}
