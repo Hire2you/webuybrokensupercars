@@ -31,7 +31,7 @@ function richText(text: string) {
   for (const match of text.matchAll(pattern)) {
     const start = match.index ?? 0;
     parts.push(text.slice(last, start));
-    parts.push(<Link key={start} href={match[2]} className="font-semibold text-red-primary underline underline-offset-4 hover:text-red-hover">{match[1]}</Link>);
+    parts.push(<Link key={start} href={match[2]} className="font-semibold text-red-primary underline underline-offset-4 hover:opacity-80">{match[1]}</Link>);
     last = start + match[0].length;
   }
   parts.push(text.slice(last));
