@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import {
   RevealGroup,
@@ -13,6 +14,7 @@ export type ModelCatalogItem = {
   bodyStyle: string;
   alt: string;
   imageSrc: string | null;
+  href?: string;
 };
 
 type ModelCardProps = ModelCatalogItem;
@@ -20,8 +22,8 @@ type ModelCardProps = ModelCatalogItem;
 const MODEL_CARD_CLASS =
   "motion-card-hover group relative flex h-full flex-col overflow-hidden rounded-md border border-border-primary bg-bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-red-primary/70 motion-reduce:transition-none motion-reduce:hover:translate-y-0";
 
-function ModelCard({ name, bodyStyle, alt, imageSrc }: ModelCardProps) {
-  return (
+function ModelCard({ name, bodyStyle, alt, imageSrc, href }: ModelCardProps) {
+  const card = (
     <div className={MODEL_CARD_CLASS}>
       <div className="relative aspect-[16/10] overflow-hidden border-b border-border-primary">
         {imageSrc ? (
@@ -55,6 +57,7 @@ function ModelCard({ name, bodyStyle, alt, imageSrc }: ModelCardProps) {
       </div>
     </div>
   );
+  return href ? <Link href={href} className="block h-full rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-primary">{card}</Link> : card;
 }
 
 export default function ModelsWeBuyGrid({

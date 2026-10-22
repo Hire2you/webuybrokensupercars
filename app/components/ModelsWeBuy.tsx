@@ -3,6 +3,7 @@ import { join } from "node:path";
 import Image from "next/image";
 import Section from "@/components/Section";
 import SectionHeading from "@/components/SectionHeading";
+import { getBrandPageHref } from "@/lib/brands";
 import ModelsCtaPanel from "./ModelsCtaPanel";
 import ModelsWeBuyGrid, { ModelsSectionHairline } from "./ModelsWeBuyGrid";
 
@@ -91,6 +92,7 @@ const catalog = models.map((model) => ({
   bodyStyle: model.bodyStyle,
   imageSrc: resolveModelSrc(model.src),
   alt: modelAlt(model.name),
+  href: getBrandPageHref(model.name),
 }));
 
 export default function ModelsWeBuy() {

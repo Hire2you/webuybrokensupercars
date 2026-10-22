@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { getAllPublishedLocationPaths } from "@/lib/locations";
 import { SITE_URL } from "@/lib/site";
+import { BRAND_PAGES } from "@/lib/brands";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
@@ -48,5 +49,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...locationRoutes, ...blogRoutes];
+  const brandRoutes: MetadataRoute.Sitemap = BRAND_PAGES.map((page) => ({
+    url: `${SITE_URL}/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+  return [...staticRoutes, ...locationRoutes, ...brandRoutes, ...blogRoutes];
 }
