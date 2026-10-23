@@ -20,7 +20,7 @@ export const PORSCHE_PAGE: BrandPage = {
     ] },
     { id: "porsche-engine", title: "Engine failure or an unresolved engine problem", paragraphs: [
       "We consider Porsches with diagnosed engine damage, overheating, coolant loss and starting problems. Tell us what happened, whether it still runs and what a specialist has actually established. If a report identifies bore scoring, bearing damage or another internal fault, share the report rather than applying that diagnosis to a noise alone.",
-      "Mention any dismantling and whether removed components are included. An engine already out of the car, missing ancillaries or an incomplete investigation can affect both valuation and collection. You can enquire without funding further repairs first.",
+      "Mention any dismantling and whether removed components are included. An engine already out of the car, missing ancillaries or an incomplete investigation can affect both valuation and collection. You can enquire without funding further repairs first. Our [bore-scoring repair-or-sell guide](/blog/porsche-bore-scoring-repair-or-sell) covers inspection evidence and repair scope in more detail.",
       "If you are still deciding, our [engine-failure repair-or-sell guide](/blog/supercar-engine-failure-repair-or-sell) explains how to compare an as-is offer with a repair proposal, including uncertain additional work.",
     ] },
     { id: "porsche-transmission", title: "PDK, manual gearbox and clutch faults", paragraphs: [
