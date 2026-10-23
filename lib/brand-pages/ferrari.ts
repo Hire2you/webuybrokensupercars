@@ -20,7 +20,7 @@ export const FERRARI_PAGE: BrandPage = {
     ] },
     { id: "ferrari-gearbox", title: "F1 gearbox, clutch and dual-clutch faults", paragraphs: [
       "A car refusing to engage a gear, dropping into neutral or displaying a gearbox warning is worth describing precisely. Say whether the problem is constant or intermittent, what the dashboard shows and what the workshop has checked. Include a written diagnosis and fault codes if available.",
-      "Keep the symptoms separate from the proposed repair. A clutch assessment, an actuator investigation and a quotation for a replacement transmission are different pieces of information. We do not assume that every warning needs the same repair or deduct a standard gearbox allowance from every Ferrari.",
+      "Keep the symptoms separate from the proposed repair. A clutch assessment, an actuator investigation and a quotation for a replacement transmission are different pieces of information. We do not assume that every warning needs the same repair or deduct a standard gearbox allowance from every Ferrari. Our [Ferrari F1 gearbox guide](/blog/ferrari-f1-gearbox-problems) explains the questions to ask about a repair proposal.",
       "If it is stuck in gear or cannot be moved, mention that at the start. The team needs to confirm an appropriate collection plan before a transporter arrives.",
     ] },
     { id: "ferrari-engine", title: "Selling with engine damage or a stalled repair", paragraphs: [
